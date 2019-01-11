@@ -122,6 +122,7 @@
             this.UPDATE.Text = "Применить";
             this.UPDATE.UseMnemonic = false;
             this.UPDATE.UseVisualStyleBackColor = false;
+            this.UPDATE.Click += new System.EventHandler(this.UPDATE_Click);
             // 
             // label4
             // 

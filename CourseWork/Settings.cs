@@ -16,5 +16,10 @@ namespace CourseWork
         {
             InitializeComponent();
         }
+
+        private void UPDATE_Click(object sender, EventArgs e)
+        {
+            UpdateClient updateClient = new UpdateClient(UpdateName.Text,UpdateUsername.Text,UpdatePassword.Text);
+        }
     }
 }

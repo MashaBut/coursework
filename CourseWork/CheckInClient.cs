@@ -44,6 +44,7 @@ namespace CourseWork
                     insert = $"insert coursework.client(Name,Usename,Login,Password) values ('{Name}','{Username}','{Login}','{Password}')";//
                     MySqlCommand command = new MySqlCommand(insert, conn);
                     command.ExecuteNonQuery();
+                    LOG.LOGIN = Login;
                     string sqlClient = $"CREATE TABLE `coursework`.`{Login}` (`id` INT NOT NULL AUTO_INCREMENT, `category` VARCHAR(100) NOT NULL, PRIMARY KEY(`id`))";
                     MySqlCommand command1 = new MySqlCommand(sqlClient, conn);
                     command1.ExecuteNonQuery();

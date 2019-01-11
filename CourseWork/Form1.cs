@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Windows.Forms;
-
 namespace CourseWork
 {
     public partial class Form1 : Form
@@ -19,7 +18,7 @@ namespace CourseWork
             PutClient client = new PutClient(NameClient.Text, PasswordClient.Text);
             if (client.rez == PasswordClient.Text)
             {
-               
+               LOG.LOGIN = NameClient.Text;
                Hide();
                WorkFuild clientFuild = new WorkFuild();
                clientFuild.Show();
