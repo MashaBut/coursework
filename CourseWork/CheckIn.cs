@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Drawing;
+
 using System.Windows.Forms;
 
 namespace CourseWork
@@ -11,9 +13,7 @@ namespace CourseWork
         }
 
         private void ExitWithCheckIn_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+        { Application.Exit();}
 
         private void CloseForm_Click(object sender, EventArgs e)
         {
@@ -40,6 +40,11 @@ namespace CourseWork
                 WorkFuild clientFuild = new WorkFuild();
                 clientFuild.Show();
             }
+        }
+
+        private void CheckIn_Load(object sender, EventArgs e)
+        {
+            this.Region = new Region(Form1.Rec.RoundedRect(new Rectangle(0, 0, this.Width, this.Height), 20));
         }
     }
 }

@@ -12,7 +12,7 @@ namespace CourseWork
         }
 
         private void Exit_Click(object sender, EventArgs e)
-        { Close();}
+        { Application.Exit(); }
 
         public void CloseForm_Click(object sender, EventArgs e)
         {
@@ -40,10 +40,9 @@ namespace CourseWork
        
         private void Form1_Load(object sender, EventArgs e)
         {
-          //  g.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
-           // this.Region = new Region(Rec.RoundedRect(new Rectangle(0, 0, this.Width, this.Height), 20));
+           this.Region = new Region(Rec.RoundedRect(new Rectangle(0, 0, this.Width, this.Height), 20));
         }
-        class Rec
+        public class Rec
         {
             public static GraphicsPath RoundedRect(Rectangle baseRect, int radius)
             {

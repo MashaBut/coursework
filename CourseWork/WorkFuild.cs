@@ -18,18 +18,22 @@ namespace CourseWork
         }
 
         private void Close_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+        { Application.Exit();}
 
         private void WriteTest_Click(object sender, EventArgs e)
         {
             panel3.Height = WriteTest.Height;
         }
 
-        private void settings1_Load(object sender, EventArgs e)
+        private void WorkFuild_Layout(object sender, LayoutEventArgs e)
         {
-
+            if (LOG.INFO == true)
+            {
+                LOG.INFO = false;
+                this.Hide();
+                Form1 form = new Form1();
+                form.Show();
+            }
         }
     }
 }

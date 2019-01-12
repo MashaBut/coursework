@@ -9,5 +9,6 @@ namespace CourseWork
     public static class LOG
     {
         public static string LOGIN { get; set; }
+        public static bool INFO { get; set; }
     }
 }

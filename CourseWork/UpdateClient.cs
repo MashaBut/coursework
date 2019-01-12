@@ -46,6 +46,7 @@ namespace CourseWork
                     string sqlUpdateName = $"update coursework.client set Password = '{Password}' where Login = '{LOG.LOGIN}'";
                     MySqlCommand command = new MySqlCommand(sqlUpdateName, conn);
                     command.ExecuteNonQuery();
+
                 }
             }
             conn.Close();

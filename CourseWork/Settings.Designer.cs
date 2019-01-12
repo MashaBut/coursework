@@ -46,8 +46,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(12)))), ((int)(((byte)(3)))));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.label1.Location = new System.Drawing.Point(150, 196);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(195, 37);
@@ -58,7 +59,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(12)))), ((int)(((byte)(3)))));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.label2.Location = new System.Drawing.Point(117, 307);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(261, 37);
@@ -69,7 +70,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(12)))), ((int)(((byte)(3)))));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.label3.Location = new System.Drawing.Point(128, 418);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(228, 37);
@@ -78,10 +79,10 @@
             // 
             // UpdateName
             // 
-            this.UpdateName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(183)))), ((int)(((byte)(133)))));
+            this.UpdateName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(198)))), ((int)(((byte)(198)))));
             this.UpdateName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.UpdateName.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.UpdateName.ForeColor = System.Drawing.Color.Yellow;
+            this.UpdateName.ForeColor = System.Drawing.Color.Black;
             this.UpdateName.Location = new System.Drawing.Point(122, 255);
             this.UpdateName.Name = "UpdateName";
             this.UpdateName.Size = new System.Drawing.Size(251, 30);
@@ -89,10 +90,10 @@
             // 
             // UpdateUsername
             // 
-            this.UpdateUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(183)))), ((int)(((byte)(133)))));
+            this.UpdateUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(198)))), ((int)(((byte)(198)))));
             this.UpdateUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.UpdateUsername.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.UpdateUsername.ForeColor = System.Drawing.Color.Yellow;
+            this.UpdateUsername.ForeColor = System.Drawing.Color.Black;
             this.UpdateUsername.Location = new System.Drawing.Point(122, 366);
             this.UpdateUsername.Name = "UpdateUsername";
             this.UpdateUsername.Size = new System.Drawing.Size(251, 30);
@@ -100,10 +101,10 @@
             // 
             // UpdatePassword
             // 
-            this.UpdatePassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(183)))), ((int)(((byte)(133)))));
+            this.UpdatePassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(198)))), ((int)(((byte)(198)))));
             this.UpdatePassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.UpdatePassword.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.UpdatePassword.ForeColor = System.Drawing.Color.Yellow;
+            this.UpdatePassword.ForeColor = System.Drawing.Color.Black;
             this.UpdatePassword.Location = new System.Drawing.Point(122, 477);
             this.UpdatePassword.Name = "UpdatePassword";
             this.UpdatePassword.Size = new System.Drawing.Size(251, 30);
@@ -111,7 +112,7 @@
             // 
             // UPDATE
             // 
-            this.UPDATE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
+            this.UPDATE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(147)))), ((int)(((byte)(147)))));
             this.UPDATE.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.UPDATE.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.UPDATE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
@@ -128,7 +129,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(12)))), ((int)(((byte)(3)))));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.label4.Location = new System.Drawing.Point(501, 439);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(82, 37);
@@ -145,13 +146,14 @@
             this.Sound.Size = new System.Drawing.Size(41, 38);
             this.Sound.TabIndex = 3;
             this.Sound.UseVisualStyleBackColor = true;
+            this.Sound.Click += new System.EventHandler(this.Sound_Click);
             // 
             // Night
             // 
-            this.Night.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(81)))), ((int)(((byte)(75)))));
+            this.Night.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.Night.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Night.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.Night.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(183)))), ((int)(((byte)(133)))));
+            this.Night.ForeColor = System.Drawing.Color.White;
             this.Night.Location = new System.Drawing.Point(508, 255);
             this.Night.Name = "Night";
             this.Night.Size = new System.Drawing.Size(275, 50);
@@ -161,10 +163,10 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(183)))), ((int)(((byte)(133)))));
+            this.button1.BackColor = System.Drawing.Color.White;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(81)))), ((int)(((byte)(75)))));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.button1.Location = new System.Drawing.Point(508, 335);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(275, 50);
@@ -174,7 +176,7 @@
             // 
             // DELETE
             // 
-            this.DELETE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(12)))), ((int)(((byte)(3)))));
+            this.DELETE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.DELETE.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.DELETE.Font = new System.Drawing.Font("Monotype Corsiva", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.DELETE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
@@ -191,7 +193,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Night);
             this.Controls.Add(this.Sound);

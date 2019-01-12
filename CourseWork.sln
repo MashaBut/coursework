@@ -8,7 +8,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Put and create client", "Put and create client", "{AFE652AE-4010-42DF-8928-D6EC9A005FF9}"
 	ProjectSection(SolutionItems) = preProject
 		CourseWork\PutClient.cs = CourseWork\PutClient.cs
-		..\..\..\..\Pictures\Screenshots\цвета.png = ..\..\..\..\Pictures\Screenshots\цвета.png
 	EndProjectSection
 EndProject
 Global

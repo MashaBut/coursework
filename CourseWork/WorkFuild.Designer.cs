@@ -44,7 +44,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(12)))), ((int)(((byte)(3)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.Settings);
             this.panel1.Controls.Add(this.Table);
@@ -58,7 +58,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(183)))), ((int)(((byte)(133)))));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(198)))), ((int)(((byte)(198)))));
             this.panel3.Location = new System.Drawing.Point(0, 339);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(12, 92);
@@ -128,7 +128,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(12)))), ((int)(((byte)(3)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.panel2.Controls.Add(this.Close);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(270, 0);
@@ -138,7 +138,7 @@
             // 
             // Close
             // 
-            this.Close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(12)))), ((int)(((byte)(3)))));
+            this.Close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.Close.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Close.BackgroundImage")));
             this.Close.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Close.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -152,7 +152,7 @@
             // 
             // settings1
             // 
-            this.settings1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
+            this.settings1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
             this.settings1.Location = new System.Drawing.Point(270, 28);
             this.settings1.Name = "settings1";
             this.settings1.Size = new System.Drawing.Size(900, 722);
@@ -163,7 +163,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
             this.ClientSize = new System.Drawing.Size(1170, 750);
             this.Controls.Add(this.settings1);
             this.Controls.Add(this.panel2);
@@ -173,6 +173,7 @@
             this.Name = "WorkFuild";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WorkFuild";
+            this.Layout += new System.Windows.Forms.LayoutEventHandler(this.WorkFuild_Layout);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
