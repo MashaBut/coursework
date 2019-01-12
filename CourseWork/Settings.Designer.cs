@@ -185,6 +185,7 @@
             this.DELETE.Text = "Удалить аккаунт";
             this.DELETE.UseMnemonic = false;
             this.DELETE.UseVisualStyleBackColor = false;
+            this.DELETE.Click += new System.EventHandler(this.DELETE_Click);
             // 
             // Settings
             // 

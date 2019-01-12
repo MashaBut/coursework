@@ -21,5 +21,10 @@ namespace CourseWork
         {
             UpdateClient updateClient = new UpdateClient(UpdateName.Text,UpdateUsername.Text,UpdatePassword.Text);
         }
+
+        private void DELETE_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
