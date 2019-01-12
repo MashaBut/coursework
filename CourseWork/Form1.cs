@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 namespace CourseWork
 {
@@ -6,7 +8,7 @@ namespace CourseWork
     {
         public Form1()
         {
-            InitializeComponent(); 
+            InitializeComponent();
         }
 
         private void Exit_Click(object sender, EventArgs e)
@@ -34,6 +36,40 @@ namespace CourseWork
             Hide(); 
             CheckIn check = new CheckIn();
             check.Show();
+        }
+       
+        private void Form1_Load(object sender, EventArgs e)
+        {
+          //  g.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
+           // this.Region = new Region(Rec.RoundedRect(new Rectangle(0, 0, this.Width, this.Height), 20));
+        }
+        class Rec
+        {
+            public static GraphicsPath RoundedRect(Rectangle baseRect, int radius)
+            {
+                var diameter = radius * 2;
+                var sz = new Size(diameter, diameter);
+                var arc = new Rectangle(baseRect.Location, sz);
+                var path = new GraphicsPath();
+
+                // Верхний левый угол
+                path.AddArc(arc, 180, 90);
+
+                // Верхний правый угол
+                arc.X = baseRect.Right - diameter;
+                path.AddArc(arc, 270, 90);
+
+                // Нижний правый угол
+                arc.Y = baseRect.Bottom - diameter;
+                path.AddArc(arc, 0, 90);
+
+                // Нижний левый угол
+                arc.X = baseRect.Left;
+                path.AddArc(arc, 90, 90);
+
+                path.CloseFigure();
+                return path;
+            }
         }
     }
 }
