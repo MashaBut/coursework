@@ -30,6 +30,25 @@ namespace CourseWork
             string connStr = "server=localhost;user=root;database=coursework;password=mashutkabut99@gmail.com;";
             MySqlConnection conn = new MySqlConnection(connStr);
             conn.Open();
+            string select = $"select category from coursework.{LOG.LOGIN}";
+            MySqlCommand my = new MySqlCommand(select, conn);
+            MySqlDataReader reader = my.ExecuteReader();
+            List <string> list = new List <string>();
+            while(reader.Read())
+            {
+                list.Add((reader[0].ToString()).ToLower());
+            }
+            reader.Close();
+            string dropCategory;
+            string Cope;
+            foreach (string i in list)
+            {
+                Cope = $"{LOG.LOGIN}_{i}";
+                MessageBox.Show(Cope);
+                dropCategory = $"drop table {Cope}";
+                MySqlCommand command3 = new MySqlCommand(dropCategory, conn);
+                command3.ExecuteNonQuery();
+            }
             string drop1 = $"delete from coursework.client where Login='{LOG.LOGIN}'";
             MySqlCommand command1 = new MySqlCommand(drop1, conn);
             command1.ExecuteNonQuery();
