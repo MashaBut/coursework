@@ -31,13 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WorkFuild));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.Settings = new System.Windows.Forms.Button();
+            this.Set = new System.Windows.Forms.Button();
             this.Table = new System.Windows.Forms.Button();
             this.Library = new System.Windows.Forms.Button();
             this.WriteTest = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.Close = new System.Windows.Forms.Button();
+            this.honors1 = new CourseWork.Honors();
             this.settings1 = new CourseWork.Settings();
+            this.library1 = new CourseWork.Library();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -46,7 +48,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.Settings);
+            this.panel1.Controls.Add(this.Set);
             this.panel1.Controls.Add(this.Table);
             this.panel1.Controls.Add(this.Library);
             this.panel1.Controls.Add(this.WriteTest);
@@ -64,20 +66,21 @@
             this.panel3.Size = new System.Drawing.Size(12, 92);
             this.panel3.TabIndex = 2;
             // 
-            // Settings
+            // Set
             // 
-            this.Settings.FlatAppearance.BorderSize = 0;
-            this.Settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Settings.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Settings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
-            this.Settings.Image = ((System.Drawing.Image)(resources.GetObject("Settings.Image")));
-            this.Settings.Location = new System.Drawing.Point(0, 633);
-            this.Settings.Name = "Settings";
-            this.Settings.Size = new System.Drawing.Size(270, 92);
-            this.Settings.TabIndex = 5;
-            this.Settings.Text = "Настройки";
-            this.Settings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Settings.UseVisualStyleBackColor = true;
+            this.Set.FlatAppearance.BorderSize = 0;
+            this.Set.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Set.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Set.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
+            this.Set.Image = ((System.Drawing.Image)(resources.GetObject("Set.Image")));
+            this.Set.Location = new System.Drawing.Point(0, 633);
+            this.Set.Name = "Set";
+            this.Set.Size = new System.Drawing.Size(270, 92);
+            this.Set.TabIndex = 5;
+            this.Set.Text = "Настройки";
+            this.Set.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Set.UseVisualStyleBackColor = true;
+            this.Set.Click += new System.EventHandler(this.Settings_Click);
             // 
             // Table
             // 
@@ -93,6 +96,7 @@
             this.Table.Text = " Таблица  дослижений";
             this.Table.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Table.UseVisualStyleBackColor = true;
+            this.Table.Click += new System.EventHandler(this.Table_Click);
             // 
             // Library
             // 
@@ -108,6 +112,7 @@
             this.Library.Text = "Библиотека";
             this.Library.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Library.UseVisualStyleBackColor = true;
+            this.Library.Click += new System.EventHandler(this.Library_Click);
             // 
             // WriteTest
             // 
@@ -150,6 +155,14 @@
             this.Close.UseVisualStyleBackColor = false;
             this.Close.Click += new System.EventHandler(this.Close_Click);
             // 
+            // honors1
+            // 
+            this.honors1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.honors1.Location = new System.Drawing.Point(270, 28);
+            this.honors1.Name = "honors1";
+            this.honors1.Size = new System.Drawing.Size(900, 722);
+            this.honors1.TabIndex = 3;
+            // 
             // settings1
             // 
             this.settings1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
@@ -158,6 +171,14 @@
             this.settings1.Size = new System.Drawing.Size(900, 722);
             this.settings1.TabIndex = 2;
             // 
+            // library1
+            // 
+            this.library1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.library1.Location = new System.Drawing.Point(279, 31);
+            this.library1.Name = "library1";
+            this.library1.Size = new System.Drawing.Size(891, 707);
+            this.library1.TabIndex = 4;
+            // 
             // WorkFuild
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -165,6 +186,8 @@
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
             this.ClientSize = new System.Drawing.Size(1170, 750);
+            this.Controls.Add(this.library1);
+            this.Controls.Add(this.honors1);
             this.Controls.Add(this.settings1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -185,11 +208,13 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button Close;
-        private System.Windows.Forms.Button Settings;
+        private System.Windows.Forms.Button Set;
         private System.Windows.Forms.Button Table;
         private System.Windows.Forms.Button Library;
         private System.Windows.Forms.Button WriteTest;
         private System.Windows.Forms.Panel panel3;
         private Settings settings1;
+        private Honors honors1;
+        private Library library1;
     }
 }

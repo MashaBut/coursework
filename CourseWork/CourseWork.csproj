@@ -47,6 +47,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CaterogoryInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CaterogoryInsert.Designer.cs">
+      <DependentUpon>CaterogoryInsert.cs</DependentUpon>
+    </Compile>
     <Compile Include="CheckIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +67,18 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Honors.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Honors.Designer.cs">
+      <DependentUpon>Honors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Library.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Library.Designer.cs">
+      <DependentUpon>Library.cs</DependentUpon>
     </Compile>
     <Compile Include="LOG.cs" />
     <Compile Include="Program.cs" />
@@ -81,6 +99,9 @@
     <Compile Include="WorkFuild.Designer.cs">
       <DependentUpon>WorkFuild.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CaterogoryInsert.resx">
+      <DependentUpon>CaterogoryInsert.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CheckIn.resx">
       <DependentUpon>CheckIn.cs</DependentUpon>
     </EmbeddedResource>
@@ -89,6 +110,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Honors.resx">
+      <DependentUpon>Honors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Library.resx">
+      <DependentUpon>Library.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

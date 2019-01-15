@@ -9,6 +9,7 @@ namespace CourseWork
         public Form1()
         {
             InitializeComponent();
+            this.PasswordClient.PasswordChar = '*';
         }
 
         private void Exit_Click(object sender, EventArgs e)

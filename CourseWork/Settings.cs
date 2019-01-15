@@ -42,9 +42,7 @@ namespace CourseWork
         }
 
         private void Sound_Click(object sender, EventArgs e)
-        {
-            
-        }
+        { }
     }
 }
 

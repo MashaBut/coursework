@@ -76,7 +76,7 @@
             this.PasswordClient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(198)))), ((int)(((byte)(198)))));
             this.PasswordClient.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PasswordClient.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
-            this.PasswordClient.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PasswordClient.Font = new System.Drawing.Font("Cambria", 12F);
             this.PasswordClient.ForeColor = System.Drawing.Color.Black;
             this.PasswordClient.Location = new System.Drawing.Point(26, 184);
             this.PasswordClient.Multiline = true;
