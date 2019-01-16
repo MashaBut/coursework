@@ -90,7 +90,6 @@
             this.Createcategory.Name = "Createcategory";
             this.Createcategory.Size = new System.Drawing.Size(158, 28);
             this.Createcategory.TabIndex = 12;
-            this.Createcategory.TextChanged += new System.EventHandler(this.UpdatePassword_TextChanged);
             // 
             // InfoClient
             // 

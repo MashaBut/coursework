@@ -18,11 +18,6 @@ namespace CourseWork
             InitializeComponent();
         }
 
-        private void UpdatePassword_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void Exit_Click(object sender, EventArgs e)
         {
             Close();
