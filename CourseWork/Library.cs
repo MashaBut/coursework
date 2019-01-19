@@ -17,38 +17,82 @@ namespace CourseWork
         {
             InitializeComponent();
         }
+
         string connStr = "server=localhost;user=root;database=coursework;password=mashutkabut99@gmail.com;";
 
         private void Library_Load(object sender, EventArgs e)
         {
-            PutCategory put = new PutCategory();
+            PutCategory category = new PutCategory();
+            Hand();
             MySqlConnection conn = new MySqlConnection(connStr);
             conn.Open();
-            string selectQuery = "select * from coursework.client";
+            string selectQuery = $"select * from coursework.{category.infoPutCategory[0]}";
             DataTable table = new DataTable();
             MySqlDataAdapter dataAdapter = new MySqlDataAdapter(selectQuery,conn);
             dataAdapter.Fill(table);
             DatabaseGridView.DataSource = table;
         }
+        ToolStripMenuItem[] tool = new ToolStripMenuItem[256];
 
-        private void CreateCategory_Click(object sender, EventArgs e)
+        public void Hand()
         {
-            CaterogoryInsert insert = new CaterogoryInsert();
-            insert.Show();
+            PutCategory category = new PutCategory();
+            ToolStripMenuItem fileItem = new ToolStripMenuItem("Категории");
+            fileItem.Image = Image.FromFile(Environment.CurrentDirectory + "\\cube.png");
+            
+            for(int i=0;i<category.putCategory.Count;i++)
+            {  tool[i] = new ToolStripMenuItem(category.putCategory[i]);
+                fileItem.DropDownItems.Add(tool[i]);
+                tool[i].Image = Image.FromFile(Environment.CurrentDirectory + "\\filetext.png");
+                tool[i].Click += MenuItem_Click;
+            }
+            ToolStripMenuItem CreateCategory = new ToolStripMenuItem("Создать категорию");
+            CreateCategory.Image = Image.FromFile(Environment.CurrentDirectory + "\\edit.png");
+
+            fileItem.DropDownItems.Add(CreateCategory);
+            CreateCategory.Click += Finish_Click;
+            menuStrip1.Items.Add(fileItem);
         }
 
-        class PutCategory
+        private void MenuItem_Click(object sender, EventArgs e)
         {
+            PutCategory category = new PutCategory();
+            for (int i = 0; i < category.putCategory.Count; i++)
+            {
+                if (Convert.ToString(sender) == category.putCategory[i])
+                {
+                    MySqlConnection conn = new MySqlConnection(connStr);
+                    conn.Open();
+                    string selectQuery = $"select * from coursework.{category.infoPutCategory[i]}";
+                    DataTable table = new DataTable();
+                    MySqlDataAdapter dataAdapter = new MySqlDataAdapter(selectQuery, conn);
+                    dataAdapter.Fill(table);
+                    DatabaseGridView.DataSource = table;
+                    break;
+                }  
+            }
+        }
+
+         private void Finish_Click(object sender, EventArgs e)
+         {
+             CaterogoryInsert insert = new CaterogoryInsert();
+             insert.Show();
+         }
+
+        public class PutCategory
+        {
+            public List<string> putCategory = new List<string>();
+            public List<string> infoPutCategory = new List<string>();
             public PutCategory()
             {
+                putCategory.Clear();
                 string connStr = "server=localhost;user=root;database=coursework;password=mashutkabut99@gmail.com;";
                 MySqlConnection conn = new MySqlConnection(connStr);
                 conn.Open();
                 string select = $"select category from coursework.{LOG.LOGIN}";
                 MySqlCommand sqlCommand = new MySqlCommand(select, conn);
                 MySqlDataReader reader = sqlCommand.ExecuteReader();
-                List<string> infoPutCategory = new List<string>();
-                List<string> putCategory = new List<string>();
+                
                 while (reader.Read())
                 {
                     infoPutCategory.Add($"{LOG.LOGIN}_" + (reader[0].ToString()).ToLower());
