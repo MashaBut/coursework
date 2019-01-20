@@ -1,6 +1,6 @@
 ﻿namespace CourseWork
 {
-    partial class CaterogoryInsert
+    partial class CategoryInsert
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CaterogoryInsert));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CategoryInsert));
             this.Exit = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.UPDATE = new System.Windows.Forms.Button();
@@ -128,7 +128,7 @@
         private System.Windows.Forms.Button Exit;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button UPDATE;
-        private System.Windows.Forms.TextBox Createcategory;
         public System.Windows.Forms.Label InfoClient;
+        public System.Windows.Forms.TextBox Createcategory;
     }
 }

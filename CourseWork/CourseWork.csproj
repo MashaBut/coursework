@@ -47,11 +47,11 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CaterogoryInsert.cs">
+    <Compile Include="CategoryInsert.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CaterogoryInsert.Designer.cs">
-      <DependentUpon>CaterogoryInsert.cs</DependentUpon>
+    <Compile Include="CategoryInsert.Designer.cs">
+      <DependentUpon>CategoryInsert.cs</DependentUpon>
     </Compile>
     <Compile Include="CheckIn.cs">
       <SubType>Form</SubType>
@@ -68,7 +68,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Handler.cs" />
     <Compile Include="Honors.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -100,8 +99,8 @@
     <Compile Include="WorkFuild.Designer.cs">
       <DependentUpon>WorkFuild.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="CaterogoryInsert.resx">
-      <DependentUpon>CaterogoryInsert.cs</DependentUpon>
+    <EmbeddedResource Include="CategoryInsert.resx">
+      <DependentUpon>CategoryInsert.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CheckIn.resx">
       <DependentUpon>CheckIn.cs</DependentUpon>
