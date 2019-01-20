@@ -34,8 +34,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
             this.DatabaseGridView = new System.Windows.Forms.DataGridView();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.listBox = new System.Windows.Forms.ListBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.DatabaseGridView)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // DatabaseGridView
@@ -65,7 +67,7 @@
             dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.DatabaseGridView.DefaultCellStyle = dataGridViewCellStyle18;
             this.DatabaseGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(198)))), ((int)(((byte)(198)))));
-            this.DatabaseGridView.Location = new System.Drawing.Point(28, 239);
+            this.DatabaseGridView.Location = new System.Drawing.Point(70, 233);
             this.DatabaseGridView.Name = "DatabaseGridView";
             dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             dataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -84,38 +86,56 @@
             this.DatabaseGridView.RowsDefaultCellStyle = dataGridViewCellStyle20;
             this.DatabaseGridView.RowTemplate.Height = 24;
             this.DatabaseGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.DatabaseGridView.Size = new System.Drawing.Size(746, 438);
+            this.DatabaseGridView.Size = new System.Drawing.Size(758, 418);
             this.DatabaseGridView.TabIndex = 0;
             // 
-            // menuStrip1
+            // listBox
             // 
-            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Location = new System.Drawing.Point(59, 132);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(158, 28);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
+            this.listBox.BackColor = System.Drawing.Color.White;
+            this.listBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.listBox.Font = new System.Drawing.Font("Cambria", 10F);
+            this.listBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.listBox.FormattingEnabled = true;
+            this.listBox.ItemHeight = 20;
+            this.listBox.Location = new System.Drawing.Point(11, 20);
+            this.listBox.Name = "listBox";
+            this.listBox.ScrollAlwaysVisible = true;
+            this.listBox.Size = new System.Drawing.Size(204, 162);
+            this.listBox.TabIndex = 2;
+            this.listBox.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.listBox);
+            this.groupBox1.Font = new System.Drawing.Font("Cambria", 10F);
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
+            this.groupBox1.Location = new System.Drawing.Point(21, 18);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(227, 190);
+            this.groupBox1.TabIndex = 3;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Категории";
             // 
             // Library
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.DatabaseGridView);
-            this.Controls.Add(this.menuStrip1);
             this.Name = "Library";
             this.Size = new System.Drawing.Size(900, 722);
             this.Load += new System.EventHandler(this.Library_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DatabaseGridView)).EndInit();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.DataGridView DatabaseGridView;
-        public System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ListBox listBox;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

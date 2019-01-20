@@ -19,80 +19,13 @@ namespace CourseWork
         }
 
         string connStr = "server=localhost;user=root;database=coursework;password=mashutkabut99@gmail.com;";
-
+        
         private void Library_Load(object sender, EventArgs e)
-        { 
-            Hand();
-        }
-        public void Hand()
         {
-            menuStrip1.Items.Clear();
-            PutCategory category = new PutCategory();
-            ToolStripMenuItem fileItem = new ToolStripMenuItem("Категории"); 
-            ToolStripMenuItem[] tool = new ToolStripMenuItem[256];
-            fileItem.DropDownItems.Clear();
-
-            fileItem.Image = Image.FromFile(Environment.CurrentDirectory + "\\cube.png");
-
-            ToolStripMenuItem CreateCategory = new ToolStripMenuItem("Создать категорию");
-            CreateCategory.Image = Image.FromFile(Environment.CurrentDirectory + "\\edit.png");
-            CreateCategory.Click += Finish_Click;
-            fileItem.DropDownItems.Add(CreateCategory);
-            if (LOG.Form)
-            {
-                ToolStripMenuItem s = new ToolStripMenuItem("Создать");
-                s.Image = Image.FromFile(Environment.CurrentDirectory + "\\edit.png");
-                s.Click += Finish_Click;
-                fileItem.DropDownItems.Add(s); 
-            }
-            for (int i = 0; i < category.putCategory.Count; i++)
-            {
-                tool[i] = new ToolStripMenuItem(category.putCategory[i]);
-                fileItem.DropDownItems.Add(tool[i]);
-                tool[i].Image = Image.FromFile(Environment.CurrentDirectory + "\\filetext.png");
-                tool[i].Click += MenuItem_Click;
-            }
-            menuStrip1.Items.Add(fileItem);
-           
+            List();
+            listBox1_SelectedIndexChanged(sender, e);
         }
 
-        private void MenuItem_Click(object sender, EventArgs e)
-        {
-            PutCategory category = new PutCategory();
-            for (int i = 0; i < category.putCategory.Count; i++)
-            {
-                if (Convert.ToString(sender) == category.putCategory[i])
-                {
-                    MySqlConnection conn = new MySqlConnection(connStr);
-                    conn.Open();
-                    string selectQuery = $"select * from coursework.{category.infoPutCategory[i]}";
-                    DataTable table = new DataTable();
-                    MySqlDataAdapter dataAdapter = new MySqlDataAdapter(selectQuery, conn);
-                    dataAdapter.Fill(table);
-                    DatabaseGridView.DataSource = table;
-                    break;
-                }  
-            }
-        }
-
-         private void Finish_Click(object sender, EventArgs e)
-         {
-            CategoryInsert insert = new CategoryInsert();
-            insert.Show();
-        }
-        void Menu()
-        {
-            CategoryInsert insert = new CategoryInsert();
-            //if (LOG.Form)
-            //{ 
-            //    MessageBox.Show(LOG.SELECT);
-            //    ToolStripMenuItem Create = new ToolStripMenuItem($"{LOG.SELECT}");
-            //    Create.Image = Image.FromFile(Environment.CurrentDirectory + "\\filetext.png");
-            //    fileItem.DropDownItems.Add(Create);
-            //    Create.Click += MenuItem_Click;
-            //    LOG.Form= false;
-            //}
-        }
         public class PutCategory
         {
             public List<string> putCategory = new List<string>();
@@ -114,6 +47,53 @@ namespace CourseWork
                 }
                 reader.Close();
                 conn.Close();
+            }
+        }
+        public void List()
+        {
+            listBox.Items.Clear();
+            PutCategory category = new PutCategory();
+            string []Name = new string [256];
+            listBox.Items.Add("Создать категорию");
+            listBox.Items.Add("Обновить категории");
+            for (int i = 0; i < category.putCategory.Count; i++)
+            {
+               Name[i]=category.putCategory[i];
+               listBox.Items.Add(Name[i]);
+            }
+           
+        }
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        { 
+            PutCategory category = new PutCategory();
+            if (Convert.ToString(listBox.SelectedItem) == "Создать категорию")
+            {
+                CategoryInsert insert = new CategoryInsert();
+                insert.Show();
+                List();
+                listBox1_SelectedIndexChanged(sender, e);
+            }
+            for (int j = 0; j <= category.putCategory.Count; j++)
+            {
+                if(Convert.ToString(listBox.SelectedItem) == "Обновить категории")
+                {
+                    List();
+                    break;
+                }
+                if (Convert.ToString(listBox.SelectedItem) != "")
+                {
+                    if (Convert.ToString(listBox.SelectedItem) == category.putCategory[j])
+                    {
+                        MySqlConnection conn = new MySqlConnection(connStr);
+                        conn.Open();
+                        string selectQuery = $"select * from coursework.{category.infoPutCategory[j]}";
+                        DataTable table = new DataTable();
+                        MySqlDataAdapter dataAdapter = new MySqlDataAdapter(selectQuery, conn);
+                        dataAdapter.Fill(table);
+                        DatabaseGridView.DataSource = table;
+                        break;
+                    }
+                }
             }
         }
     }
