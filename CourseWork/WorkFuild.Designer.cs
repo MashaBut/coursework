@@ -195,7 +195,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "WorkFuild";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "WorkFuild";
+            this.Text = "TestHub";
             this.Layout += new System.Windows.Forms.LayoutEventHandler(this.WorkFuild_Layout);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

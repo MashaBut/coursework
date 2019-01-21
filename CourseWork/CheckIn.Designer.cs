@@ -241,6 +241,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CheckIn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "TestHub";
             this.Load += new System.EventHandler(this.CheckIn_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

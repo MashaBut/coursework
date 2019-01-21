@@ -103,7 +103,7 @@
             this.InfoClient.Size = new System.Drawing.Size(0, 21);
             this.InfoClient.TabIndex = 13;
             // 
-            // CaterogoryInsert
+            // CategoryInsert
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -115,7 +115,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Exit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "CaterogoryInsert";
+            this.Name = "CategoryInsert";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.CaterogoryInsert_Load);
             this.ResumeLayout(false);

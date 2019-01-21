@@ -59,7 +59,8 @@ namespace CourseWork
                 string create= $"CREATE TABLE `coursework`.`{LOG.LOGIN}_{Createcategory.Text}` (`id` INT NOT NULL AUTO_INCREMENT, `Question` VARCHAR(256) NOT NULL, `FirstAns` VARCHAR(256) NOT NULL, `SecondAns` VARCHAR(256) NULL,PRIMARY KEY(`id`), UNIQUE INDEX `Question_UNIQUE` (`Question` ASC) VISIBLE, UNIQUE INDEX `FirstAns_UNIQUE` (`FirstAns` ASC) VISIBLE, UNIQUE INDEX `SecondAns_UNIQUE` (`SecondAns` ASC) VISIBLE)";
                 MySqlCommand command1 = new MySqlCommand(create, sqlConnection);
                 command1.ExecuteNonQuery();
-                sqlConnection.Close();
+                Library library = new Library();
+                library.List();
                 this.Close();
             }
             sqlConnection.Close();

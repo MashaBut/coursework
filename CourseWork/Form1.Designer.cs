@@ -37,6 +37,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.CheckIn = new System.Windows.Forms.Button();
             this.InfoClient = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Exit
@@ -157,12 +158,24 @@
             this.InfoClient.Size = new System.Drawing.Size(0, 17);
             this.InfoClient.TabIndex = 4;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Kristen ITC", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.label3.Location = new System.Drawing.Point(13, 46);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(243, 66);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "TestHub";
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(212, 297);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.InfoClient);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -175,6 +188,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "TestHub";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -191,6 +205,7 @@
         private System.Windows.Forms.Button CheckIn;
         public System.Windows.Forms.Label InfoClient;
         public System.Windows.Forms.TextBox NameClient;
+        private System.Windows.Forms.Label label3;
     }
 }
 

@@ -7,7 +7,22 @@ class CheckInClient : CheckIn
     string selectLogin, selectPassword;
     string insert;
     public string rezLogin, rezPassword;
-    public bool finish1 = true, finish2 = true;
+
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // CheckInClient
+            // 
+            this.ClientSize = new System.Drawing.Size(212, 297);
+            this.Name = "CheckInClient";
+            this.Text = "TestHub";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        public bool finish1 = true, finish2 = true;
     public CheckInClient(string Name, string Username, string Login, string Password)
     {
         if (Name != "" && Username != "" && Login != "" && Password != "")

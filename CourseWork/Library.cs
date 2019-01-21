@@ -18,12 +18,14 @@ namespace CourseWork
             InitializeComponent();
         }
 
-        string connStr = "server=localhost;user=root;database=coursework;password=mashutkabut99@gmail.com;";
-        
+        public string punkt;
+        public MySqlConnection conn = new MySqlConnection("server=localhost;user=root;database=coursework;password=mashutkabut99@gmail.com;");
+        DataSet ds = new DataSet();
+        DataTable table = new DataTable();
+
         private void Library_Load(object sender, EventArgs e)
         {
             List();
-            listBox1_SelectedIndexChanged(sender, e);
         }
 
         public class PutCategory
@@ -66,16 +68,16 @@ namespace CourseWork
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         { 
             PutCategory category = new PutCategory();
-            if (Convert.ToString(listBox.SelectedItem) == "Создать категорию")
-            {
-                CategoryInsert insert = new CategoryInsert();
-                insert.Show();
-                List();
-                listBox1_SelectedIndexChanged(sender, e);
-            }
             for (int j = 0; j <= category.putCategory.Count; j++)
             {
-                if(Convert.ToString(listBox.SelectedItem) == "Обновить категории")
+                if (Convert.ToString(listBox.SelectedItem) == "Создать категорию")
+                {
+                    CategoryInsert insert = new CategoryInsert();
+                    insert.Show();
+                    List();
+                    break;
+                }
+                if (Convert.ToString(listBox.SelectedItem) == "Обновить категории")
                 {
                     List();
                     break;
@@ -84,16 +86,35 @@ namespace CourseWork
                 {
                     if (Convert.ToString(listBox.SelectedItem) == category.putCategory[j])
                     {
-                        MySqlConnection conn = new MySqlConnection(connStr);
+                        
                         conn.Open();
-                        string selectQuery = $"select * from coursework.{category.infoPutCategory[j]}";
-                        DataTable table = new DataTable();
+                        string selectQuery = $"select Question,FirstAns,SecondAns from coursework.{category.infoPutCategory[j]}";
+                        LOG.NameTable = category.infoPutCategory[j];
+                        
                         MySqlDataAdapter dataAdapter = new MySqlDataAdapter(selectQuery, conn);
                         dataAdapter.Fill(table);
                         DatabaseGridView.DataSource = table;
                         break;
                     }
                 }
+            }
+        }
+
+        private void UPDATE_Click(object sender, EventArgs e)
+        {
+            //DataSet d = new DataSet();
+            //MySqlDataAdapter update = new MySqlDataAdapter();
+            //MySqlCommandBuilder cmbd = new MySqlCommandBuilder(update);
+            //update.Update(d,$"coursework.{LOG.NameTable}");
+            //d.AcceptChanges();
+            //DatabaseGridView.DataSource = d.Tables[LOG.NameTable];
+        }
+
+        private void DeletePart_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow row in DatabaseGridView.SelectedRows)
+            {
+                DatabaseGridView.Rows.Remove(row);
             }
         }
     }
