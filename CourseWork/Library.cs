@@ -19,7 +19,7 @@ namespace CourseWork
         }
 
         public string punkt;
-        public MySqlConnection conn = new MySqlConnection("server=localhost;user=root;database=coursework;password=mashutkabut99@gmail.com;");
+        
         DataSet ds = new DataSet();
         DataTable table = new DataTable();
 
@@ -44,7 +44,7 @@ namespace CourseWork
                 
                 while (reader.Read())
                 {
-                    infoPutCategory.Add($"{LOG.LOGIN}_" + (reader[0].ToString()).ToLower());
+                    infoPutCategory.Add($"{LOG.LOGIN}_" + (reader[0].ToString()).ToLower().Replace(' ', '_'));
                     putCategory.Add(reader[0].ToString());
                 }
                 reader.Close();
@@ -86,7 +86,7 @@ namespace CourseWork
                 {
                     if (Convert.ToString(listBox.SelectedItem) == category.putCategory[j])
                     {
-                        
+                        MySqlConnection conn = new MySqlConnection("server=localhost;user=root;database=coursework;password=mashutkabut99@gmail.com;");
                         conn.Open();
                         string selectQuery = $"select Question,FirstAns,SecondAns from coursework.{category.infoPutCategory[j]}";
                         LOG.NameTable = category.infoPutCategory[j];
