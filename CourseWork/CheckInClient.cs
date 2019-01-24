@@ -7,7 +7,7 @@ class CheckInClient : CheckIn
     string selectLogin, selectPassword;
     string insert;
     public string rezLogin, rezPassword;
-
+        public bool finish1 = true, finish2 = true, nAndu = true;
         private void InitializeComponent()
         {
             this.SuspendLayout();
@@ -22,15 +22,15 @@ class CheckInClient : CheckIn
 
         }
 
-        public bool finish1 = true, finish2 = true;
+        
     public CheckInClient(string Name, string Username, string Login, string Password)
     {
-        if (Name != "" && Username != "" && Login != "" && Password != "")
+        if (Name != null || Username != null || Login != null || Password != null)
         {
             string connStr = "server=localhost;user=root;database=coursework;password=mashutkabut99@gmail.com;";
             MySqlConnection conn = new MySqlConnection(connStr);
-            conn.Open();
-
+            conn.Open(); 
+                
             selectLogin = $"select distinct Login from coursework.client where Login='{Login}'";
             MySqlCommand commandLogin = new MySqlCommand(selectLogin, conn);
             try
@@ -54,7 +54,7 @@ class CheckInClient : CheckIn
             }
             catch { }
 
-            if (finish1 && finish2)
+            if (finish1 && finish2 && nAndu)
             {
                 insert = $"insert coursework.client(Name,Usename,Login,Password) values ('{Name}','{Username}','{Login}','{Password}')";
                 MySqlCommand command = new MySqlCommand(insert, conn);
