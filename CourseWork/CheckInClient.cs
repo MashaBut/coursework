@@ -7,7 +7,7 @@ class CheckInClient : CheckIn
     string selectLogin, selectPassword;
     string insert;
     public string rezLogin, rezPassword;
-        public bool finish1 = true, finish2 = true, nAndu = true;
+    public bool finish1 = true, finish2 = true;
         private void InitializeComponent()
         {
             this.SuspendLayout();
@@ -19,10 +19,8 @@ class CheckInClient : CheckIn
             this.Text = "TestHub";
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
-
-        
+ 
     public CheckInClient(string Name, string Username, string Login, string Password)
     {
         if (Name != null || Username != null || Login != null || Password != null)
@@ -54,7 +52,7 @@ class CheckInClient : CheckIn
             }
             catch { }
 
-            if (finish1 && finish2 && nAndu)
+            if (finish1 && finish2)
             {
                 insert = $"insert coursework.client(Name,Usename,Login,Password) values ('{Name}','{Username}','{Login}','{Password}')";
                 MySqlCommand command = new MySqlCommand(insert, conn);

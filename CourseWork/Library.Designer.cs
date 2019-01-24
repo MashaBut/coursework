@@ -97,7 +97,7 @@
             this.listBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
             this.listBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listBox.Font = new System.Drawing.Font("Cambria", 10F);
-            this.listBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.listBox.ForeColor = System.Drawing.Color.White;
             this.listBox.FormattingEnabled = true;
             this.listBox.ItemHeight = 20;
             this.listBox.Location = new System.Drawing.Point(11, 26);
