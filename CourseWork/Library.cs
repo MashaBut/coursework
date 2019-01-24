@@ -22,7 +22,8 @@ namespace CourseWork
         
         DataSet ds = new DataSet();
         DataTable table = new DataTable();
-
+        BindingSource bsource = new BindingSource();
+        MySqlDataAdapter dataAdapter;
         private void Library_Load(object sender, EventArgs e)
         {
             List();
@@ -84,16 +85,25 @@ namespace CourseWork
                 }
                 if (Convert.ToString(listBox.SelectedItem) != "")
                 {
+                    try
+                    {
+                        dataAdapter.Update(ds);
+                        ds.Clear();
+                    }
+                    catch { }
                     if (Convert.ToString(listBox.SelectedItem) == category.putCategory[j])
                     {
+                       
                         MySqlConnection conn = new MySqlConnection("server=localhost;user=root;database=coursework;password=mashutkabut99@gmail.com;");
                         conn.Open();
                         string selectQuery = $"select Question,FirstAns,SecondAns from coursework.{category.infoPutCategory[j]}";
                         LOG.NameTable = category.infoPutCategory[j];
                         
-                        MySqlDataAdapter dataAdapter = new MySqlDataAdapter(selectQuery, conn);
-                        dataAdapter.Fill(table);
-                        DatabaseGridView.DataSource = table;
+                        dataAdapter = new MySqlDataAdapter(selectQuery, conn);
+                       
+                        dataAdapter.Fill(ds);
+                        DatabaseGridView.DataSource = ds.Tables[0];
+                        conn.Close();
                         break;
                     }
                 }
@@ -102,12 +112,24 @@ namespace CourseWork
 
         private void UPDATE_Click(object sender, EventArgs e)
         {
-            //DataSet d = new DataSet();
-            //MySqlDataAdapter update = new MySqlDataAdapter();
-            //MySqlCommandBuilder cmbd = new MySqlCommandBuilder(update);
-            //update.Update(d,$"coursework.{LOG.NameTable}");
-            //d.AcceptChanges();
-            //DatabaseGridView.DataSource = d.Tables[LOG.NameTable];
+            MySqlConnection conn = new MySqlConnection("server=localhost;user=root;database=coursework;password=mashutkabut99@gmail.com;");
+            conn.Open();
+            string selectQuery = $"select Question,FirstAns,SecondAns from coursework.{LOG.NameTable}";
+            dataAdapter = new MySqlDataAdapter(selectQuery, conn);
+            DataTable dt = ds.Tables[0];
+            try
+            {
+                MySqlCommandBuilder commandBuilder = new MySqlCommandBuilder(dataAdapter);
+                dataAdapter.Update(ds);  
+            }
+            catch
+            {
+                MessageBox.Show("Все поля должны быть заполненны!!!");
+            }
+            // перезагружаем данные
+            ds.Clear();
+            dataAdapter.Fill(ds);
+            DatabaseGridView.DataSource = ds.Tables[0];
         }
 
         private void DeletePart_Click(object sender, EventArgs e)
@@ -116,6 +138,11 @@ namespace CourseWork
             {
                 DatabaseGridView.Rows.Remove(row);
             }
+            MySqlCommandBuilder commandBuilder = new MySqlCommandBuilder();
+            dataAdapter.Update(ds);
+            ds.Clear();
+            dataAdapter.Fill(ds);
+            DatabaseGridView.DataSource = ds.Tables[0];
         }
     }
 }
