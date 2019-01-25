@@ -24,6 +24,7 @@ namespace CourseWork
         DataTable table = new DataTable();
         BindingSource bsource = new BindingSource();
         MySqlDataAdapter dataAdapter;
+        MySqlCommandBuilder commandBuilder;
         private void Library_Load(object sender, EventArgs e)
         {
             List();
@@ -112,24 +113,26 @@ namespace CourseWork
 
         private void UPDATE_Click(object sender, EventArgs e)
         {
-            MySqlConnection conn = new MySqlConnection("server=localhost;user=root;database=coursework;password=mashutkabut99@gmail.com;");
-            conn.Open();
-            string selectQuery = $"select Question,FirstAns,SecondAns from coursework.{LOG.NameTable}";
-            dataAdapter = new MySqlDataAdapter(selectQuery, conn);
-            DataTable dt = ds.Tables[0];
-            try
+            using (MySqlConnection conn = new MySqlConnection("server=localhost;user=root;database=coursework;password=mashutkabut99@gmail.com;"))
             {
-                MySqlCommandBuilder commandBuilder = new MySqlCommandBuilder(dataAdapter);
-                dataAdapter.Update(ds);  
+                conn.Open();
+                string selectQuery = $"select Question,FirstAns,SecondAns from coursework.{LOG.NameTable}";
+                dataAdapter = new MySqlDataAdapter(selectQuery, conn);
+                DataTable dt = ds.Tables[0];
+                try
+                {
+                    MySqlCommandBuilder commandBuilder = new MySqlCommandBuilder(dataAdapter);
+                    dataAdapter.Update(ds);
+                }
+                catch
+                {
+                    MessageBox.Show("Все поля должны быть заполненны!!!");
+                }
+                // перезагружаем данные
+                ds.Clear();
+                dataAdapter.Fill(ds);
+                DatabaseGridView.DataSource = ds.Tables[0];
             }
-            catch
-            {
-                MessageBox.Show("Все поля должны быть заполненны!!!");
-            }
-            // перезагружаем данные
-            ds.Clear();
-            dataAdapter.Fill(ds);
-            DatabaseGridView.DataSource = ds.Tables[0];
         }
 
         private void DeletePart_Click(object sender, EventArgs e)
@@ -143,6 +146,47 @@ namespace CourseWork
             ds.Clear();
             dataAdapter.Fill(ds);
             DatabaseGridView.DataSource = ds.Tables[0];
+        }
+
+        private void AddToDatabase_Click(object sender, EventArgs e)
+        {
+            DataRow row = ds.Tables[0].NewRow(); // добавляем новую строку в DataTable
+            ds.Tables[0].Rows.Add(row);
+        }
+
+        private void deleteWithDatabase_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                foreach (DataGridViewRow row in DatabaseGridView.SelectedRows)
+                {
+                    DatabaseGridView.Rows.Remove(row);
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Все поля должны быть заполненны!!!");
+            }
+        }
+
+        private void saveToDatabase_Click(object sender, EventArgs e)
+        {
+            using (MySqlConnection connection = new MySqlConnection("server=localhost;user=root;database=coursework;password=mashutkabut99@gmail.com;"))
+            {
+                string selectQuery = $"select Question,FirstAns,SecondAns from coursework.{LOG.NameTable}";
+                connection.Open();
+                dataAdapter = new MySqlDataAdapter(selectQuery, connection);
+                commandBuilder = new MySqlCommandBuilder(dataAdapter);
+                dataAdapter.InsertCommand = new MySqlCommand($"coursework.{LOG.NameTable}", connection);
+                dataAdapter.InsertCommand.CommandType = CommandType.StoredProcedure;
+                dataAdapter.InsertCommand.Parameters.Add(new MySqlParameter("Question", MySqlDbType.VarChar, 50, "Question"));
+            //    dataAdapter.InsertCommand.Parameters.Add(new MySqlParameter("@age", MySqlDbType.VarChar, 0, "Age"));
+
+              //  MySqlParameter parameter = dataAdapter.InsertCommand.Parameters.Add("@Id", SqlDbType.Int, 0, "Id");
+            //    parameter.Direction = ParameterDirection.Output;
+
+                dataAdapter.Update(ds);
+            }
         }
     }
 }

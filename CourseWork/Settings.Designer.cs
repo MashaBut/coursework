@@ -41,6 +41,8 @@
             this.Night = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.DELETE = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -49,7 +51,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.label1.Location = new System.Drawing.Point(150, 196);
+            this.label1.Location = new System.Drawing.Point(66, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(195, 37);
             this.label1.TabIndex = 0;
@@ -60,7 +62,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.label2.Location = new System.Drawing.Point(117, 307);
+            this.label2.Location = new System.Drawing.Point(33, 129);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(261, 37);
             this.label2.TabIndex = 0;
@@ -71,7 +73,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.label3.Location = new System.Drawing.Point(128, 418);
+            this.label3.Location = new System.Drawing.Point(44, 240);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(228, 37);
             this.label3.TabIndex = 0;
@@ -83,7 +85,7 @@
             this.UpdateName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.UpdateName.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.UpdateName.ForeColor = System.Drawing.Color.Black;
-            this.UpdateName.Location = new System.Drawing.Point(122, 255);
+            this.UpdateName.Location = new System.Drawing.Point(38, 77);
             this.UpdateName.Name = "UpdateName";
             this.UpdateName.Size = new System.Drawing.Size(251, 30);
             this.UpdateName.TabIndex = 1;
@@ -94,7 +96,7 @@
             this.UpdateUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.UpdateUsername.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.UpdateUsername.ForeColor = System.Drawing.Color.Black;
-            this.UpdateUsername.Location = new System.Drawing.Point(122, 366);
+            this.UpdateUsername.Location = new System.Drawing.Point(38, 188);
             this.UpdateUsername.Name = "UpdateUsername";
             this.UpdateUsername.Size = new System.Drawing.Size(251, 30);
             this.UpdateUsername.TabIndex = 1;
@@ -105,7 +107,7 @@
             this.UpdatePassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.UpdatePassword.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.UpdatePassword.ForeColor = System.Drawing.Color.Black;
-            this.UpdatePassword.Location = new System.Drawing.Point(122, 477);
+            this.UpdatePassword.Location = new System.Drawing.Point(38, 299);
             this.UpdatePassword.Name = "UpdatePassword";
             this.UpdatePassword.Size = new System.Drawing.Size(251, 30);
             this.UpdatePassword.TabIndex = 1;
@@ -116,7 +118,7 @@
             this.UPDATE.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.UPDATE.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.UPDATE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
-            this.UPDATE.Location = new System.Drawing.Point(150, 557);
+            this.UPDATE.Location = new System.Drawing.Point(66, 379);
             this.UPDATE.Name = "UPDATE";
             this.UPDATE.Size = new System.Drawing.Size(195, 52);
             this.UPDATE.TabIndex = 2;
@@ -189,25 +191,37 @@
             this.DELETE.UseVisualStyleBackColor = false;
             this.DELETE.Click += new System.EventHandler(this.DELETE_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.UpdateName);
+            this.groupBox1.Controls.Add(this.UpdateUsername);
+            this.groupBox1.Controls.Add(this.UPDATE);
+            this.groupBox1.Controls.Add(this.UpdatePassword);
+            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox1.Location = new System.Drawing.Point(77, 139);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(326, 448);
+            this.groupBox1.TabIndex = 5;
+            this.groupBox1.TabStop = false;
+            // 
             // Settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Night);
             this.Controls.Add(this.Sound);
             this.Controls.Add(this.DELETE);
-            this.Controls.Add(this.UPDATE);
-            this.Controls.Add(this.UpdatePassword);
-            this.Controls.Add(this.UpdateUsername);
-            this.Controls.Add(this.UpdateName);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label1);
             this.Name = "Settings";
             this.Size = new System.Drawing.Size(900, 722);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -227,5 +241,6 @@
         private System.Windows.Forms.Button Night;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button DELETE;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

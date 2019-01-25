@@ -174,6 +174,7 @@
             // library1
             // 
             this.library1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.library1.ForeColor = System.Drawing.Color.White;
             this.library1.Location = new System.Drawing.Point(279, 31);
             this.library1.Name = "library1";
             this.library1.Size = new System.Drawing.Size(891, 707);
