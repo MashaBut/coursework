@@ -64,7 +64,7 @@ namespace CourseWork
                 string insert = $"insert coursework.{LOG.LOGIN}(category) values ('{Createcategory.Text}')";
                 MySqlCommand command = new MySqlCommand(insert, sqlConnection);
                 command.ExecuteNonQuery();
-                string create = $"CREATE TABLE `coursework`.`{LOG.LOGIN}_{nameForCreateCategory}` (`id` INT NOT NULL AUTO_INCREMENT, `Question` VARCHAR(256) NOT NULL, `FirstAns` VARCHAR(256) NOT NULL, `SecondAns` VARCHAR(256) NULL,PRIMARY KEY(`id`), UNIQUE INDEX `Question_UNIQUE` (`Question` ASC) VISIBLE, UNIQUE INDEX `FirstAns_UNIQUE` (`FirstAns` ASC) VISIBLE, UNIQUE INDEX `SecondAns_UNIQUE` (`SecondAns` ASC) VISIBLE)";
+                string create = $"CREATE TABLE `coursework`.`{LOG.LOGIN}_{nameForCreateCategory}` (`id` INT NOT NULL AUTO_INCREMENT, `Question` VARCHAR(256), `FirstAns` VARCHAR(256), `SecondAns` VARCHAR(256) NULL,PRIMARY KEY(`id`), UNIQUE INDEX `Question_UNIQUE` (`Question` ASC) VISIBLE, UNIQUE INDEX `FirstAns_UNIQUE` (`FirstAns` ASC) VISIBLE, UNIQUE INDEX `SecondAns_UNIQUE` (`SecondAns` ASC) VISIBLE)";
                 MySqlCommand command1 = new MySqlCommand(create, sqlConnection);
                 command1.ExecuteNonQuery();
                 Library library = new Library();

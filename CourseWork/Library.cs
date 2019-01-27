@@ -13,18 +13,28 @@ namespace CourseWork
 {
     public partial class Library : UserControl
     {
+        delegate void Del();
         public Library()
         {
-            InitializeComponent();
+            Del del = delegate
+            {
+                PutCategory category = new PutCategory();
+                InitializeComponent();
+                MySqlConnection conn = new MySqlConnection("server=localhost;user=root;database=coursework;password=mashutkabut99@gmail.com;");
+                conn.Open();
+                string selectQuery = $"select id,Question,FirstAns,SecondAns from coursework.{category.infoPutCategory[0]}";
+                LOG.NameTable = category.infoPutCategory[0];
+                dataAdapter = new MySqlDataAdapter(selectQuery, conn);
+                table = new DataTable();
+                dataAdapter.Fill(table);
+                DatabaseGridView.DataSource = table;
+                conn.Close();
+            };
+            del();
         }
-
-        public string punkt;
-        
-        DataSet ds = new DataSet();
-        DataTable table = new DataTable();
-        BindingSource bsource = new BindingSource();
+        DataTable table;
         MySqlDataAdapter dataAdapter;
-        MySqlCommandBuilder commandBuilder;
+        MySqlCommandBuilder scb;
         private void Library_Load(object sender, EventArgs e)
         {
             List();
@@ -88,22 +98,20 @@ namespace CourseWork
                 {
                     try
                     {
-                        dataAdapter.Update(ds);
-                        ds.Clear();
+                        dataAdapter.Update(table);
+                        table.Clear();
                     }
                     catch { }
                     if (Convert.ToString(listBox.SelectedItem) == category.putCategory[j])
                     {
-                       
                         MySqlConnection conn = new MySqlConnection("server=localhost;user=root;database=coursework;password=mashutkabut99@gmail.com;");
                         conn.Open();
-                        string selectQuery = $"select Question,FirstAns,SecondAns from coursework.{category.infoPutCategory[j]}";
+                        string selectQuery = $"select id,Question,FirstAns,SecondAns from coursework.{category.infoPutCategory[j]}";
                         LOG.NameTable = category.infoPutCategory[j];
-                        
                         dataAdapter = new MySqlDataAdapter(selectQuery, conn);
-                       
-                        dataAdapter.Fill(ds);
-                        DatabaseGridView.DataSource = ds.Tables[0];
+                        table = new DataTable();
+                        dataAdapter.Fill(table);
+                        DatabaseGridView.DataSource = table;
                         conn.Close();
                         break;
                     }
@@ -111,82 +119,10 @@ namespace CourseWork
             }
         }
 
-        private void UPDATE_Click(object sender, EventArgs e)
-        {
-            using (MySqlConnection conn = new MySqlConnection("server=localhost;user=root;database=coursework;password=mashutkabut99@gmail.com;"))
-            {
-                conn.Open();
-                string selectQuery = $"select Question,FirstAns,SecondAns from coursework.{LOG.NameTable}";
-                dataAdapter = new MySqlDataAdapter(selectQuery, conn);
-                DataTable dt = ds.Tables[0];
-                try
-                {
-                    MySqlCommandBuilder commandBuilder = new MySqlCommandBuilder(dataAdapter);
-                    dataAdapter.Update(ds);
-                }
-                catch
-                {
-                    MessageBox.Show("Все поля должны быть заполненны!!!");
-                }
-                // перезагружаем данные
-                ds.Clear();
-                dataAdapter.Fill(ds);
-                DatabaseGridView.DataSource = ds.Tables[0];
-            }
-        }
-
-        private void DeletePart_Click(object sender, EventArgs e)
-        {
-            foreach (DataGridViewRow row in DatabaseGridView.SelectedRows)
-            {
-                DatabaseGridView.Rows.Remove(row);
-            }
-            MySqlCommandBuilder commandBuilder = new MySqlCommandBuilder();
-            dataAdapter.Update(ds);
-            ds.Clear();
-            dataAdapter.Fill(ds);
-            DatabaseGridView.DataSource = ds.Tables[0];
-        }
-
-        private void AddToDatabase_Click(object sender, EventArgs e)
-        {
-            DataRow row = ds.Tables[0].NewRow(); // добавляем новую строку в DataTable
-            ds.Tables[0].Rows.Add(row);
-        }
-
-        private void deleteWithDatabase_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                foreach (DataGridViewRow row in DatabaseGridView.SelectedRows)
-                {
-                    DatabaseGridView.Rows.Remove(row);
-                }
-            }
-            catch
-            {
-                MessageBox.Show("Все поля должны быть заполненны!!!");
-            }
-        }
-
         private void saveToDatabase_Click(object sender, EventArgs e)
         {
-            using (MySqlConnection connection = new MySqlConnection("server=localhost;user=root;database=coursework;password=mashutkabut99@gmail.com;"))
-            {
-                string selectQuery = $"select Question,FirstAns,SecondAns from coursework.{LOG.NameTable}";
-                connection.Open();
-                dataAdapter = new MySqlDataAdapter(selectQuery, connection);
-                commandBuilder = new MySqlCommandBuilder(dataAdapter);
-                dataAdapter.InsertCommand = new MySqlCommand($"coursework.{LOG.NameTable}", connection);
-                dataAdapter.InsertCommand.CommandType = CommandType.StoredProcedure;
-                dataAdapter.InsertCommand.Parameters.Add(new MySqlParameter("Question", MySqlDbType.VarChar, 50, "Question"));
-            //    dataAdapter.InsertCommand.Parameters.Add(new MySqlParameter("@age", MySqlDbType.VarChar, 0, "Age"));
-
-              //  MySqlParameter parameter = dataAdapter.InsertCommand.Parameters.Add("@Id", SqlDbType.Int, 0, "Id");
-            //    parameter.Direction = ParameterDirection.Output;
-
-                dataAdapter.Update(ds);
-            }
+            scb = new MySqlCommandBuilder(dataAdapter);
+            dataAdapter.Update(table);
         }
     }
 }
