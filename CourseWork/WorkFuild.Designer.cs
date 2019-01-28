@@ -37,8 +37,10 @@
             this.WriteTest = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.Close = new System.Windows.Forms.Button();
+            this.testing1 = new CourseWork.Testing();
             this.honors1 = new CourseWork.Honors();
             this.settings1 = new CourseWork.Settings();
+           // this.library2 = new CourseWork.Library();
             this.library1 = new CourseWork.Library();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -155,10 +157,18 @@
             this.Close.UseVisualStyleBackColor = false;
             this.Close.Click += new System.EventHandler(this.Close_Click);
             // 
+            // testing1
+            // 
+            this.testing1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.testing1.Location = new System.Drawing.Point(270, 25);
+            this.testing1.Name = "testing1";
+            this.testing1.Size = new System.Drawing.Size(900, 722);
+            this.testing1.TabIndex = 4;
+            // 
             // honors1
             // 
             this.honors1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            this.honors1.Location = new System.Drawing.Point(270, 28);
+            this.honors1.Location = new System.Drawing.Point(270, 25);
             this.honors1.Name = "honors1";
             this.honors1.Size = new System.Drawing.Size(900, 722);
             this.honors1.TabIndex = 3;
@@ -175,10 +185,10 @@
             // 
             this.library1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
             this.library1.ForeColor = System.Drawing.Color.White;
-            this.library1.Location = new System.Drawing.Point(279, 31);
+            this.library1.Location = new System.Drawing.Point(270, 25);
             this.library1.Name = "library1";
-            this.library1.Size = new System.Drawing.Size(891, 707);
-            this.library1.TabIndex = 4;
+            this.library1.Size = new System.Drawing.Size(900, 722);
+            this.library1.TabIndex = 5;
             // 
             // WorkFuild
             // 
@@ -188,6 +198,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
             this.ClientSize = new System.Drawing.Size(1170, 750);
             this.Controls.Add(this.library1);
+            this.Controls.Add(this.testing1);
             this.Controls.Add(this.honors1);
             this.Controls.Add(this.settings1);
             this.Controls.Add(this.panel2);
@@ -217,6 +228,7 @@
         private System.Windows.Forms.Panel panel3;
         private Settings settings1;
         private Honors honors1;
+        private Testing testing1;
         private Library library1;
     }
 }

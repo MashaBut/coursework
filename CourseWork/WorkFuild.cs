@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace CourseWork
 {
@@ -15,6 +16,7 @@ namespace CourseWork
         public WorkFuild()
         {
             InitializeComponent();
+            testing1.BringToFront();
         }
 
         private void Close_Click(object sender, EventArgs e)
@@ -35,7 +37,7 @@ namespace CourseWork
         {
             panel3.Height = WriteTest.Height;
             panel3.Top = WriteTest.Top;
-
+            testing1.BringToFront();
         }
 
         private void Library_Click(object sender, EventArgs e)
