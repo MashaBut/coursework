@@ -98,6 +98,12 @@
     <Compile Include="Testing.Designer.cs">
       <DependentUpon>Testing.cs</DependentUpon>
     </Compile>
+    <Compile Include="TestLight.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TestLight.Designer.cs">
+      <DependentUpon>TestLight.cs</DependentUpon>
+    </Compile>
     <Compile Include="UpdateClient.cs" />
     <Compile Include="WorkFuild.cs">
       <SubType>Form</SubType>
@@ -137,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Testing.resx">
       <DependentUpon>Testing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestLight.resx">
+      <DependentUpon>TestLight.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WorkFuild.resx">
       <DependentUpon>WorkFuild.cs</DependentUpon>

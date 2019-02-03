@@ -67,7 +67,7 @@ namespace CourseWork
                         {
                             MessageBox.Show(
                                 "Таблица должна содержать больше 10 объектов",
-                                "          Ошибка",
+                               "                                     Ошибка",
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Error,
                                 MessageBoxDefaultButton.Button1
@@ -82,8 +82,8 @@ namespace CourseWork
                                MessageBoxButtons.OK,
                                MessageBoxIcon.Information,
                                MessageBoxDefaultButton.Button1
-                               ); }
-                    
+                               );
+                    }
                     conn.Close();
                 }
             }
