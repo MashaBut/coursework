@@ -65,11 +65,24 @@ namespace CourseWork
                         SizeList = Convert.ToInt32(sqlCommand.ExecuteScalar());
                         if(SizeList<10)
                         {
-                            MessageBox.Show("Таблица должна содержать больше 10 объектов");
+                            MessageBox.Show(
+                                "Таблица должна содержать больше 10 объектов",
+                                "          Ошибка",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Error,
+                                MessageBoxDefaultButton.Button1
+                                );
                         }
                       //  MessageBox.Show(SizeList.ToString());
                     }
-                    catch { MessageBox.Show("Таблица пуста и не может использоваться для тестирования!!!"); }
+                    catch { MessageBox.Show(
+                               "Таблица пуста и не может\n" +
+                               " использоваться для тестирования!!!",
+                               "                                     Ошибка",
+                               MessageBoxButtons.OK,
+                               MessageBoxIcon.Information,
+                               MessageBoxDefaultButton.Button1
+                               ); }
                     
                     conn.Close();
                 }
