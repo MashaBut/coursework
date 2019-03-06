@@ -38,8 +38,6 @@
             this.UPDATE = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.Sound = new System.Windows.Forms.Button();
-            this.Night = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.DELETE = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
@@ -132,7 +130,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.label4.Location = new System.Drawing.Point(501, 439);
+            this.label4.Location = new System.Drawing.Point(53, 643);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(82, 37);
             this.label4.TabIndex = 0;
@@ -143,38 +141,12 @@
             this.Sound.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Sound.BackgroundImage")));
             this.Sound.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Sound.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Sound.Location = new System.Drawing.Point(589, 438);
+            this.Sound.Location = new System.Drawing.Point(141, 642);
             this.Sound.Name = "Sound";
             this.Sound.Size = new System.Drawing.Size(41, 38);
             this.Sound.TabIndex = 3;
             this.Sound.UseVisualStyleBackColor = true;
             this.Sound.Click += new System.EventHandler(this.Sound_Click);
-            // 
-            // Night
-            // 
-            this.Night.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.Night.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Night.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.Night.ForeColor = System.Drawing.Color.White;
-            this.Night.Location = new System.Drawing.Point(508, 255);
-            this.Night.Name = "Night";
-            this.Night.Size = new System.Drawing.Size(275, 50);
-            this.Night.TabIndex = 4;
-            this.Night.Text = "Тёмная тема";
-            this.Night.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.button1.Location = new System.Drawing.Point(508, 335);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(275, 50);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Светлая тема";
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // DELETE
             // 
@@ -201,7 +173,7 @@
             this.groupBox1.Controls.Add(this.UPDATE);
             this.groupBox1.Controls.Add(this.UpdatePassword);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox1.Location = new System.Drawing.Point(77, 139);
+            this.groupBox1.Location = new System.Drawing.Point(287, 139);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(326, 448);
             this.groupBox1.TabIndex = 5;
@@ -213,8 +185,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.Night);
             this.Controls.Add(this.Sound);
             this.Controls.Add(this.DELETE);
             this.Controls.Add(this.label4);
@@ -238,8 +208,6 @@
         private System.Windows.Forms.Button UPDATE;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button Sound;
-        private System.Windows.Forms.Button Night;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button DELETE;
         private System.Windows.Forms.GroupBox groupBox1;
     }

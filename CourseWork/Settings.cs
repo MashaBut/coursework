@@ -44,7 +44,7 @@ namespace CourseWork
             foreach (string i in list)
             {
                 Cope = $"{LOG.LOGIN}_{i}";
-                MessageBox.Show(Cope);
+             //   MessageBox.Show(Cope);
                 dropCategory = $"drop table {Cope}";
                 MySqlCommand command3 = new MySqlCommand(dropCategory, conn);
                 command3.ExecuteNonQuery();

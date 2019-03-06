@@ -23,12 +23,16 @@ namespace CourseWork
 
                 MySqlConnection conn = new MySqlConnection("server=localhost;user=root;database=coursework;password=mashutkabut99@gmail.com;");
                 conn.Open();
-                string selectQuery = $"select id,Question,FirstAns,SecondAns from coursework.{category.infoPutCategory[0]}";
-                LOG.NameTable = category.infoPutCategory[0];
-                dataAdapter = new MySqlDataAdapter(selectQuery, conn);
-                table = new DataTable();
-                dataAdapter.Fill(table);
-                DatabaseGridView.DataSource = table;
+                try
+                {
+                    string selectQuery = $"select Question,FirstAns,SecondAns from coursework.{category.infoPutCategory[0]}";
+                    LOG.NameTable = category.infoPutCategory[0];
+                    dataAdapter = new MySqlDataAdapter(selectQuery, conn);
+                    table = new DataTable();
+                    dataAdapter.Fill(table);
+                    DatabaseGridView.DataSource = table;
+                }
+                catch { }
                 conn.Close();
             };
             del();
@@ -107,7 +111,7 @@ namespace CourseWork
                     {
                         MySqlConnection conn = new MySqlConnection("server=localhost;user=root;database=coursework;password=mashutkabut99@gmail.com;");
                         conn.Open();
-                        string selectQuery = $"select id,Question,FirstAns,SecondAns from coursework.{category.infoPutCategory[j]}";
+                        string selectQuery = $"select Question,FirstAns,SecondAns from coursework.{category.infoPutCategory[j]}";
                         LOG.NameTable = category.infoPutCategory[j];
                         dataAdapter = new MySqlDataAdapter(selectQuery, conn);
                         table = new DataTable();
