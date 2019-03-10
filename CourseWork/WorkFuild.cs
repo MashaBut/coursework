@@ -17,6 +17,7 @@ namespace CourseWork
         {
             InitializeComponent();
             testing2.BringToFront();
+
         }
 
         private void Close_Click(object sender, EventArgs e)

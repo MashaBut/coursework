@@ -21,7 +21,7 @@ namespace CourseWork
                 conn.Open();
                 try
                 {
-                    string selectQuery = $"select Question,FirstAns from coursework.{category.infoPutCategory[0]}";
+                    string selectQuery = $"select Question,FirstAns from coursework.{category.putCategory[0]}";
                     LOG.NameTable = category.infoPutCategory[0];
                     dataAdapter = new MySqlDataAdapter(selectQuery, conn);
                     table = new DataTable();
@@ -45,7 +45,6 @@ namespace CourseWork
         public class PutCategory
         {
             public List<string> putCategory = new List<string>();
-            public List<string> infoPutCategory = new List<string>();
             public PutCategory()
             {
                 putCategory.Clear();

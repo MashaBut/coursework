@@ -48,28 +48,7 @@ namespace CourseWork
 
         private void Test_Click(object sender, EventArgs e)
         {
-            if(Convert.ToString(level.SelectedItem)=="Легкий")
-            {
-                LOG.VariantTest = "Легкий";
-            }
-            else if(Convert.ToString(level.SelectedItem) == "Средний")
-            {
-                LOG.VariantTest = "Средний";
-            }
-            else if(Convert.ToString(level.SelectedItem) == "Сложный")
-            {
-                LOG.VariantTest = "Сложный";
-            }
-            else
-            {
-                MessageBox.Show(
-                               "Выберете уровень сложности!",
-                               "                                  Предупреждение",
-                               MessageBoxButtons.OK,
-                               MessageBoxIcon.Information,
-                               MessageBoxDefaultButton.Button1
-                               );
-            }
+
         }
         private void BoxForCategory_SelectedIndexChanged(object sender, EventArgs e)
         {
