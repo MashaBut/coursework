@@ -209,7 +209,6 @@
             this.Name = "WorkFuild";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TestHub";
-            this.Load += new System.EventHandler(this.WorkFuild_Load);
             this.Layout += new System.Windows.Forms.LayoutEventHandler(this.WorkFuild_Layout);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -229,8 +228,6 @@
         private System.Windows.Forms.Panel panel3;
         private Settings settings1;
         private Honors honors1;
-        private Testing testing1;
-        private Library library1;
         private Library library2;
         private Testing testing2;
     }

@@ -1,13 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
 
 namespace CourseWork
 {
@@ -17,7 +9,6 @@ namespace CourseWork
         {
             InitializeComponent();
             testing2.BringToFront();
-
         }
 
         private void Close_Click(object sender, EventArgs e)
@@ -65,11 +56,6 @@ namespace CourseWork
         private void honors1_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void WorkFuild_Load(object sender, EventArgs e)
-        {
-            
         }
     }
 }

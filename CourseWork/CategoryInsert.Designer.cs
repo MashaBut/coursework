@@ -32,8 +32,8 @@
             this.Exit = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.UPDATE = new System.Windows.Forms.Button();
-            this.Createcategory = new System.Windows.Forms.TextBox();
             this.InfoClient = new System.Windows.Forms.Label();
+            this.Createcategory = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // Exit
@@ -80,17 +80,6 @@
             this.UPDATE.UseVisualStyleBackColor = false;
             this.UPDATE.Click += new System.EventHandler(this.INSERT_Click);
             // 
-            // Createcategory
-            // 
-            this.Createcategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(198)))), ((int)(((byte)(198)))));
-            this.Createcategory.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Createcategory.Font = new System.Drawing.Font("Century", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Createcategory.ForeColor = System.Drawing.Color.Black;
-            this.Createcategory.Location = new System.Drawing.Point(83, 83);
-            this.Createcategory.Name = "Createcategory";
-            this.Createcategory.Size = new System.Drawing.Size(158, 28);
-            this.Createcategory.TabIndex = 12;
-            // 
             // InfoClient
             // 
             this.InfoClient.AutoSize = true;
@@ -102,6 +91,17 @@
             this.InfoClient.Name = "InfoClient";
             this.InfoClient.Size = new System.Drawing.Size(0, 21);
             this.InfoClient.TabIndex = 13;
+            // 
+            // Createcategory
+            // 
+            this.Createcategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(198)))), ((int)(((byte)(198)))));
+            this.Createcategory.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Createcategory.Font = new System.Drawing.Font("Century", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Createcategory.ForeColor = System.Drawing.Color.Black;
+            this.Createcategory.Location = new System.Drawing.Point(83, 83);
+            this.Createcategory.Name = "Createcategory";
+            this.Createcategory.Size = new System.Drawing.Size(158, 28);
+            this.Createcategory.TabIndex = 12;
             // 
             // CategoryInsert
             // 

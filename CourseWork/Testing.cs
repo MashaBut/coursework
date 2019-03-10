@@ -1,11 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using static CourseWork.Library;
@@ -27,7 +21,8 @@ namespace CourseWork
         void List()
         {
             BoxForCategory.Items.Clear();
-           
+            PutCategory category = new PutCategory();
+            BoxForCategory.Items.Add("Обновить категории");
             string[] Name = new string[256];
             for (int i = 0; i < category.putCategory.Count; i++)
             {
@@ -63,7 +58,7 @@ namespace CourseWork
                     try
                     {
                         SizeList = Convert.ToInt32(sqlCommand.ExecuteScalar());
-                        if(SizeList<10)
+                        if (SizeList < 10)
                         {
                             MessageBox.Show(
                                 "Таблица должна содержать больше 10 объектов",
@@ -73,18 +68,25 @@ namespace CourseWork
                                 MessageBoxDefaultButton.Button1
                                 );
                         }
-                      //  MessageBox.Show(SizeList.ToString());
+                        //  MessageBox.Show(SizeList.ToString());
                     }
-                    catch { MessageBox.Show(
-                               "Таблица пуста и не может\n" +
-                               " использоваться для тестирования!!!",
-                               "                                     Ошибка",
-                               MessageBoxButtons.OK,
-                               MessageBoxIcon.Information,
-                               MessageBoxDefaultButton.Button1
-                               );
+                    catch
+                    {
+                        MessageBox.Show(
+                           "Таблица пуста и не может\n" +
+                           " использоваться для тестирования!!!",
+                           "                                     Ошибка",
+                           MessageBoxButtons.OK,
+                           MessageBoxIcon.Information,
+                           MessageBoxDefaultButton.Button1
+                           );
                     }
                     conn.Close();
+                }
+                else if (Convert.ToString(BoxForCategory.SelectedItem) == "Обновить категории")
+                {
+                    List();
+                    break;
                 }
             }
         }

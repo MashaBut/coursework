@@ -21,8 +21,8 @@ namespace CourseWork
                 conn.Open();
                 try
                 {
-                    string selectQuery = $"select Question,FirstAns from coursework.{category.putCategory[0]}";
-                    LOG.NameTable = category.infoPutCategory[0];
+                    string selectQuery = $"select Question,FirstAns,Error1Ans,Error2Ans,Error3Ans from coursework.{category.putCategory[0]}";
+                    LOG.NameTable = category.putCategory[0];
                     dataAdapter = new MySqlDataAdapter(selectQuery, conn);
                     table = new DataTable();
                     dataAdapter.Fill(table);
@@ -40,6 +40,7 @@ namespace CourseWork
         private void Library_Load(object sender, EventArgs e)
         {
             List();
+            PutCategory category = new PutCategory();
         }
 
         public class PutCategory
@@ -106,7 +107,7 @@ namespace CourseWork
                     {
                         MySqlConnection conn = new MySqlConnection(connS);
                         conn.Open();
-                        string selectQuery = $"select Question,FirstAns from coursework.{category.putCategory[j]}";
+                        string selectQuery = $"select Question,FirstAns,Error1Ans,Error2Ans,Error3Ans from coursework.{category.putCategory[j]}";
                         LOG.NameTable = category.putCategory[j];
                         dataAdapter = new MySqlDataAdapter(selectQuery, conn);
                         table = new DataTable();

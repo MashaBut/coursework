@@ -40,6 +40,7 @@
             this.Sound = new System.Windows.Forms.Button();
             this.DELETE = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.deleteCategory = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -130,7 +131,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.label4.Location = new System.Drawing.Point(53, 643);
+            this.label4.Location = new System.Drawing.Point(386, 643);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(82, 37);
             this.label4.TabIndex = 0;
@@ -141,7 +142,7 @@
             this.Sound.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Sound.BackgroundImage")));
             this.Sound.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Sound.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Sound.Location = new System.Drawing.Point(141, 642);
+            this.Sound.Location = new System.Drawing.Point(474, 642);
             this.Sound.Name = "Sound";
             this.Sound.Size = new System.Drawing.Size(41, 38);
             this.Sound.TabIndex = 3;
@@ -173,17 +174,33 @@
             this.groupBox1.Controls.Add(this.UPDATE);
             this.groupBox1.Controls.Add(this.UpdatePassword);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox1.Location = new System.Drawing.Point(287, 139);
+            this.groupBox1.Location = new System.Drawing.Point(287, 132);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(326, 448);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
+            // 
+            // deleteCategory
+            // 
+            this.deleteCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.deleteCategory.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.deleteCategory.Font = new System.Drawing.Font("Monotype Corsiva", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.deleteCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
+            this.deleteCategory.Location = new System.Drawing.Point(37, 636);
+            this.deleteCategory.Name = "deleteCategory";
+            this.deleteCategory.Size = new System.Drawing.Size(305, 52);
+            this.deleteCategory.TabIndex = 6;
+            this.deleteCategory.Text = "Удалить категорию";
+            this.deleteCategory.UseMnemonic = false;
+            this.deleteCategory.UseVisualStyleBackColor = false;
+            this.deleteCategory.Click += new System.EventHandler(this.deleteCategory_Click);
             // 
             // Settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.Controls.Add(this.deleteCategory);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.Sound);
             this.Controls.Add(this.DELETE);
@@ -210,5 +227,6 @@
         private System.Windows.Forms.Button Sound;
         private System.Windows.Forms.Button DELETE;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button deleteCategory;
     }
 }

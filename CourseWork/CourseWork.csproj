@@ -62,6 +62,12 @@
     <Compile Include="CheckInClient.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="DropCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DropCategory.Designer.cs">
+      <DependentUpon>DropCategory.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CheckInClient.resx">
       <DependentUpon>CheckInClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DropCategory.resx">
+      <DependentUpon>DropCategory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
