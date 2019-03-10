@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
 using System.Data;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
@@ -20,12 +17,11 @@ namespace CourseWork
             Del del = delegate
             {
                 PutCategory category = new PutCategory();
-
-                MySqlConnection conn = new MySqlConnection("server=localhost;user=root;database=coursework;password=mashutkabut99@gmail.com;");
+                MySqlConnection conn = new MySqlConnection(connS);
                 conn.Open();
                 try
                 {
-                    string selectQuery = $"select Question,FirstAns,SecondAns from coursework.{category.infoPutCategory[0]}";
+                    string selectQuery = $"select Question,FirstAns from coursework.{category.putCategory[0]}";
                     LOG.NameTable = category.infoPutCategory[0];
                     dataAdapter = new MySqlDataAdapter(selectQuery, conn);
                     table = new DataTable();
@@ -37,6 +33,7 @@ namespace CourseWork
             };
             del();
         }
+        string connS = "server=localhost;user=root;database=coursework;password=mashutkabut99@gmail.com;";
         DataTable table;
         MySqlDataAdapter dataAdapter;
         MySqlCommandBuilder scb;
@@ -48,21 +45,19 @@ namespace CourseWork
         public class PutCategory
         {
             public List<string> putCategory = new List<string>();
-            public List<string> infoPutCategory = new List<string>();
             public PutCategory()
             {
                 putCategory.Clear();
-                string connStr = "server=localhost;user=root;database=coursework;password=mashutkabut99@gmail.com;";
-                MySqlConnection conn = new MySqlConnection(connStr);
+
+                MySqlConnection conn = new MySqlConnection("server=localhost;user=root;database=coursework;password=mashutkabut99@gmail.com;");
                 conn.Open();
-                string select = $"select category from coursework.{LOG.LOGIN}";
+                string select = $"select category from coursework.category";
                 MySqlCommand sqlCommand = new MySqlCommand(select, conn);
                 MySqlDataReader reader = sqlCommand.ExecuteReader();
 
                 while (reader.Read())
                 {
-                    infoPutCategory.Add($"{LOG.LOGIN}_" + (reader[0].ToString()).ToLower().Replace(' ', '_'));
-                    putCategory.Add(reader[0].ToString());
+                    putCategory.Add(reader[0].ToString().ToLower());
                 }
                 reader.Close();
                 conn.Close();
@@ -109,10 +104,10 @@ namespace CourseWork
                     catch { }
                     if (Convert.ToString(listBox.SelectedItem) == category.putCategory[j])
                     {
-                        MySqlConnection conn = new MySqlConnection("server=localhost;user=root;database=coursework;password=mashutkabut99@gmail.com;");
+                        MySqlConnection conn = new MySqlConnection(connS);
                         conn.Open();
-                        string selectQuery = $"select Question,FirstAns,SecondAns from coursework.{category.infoPutCategory[j]}";
-                        LOG.NameTable = category.infoPutCategory[j];
+                        string selectQuery = $"select Question,FirstAns from coursework.{category.putCategory[j]}";
+                        LOG.NameTable = category.putCategory[j];
                         dataAdapter = new MySqlDataAdapter(selectQuery, conn);
                         table = new DataTable();
                         dataAdapter.Fill(table);

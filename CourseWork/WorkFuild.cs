@@ -16,7 +16,8 @@ namespace CourseWork
         public WorkFuild()
         {
             InitializeComponent();
-            testing1.BringToFront();
+            testing2.BringToFront();
+
         }
 
         private void Close_Click(object sender, EventArgs e)
@@ -37,14 +38,14 @@ namespace CourseWork
         {
             panel3.Height = WriteTest.Height;
             panel3.Top = WriteTest.Top;
-            testing1.BringToFront();
+            testing2.BringToFront();
         }
 
         private void Library_Click(object sender, EventArgs e)
         {
             panel3.Height = Library.Height;
             panel3.Top = Library.Top;
-            library1.BringToFront();
+            library2.BringToFront();
         }
 
         private void Table_Click(object sender, EventArgs e)
@@ -59,6 +60,16 @@ namespace CourseWork
             panel3.Height = Set.Height;
             panel3.Top = Set.Top;
             settings1.BringToFront();
+        }
+
+        private void honors1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void WorkFuild_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

@@ -11,6 +11,5 @@ namespace CourseWork
         public static string LOGIN { get; set; }
         public static bool INFO { get; set; }//delete account
         public static string NameTable { get; set; }
-        public static string VariantTest { get; set; }
     }
 }
