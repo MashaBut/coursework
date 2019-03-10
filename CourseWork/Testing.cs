@@ -59,7 +59,7 @@ namespace CourseWork
                     //MessageBox.Show(category.infoPutCategory[j]);
                     MySqlConnection conn = new MySqlConnection("server=localhost;user=root;database=coursework;password=mashutkabut99@gmail.com;");
                     conn.Open();
-                    MySqlCommand sqlCommand = new MySqlCommand($"SELECT MAX(id) FROM coursework.{category.infoPutCategory[j]}", conn);
+                    MySqlCommand sqlCommand = new MySqlCommand($"SELECT MAX(id) FROM coursework.{category.putCategory[j]}", conn);
                     try
                     {
                         SizeList = Convert.ToInt32(sqlCommand.ExecuteScalar());

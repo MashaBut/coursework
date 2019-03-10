@@ -58,9 +58,6 @@ class CheckInClient : CheckIn
                 MySqlCommand command = new MySqlCommand(insert, conn);
                 command.ExecuteNonQuery();
                 LOG.LOGIN = Login;
-                string sqlClient = $"CREATE TABLE `coursework`.`{Login}` (`id` INT NOT NULL AUTO_INCREMENT, `category` VARCHAR(100) NOT NULL, PRIMARY KEY(`id`),UNIQUE INDEX `category_UNIQUE` (`category` ASC) VISIBLE)";
-                MySqlCommand command1 = new MySqlCommand(sqlClient, conn);
-                command1.ExecuteNonQuery();
             }
             conn.Close();
         }

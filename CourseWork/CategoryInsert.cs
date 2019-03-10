@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using static CourseWork.Library;
@@ -37,7 +31,7 @@ namespace CourseWork
             string connStr = "server=localhost;user=root;database=coursework;password=mashutkabut99@gmail.com;";
             MySqlConnection sqlConnection = new MySqlConnection(connStr);
             sqlConnection.Open();
-            string selectPassword = $"select distinct category from coursework.{LOG.LOGIN} where category='{Createcategory.Text}'";
+            string selectPassword = $"select distinct category from coursework.category where category='{Createcategory.Text}'";
             MySqlCommand commandPassword = new MySqlCommand(selectPassword, sqlConnection);
             try
             {
@@ -49,7 +43,7 @@ namespace CourseWork
             {
                 if (nameCategory.Contains(" "))
                 {
-                    nameForCreateCategory=nameCategory.Replace(' ', '_');
+                    nameForCreateCategory=nameCategory.Replace(" ", "");
                     rez = true;
                     InfoClient.Text = "";
                 }
@@ -61,10 +55,10 @@ namespace CourseWork
             }
             if (rez)
             {
-                string insert = $"insert coursework.{LOG.LOGIN}(category) values ('{Createcategory.Text}')";
+                string insert = $"insert coursework.category (category) values ('{Createcategory.Text}')";
                 MySqlCommand command = new MySqlCommand(insert, sqlConnection);
                 command.ExecuteNonQuery();
-                string create = $"CREATE TABLE `coursework`.`{LOG.LOGIN}_{nameForCreateCategory}` (`id` INT NOT NULL AUTO_INCREMENT, `Question` VARCHAR(256), `FirstAns` VARCHAR(256), `SecondAns` VARCHAR(256) NULL,PRIMARY KEY(`id`), UNIQUE INDEX `Question_UNIQUE` (`Question` ASC) VISIBLE, UNIQUE INDEX `FirstAns_UNIQUE` (`FirstAns` ASC) VISIBLE, UNIQUE INDEX `SecondAns_UNIQUE` (`SecondAns` ASC) VISIBLE)";
+                string create = $"CREATE TABLE `coursework`.`{nameForCreateCategory}` (`id` INT NOT NULL AUTO_INCREMENT, `Question` VARCHAR(256), `FirstAns` VARCHAR(256),PRIMARY KEY(`id`), UNIQUE INDEX `Question_UNIQUE` (`Question` ASC) VISIBLE, UNIQUE INDEX `FirstAns_UNIQUE` (`FirstAns` ASC) VISIBLE)";
                 MySqlCommand command1 = new MySqlCommand(create, sqlConnection);
                 command1.ExecuteNonQuery();
                 Library library = new Library();
