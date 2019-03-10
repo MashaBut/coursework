@@ -14,8 +14,6 @@ namespace CourseWork
             List();
             Level();
         }
-        List<string> Questions = new List<string>();
-        List<string> Answers = new List<string>();
         int SizeList = 0;
         PutCategory category = new PutCategory();
         void List()
@@ -36,14 +34,25 @@ namespace CourseWork
             level.Items.Add("Средний");
             level.Items.Add("Сложный");
         }
-        private void Level_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void Test_Click(object sender, EventArgs e)
         {
+            if(SizeList>=10)
+            {
+                LOG.NameTable = Convert.ToString(BoxForCategory.SelectedItem);
+                if(Convert.ToString(level.SelectedItem)== "Легкий")
+                {
+                    TestLight.TestLight testLight = new TestLight.TestLight();
+                    testLight.Show();
+                }
+                else if (Convert.ToString(level.SelectedItem) == "Средний")
+                {
 
+                }
+                else if(Convert.ToString(level.SelectedItem) == "Сложный")
+                {
+
+                }
+            }
         }
         private void BoxForCategory_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -51,7 +60,6 @@ namespace CourseWork
             {
                 if (Convert.ToString(BoxForCategory.SelectedItem) == category.putCategory[j])
                 {
-                    //MessageBox.Show(category.infoPutCategory[j]);
                     MySqlConnection conn = new MySqlConnection("server=localhost;user=root;database=coursework;password=mashutkabut99@gmail.com;");
                     conn.Open();
                     MySqlCommand sqlCommand = new MySqlCommand($"SELECT MAX(id) FROM coursework.{category.putCategory[j]}", conn);
@@ -68,7 +76,6 @@ namespace CourseWork
                                 MessageBoxDefaultButton.Button1
                                 );
                         }
-                        //  MessageBox.Show(SizeList.ToString());
                     }
                     catch
                     {

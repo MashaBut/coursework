@@ -52,10 +52,5 @@ namespace CourseWork
             panel3.Top = Set.Top;
             settings1.BringToFront();
         }
-
-        private void honors1_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -37,9 +37,9 @@
             this.WriteTest = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.Close = new System.Windows.Forms.Button();
+            this.library2 = new CourseWork.Library();
             this.honors1 = new CourseWork.Honors();
             this.settings1 = new CourseWork.Settings();
-            this.library2 = new CourseWork.Library();
             this.testing2 = new CourseWork.Testing();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -156,23 +156,6 @@
             this.Close.UseVisualStyleBackColor = false;
             this.Close.Click += new System.EventHandler(this.Close_Click);
             // 
-            // honors1
-            // 
-            this.honors1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            this.honors1.Location = new System.Drawing.Point(270, 28);
-            this.honors1.Name = "honors1";
-            this.honors1.Size = new System.Drawing.Size(900, 722);
-            this.honors1.TabIndex = 3;
-            this.honors1.Load += new System.EventHandler(this.honors1_Load);
-            // 
-            // settings1
-            // 
-            this.settings1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            this.settings1.Location = new System.Drawing.Point(273, 28);
-            this.settings1.Name = "settings1";
-            this.settings1.Size = new System.Drawing.Size(900, 722);
-            this.settings1.TabIndex = 2;
-            // 
             // library2
             // 
             this.library2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
@@ -182,10 +165,26 @@
             this.library2.Size = new System.Drawing.Size(900, 722);
             this.library2.TabIndex = 4;
             // 
+            // honors1
+            // 
+            this.honors1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.honors1.Location = new System.Drawing.Point(270, 28);
+            this.honors1.Name = "honors1";
+            this.honors1.Size = new System.Drawing.Size(900, 722);
+            this.honors1.TabIndex = 3;
+            // 
+            // settings1
+            // 
+            this.settings1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.settings1.Location = new System.Drawing.Point(273, 28);
+            this.settings1.Name = "settings1";
+            this.settings1.Size = new System.Drawing.Size(900, 722);
+            this.settings1.TabIndex = 2;
+            // 
             // testing2
             // 
             this.testing2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            this.testing2.Location = new System.Drawing.Point(269, 25);
+            this.testing2.Location = new System.Drawing.Point(273, 28);
             this.testing2.Name = "testing2";
             this.testing2.Size = new System.Drawing.Size(900, 722);
             this.testing2.TabIndex = 5;
