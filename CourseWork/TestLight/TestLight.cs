@@ -1,14 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
-using static CourseWork.Library;
 
 namespace CourseWork.TestLight
 {
@@ -18,7 +14,7 @@ namespace CourseWork.TestLight
         {
             InitializeComponent();
             TestL test = new TestL();
-            test.SearchQ();
+            test.Search();
         }
 
         private void close_Click(object sender, EventArgs e)
@@ -45,13 +41,21 @@ namespace CourseWork.TestLight
                 }
                 conn.Close();
             }
-            public void SearchQ()
+            public void Search()
             {
                 conn.Open();
                 foreach(int i in number)
                 {
-                    MySqlCommand sqlCommand2 = new MySqlCommand($"SELECT Question FROM coursework.{LOG.NameTable} where id='{i}'", conn);
-                    tlQ.Add(Convert.ToString(sqlCommand2.ExecuteReader()));
+                    MySqlCommand sqlCommand1 = new MySqlCommand($"SELECT Question FROM coursework.{LOG.NameTable} where id='{i}'", conn);
+                    tlQ.Add(Convert.ToString(sqlCommand1.ExecuteScalar()));
+                    MySqlCommand sqlCommand2 = new MySqlCommand($"SELECT FirstAns FROM coursework.{LOG.NameTable} where id='{i}'", conn);
+                    trueAns.Add(Convert.ToString(sqlCommand2.ExecuteScalar()));
+                    MySqlCommand sqlCommand3 = new MySqlCommand($"SELECT Error1Ans FROM coursework.{LOG.NameTable} where id='{i}'", conn);
+                    ErrorAns.Add(Convert.ToString(sqlCommand3.ExecuteScalar()));
+                    MySqlCommand sqlCommand4 = new MySqlCommand($"SELECT Error2Ans FROM coursework.{LOG.NameTable} where id='{i}'", conn);
+                    ErrorAns.Add(Convert.ToString(sqlCommand4.ExecuteScalar()));
+                    MySqlCommand sqlCommand5 = new MySqlCommand($"SELECT Error3Ans FROM coursework.{LOG.NameTable} where id='{i}'", conn);
+                    ErrorAns.Add(Convert.ToString(sqlCommand5.ExecuteScalar()));
                 }
                 conn.Close();
             }
