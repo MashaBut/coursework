@@ -104,6 +104,8 @@
     <Compile Include="Testing.Designer.cs">
       <DependentUpon>Testing.cs</DependentUpon>
     </Compile>
+    <Compile Include="TestLight\BuildTestForm.cs" />
+    <Compile Include="TestLight\FilllingOutForms.cs" />
     <Compile Include="TestLight\TestLight.cs">
       <SubType>Form</SubType>
     </Compile>
