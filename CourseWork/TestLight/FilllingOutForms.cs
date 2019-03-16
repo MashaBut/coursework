@@ -17,7 +17,7 @@ namespace CourseWork.TestLight
         {
             return buildTestForm.tlQ[i];
         }
-        public string AddTrueAns(int i)
+        public string GetTrueAns(int i)
         {
             return buildTestForm.trueAns[i];
         }

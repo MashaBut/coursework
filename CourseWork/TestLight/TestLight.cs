@@ -23,6 +23,7 @@ namespace CourseWork.TestLight
         HashSet<int> Order = new HashSet<int>();
         HashSet<int> OrderTwo = new HashSet<int>();
         FilllingOutForms filllingOutForms = new FilllingOutForms();
+        ResultTesting ResultTesting = new ResultTesting();
         List<string> AnswersClient = new List<string>();
         private void Built1()
         {
@@ -257,16 +258,130 @@ namespace CourseWork.TestLight
         {
             Close();
         }
-        private void TestLight_Load(object sender, EventArgs e)
+        private void GetAnsWithButtons()
         {
+            if (Answer1_1.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer1_1.Text); }
+            else if(Answer1_2.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer1_2.Text); }
+            else if(Answer1_3.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer1_3.Text); }
+            else if (Answer1_4.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer1_4.Text); }
 
+            if (Answer2_1.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer2_1.Text); }
+            else if (Answer2_2.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer2_2.Text); }
+            else if (Answer2_3.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer2_3.Text); }
+            else if (Answer2_4.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer2_4.Text); }
+
+            if (Answer3_1.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer3_1.Text); }
+            else if (Answer3_2.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer3_2.Text); }
+            else if (Answer3_3.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer3_3.Text); }
+            else if (Answer3_4.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer3_4.Text); }
+
+            if (Answer4_1.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer4_1.Text); }
+            else if (Answer4_2.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer4_2.Text); }
+            else if (Answer4_3.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer4_3.Text); }
+            else if (Answer4_4.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer4_4.Text); }
+
+            if (Answer5_1.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer5_1.Text); }
+            else if (Answer5_2.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer5_2.Text); }
+            else if (Answer5_3.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer5_3.Text); }
+            else if (Answer5_4.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer5_4.Text); }
+
+            if (Answer6_1.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer6_1.Text); }
+            else if (Answer6_2.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer6_2.Text); }
+            else if (Answer6_3.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer6_3.Text); }
+            else if (Answer6_4.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer6_4.Text); }
+
+            if (Answer7_1.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer7_1.Text); }
+            else if (Answer7_2.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer7_2.Text); }
+            else if (Answer7_3.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer7_3.Text); }
+            else if (Answer7_4.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer7_4.Text); }
+
+            if (Answer8_1.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer8_1.Text); }
+            else if (Answer8_2.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer8_2.Text); }
+            else if (Answer8_3.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer8_3.Text); }
+            else if (Answer8_4.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer8_4.Text); }
+
+            if (Answer9_1.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer9_1.Text); }
+            else if (Answer9_2.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer9_2.Text); }
+            else if (Answer9_3.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer9_3.Text); }
+            else if (Answer9_4.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer9_4.Text); }
+
+            if (Answer10_1.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer10_1.Text); }
+            else if (Answer10_2.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer10_2.Text); }
+            else if (Answer10_3.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer10_3.Text); }
+            else if (Answer10_4.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer10_4.Text); }
         }
-
         private void Test_Click(object sender, EventArgs e)
         {
-
+            int result = 0;
+            GetAnsWithButtons();
+            if (AnswersClient.Count == 10)
+            {
+                for (int i = 0; i < 10; i++)
+                {
+                    if (AnswersClient[i] == filllingOutForms.GetTrueAns(i))
+                    { result++; }
+                }
+                MessageBox.Show(
+                          $"Правильных ответов: {result}",
+                          "\tРезультаты",
+                          MessageBoxButtons.OK
+                   );
+                ResultTesting.PushSQL(result, AnswersClient.Count, "Легкий");
+                Close();
+            }
+            else
+            {
+                MessageBox.Show(
+                           "Вы должны ответить на все вопросы!\n",
+                           "                                     Ошибка",
+                           MessageBoxButtons.OK,
+                           MessageBoxIcon.Information,
+                           MessageBoxDefaultButton.Button1
+                    );
+            }
+            AnswersClient.Clear();
         }
-
+ 
         private void Answer1_1_Click(object sender, EventArgs e)
         {
             Answer1_1.BackColor = Color.Teal;

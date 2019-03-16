@@ -92,6 +92,7 @@
     <Compile Include="PutClient.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ResultTesting.cs" />
     <Compile Include="Settings.cs">
       <SubType>UserControl</SubType>
     </Compile>
