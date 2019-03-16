@@ -104,7 +104,6 @@
             this.level.Name = "level";
             this.level.Size = new System.Drawing.Size(164, 96);
             this.level.TabIndex = 2;
-            this.level.SelectedIndexChanged += new System.EventHandler(this.Level_SelectedIndexChanged);
             // 
             // label3
             // 

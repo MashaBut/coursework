@@ -92,6 +92,7 @@
     <Compile Include="PutClient.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ResultTesting.cs" />
     <Compile Include="Settings.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -104,10 +105,12 @@
     <Compile Include="Testing.Designer.cs">
       <DependentUpon>Testing.cs</DependentUpon>
     </Compile>
-    <Compile Include="TestLight.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="TestLight\BuildTestForm.cs" />
+    <Compile Include="TestLight\FilllingOutForms.cs" />
+    <Compile Include="TestLight\TestLight.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TestLight.Designer.cs">
+    <Compile Include="TestLight\TestLight.Designer.cs">
       <DependentUpon>TestLight.cs</DependentUpon>
     </Compile>
     <Compile Include="UpdateClient.cs" />
@@ -153,7 +156,7 @@
     <EmbeddedResource Include="Testing.resx">
       <DependentUpon>Testing.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TestLight.resx">
+    <EmbeddedResource Include="TestLight\TestLight.resx">
       <DependentUpon>TestLight.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WorkFuild.resx">
