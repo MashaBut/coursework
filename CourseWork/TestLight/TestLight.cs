@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
-using System.Text;
-using System.Threading.Tasks;
 using System.Threading;
 using System.Drawing;
 using System.Windows.Forms;
@@ -363,7 +360,7 @@ namespace CourseWork.TestLight
                 }
                 MessageBox.Show(
                           $"Правильных ответов: {result}",
-                          "\tРезультаты",
+                          "Результаты",
                           MessageBoxButtons.OK
                    );
                 ResultTesting.PushSQL(result, AnswersClient.Count, "Легкий");
