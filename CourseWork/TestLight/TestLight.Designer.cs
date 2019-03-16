@@ -96,6 +96,7 @@
             this.Answer5_4.Text = "Применить";
             this.Answer5_4.UseMnemonic = false;
             this.Answer5_4.UseVisualStyleBackColor = false;
+            this.Answer5_4.Click += new System.EventHandler(this.Answer5_4_Click);
             // 
             // Answer4_4
             // 
@@ -110,6 +111,7 @@
             this.Answer4_4.Text = "Применить";
             this.Answer4_4.UseMnemonic = false;
             this.Answer4_4.UseVisualStyleBackColor = false;
+            this.Answer4_4.Click += new System.EventHandler(this.Answer4_4_Click);
             // 
             // Answer3_4
             // 
@@ -124,6 +126,7 @@
             this.Answer3_4.Text = "Применить";
             this.Answer3_4.UseMnemonic = false;
             this.Answer3_4.UseVisualStyleBackColor = false;
+            this.Answer3_4.Click += new System.EventHandler(this.Answer3_4_Click);
             // 
             // Answer2_4
             // 
@@ -138,6 +141,7 @@
             this.Answer2_4.Text = "Применить";
             this.Answer2_4.UseMnemonic = false;
             this.Answer2_4.UseVisualStyleBackColor = false;
+            this.Answer2_4.Click += new System.EventHandler(this.Answer2_4_Click);
             // 
             // Answer1_4
             // 
@@ -152,6 +156,7 @@
             this.Answer1_4.Text = "Применить";
             this.Answer1_4.UseMnemonic = false;
             this.Answer1_4.UseVisualStyleBackColor = false;
+            this.Answer1_4.Click += new System.EventHandler(this.Answer1_4_Click);
             // 
             // Answer5_3
             // 
@@ -166,6 +171,7 @@
             this.Answer5_3.Text = "Применить";
             this.Answer5_3.UseMnemonic = false;
             this.Answer5_3.UseVisualStyleBackColor = false;
+            this.Answer5_3.Click += new System.EventHandler(this.Answer5_3_Click);
             // 
             // Answer4_3
             // 
@@ -180,6 +186,7 @@
             this.Answer4_3.Text = "Применить";
             this.Answer4_3.UseMnemonic = false;
             this.Answer4_3.UseVisualStyleBackColor = false;
+            this.Answer4_3.Click += new System.EventHandler(this.Answer4_3_Click);
             // 
             // Answer3_3
             // 
@@ -194,6 +201,7 @@
             this.Answer3_3.Text = "Применить";
             this.Answer3_3.UseMnemonic = false;
             this.Answer3_3.UseVisualStyleBackColor = false;
+            this.Answer3_3.Click += new System.EventHandler(this.Answer3_3_Click);
             // 
             // Answer2_3
             // 
@@ -208,6 +216,7 @@
             this.Answer2_3.Text = "Применить";
             this.Answer2_3.UseMnemonic = false;
             this.Answer2_3.UseVisualStyleBackColor = false;
+            this.Answer2_3.Click += new System.EventHandler(this.Answer2_3_Click);
             // 
             // Answer1_3
             // 
@@ -222,6 +231,7 @@
             this.Answer1_3.Text = "Применить";
             this.Answer1_3.UseMnemonic = false;
             this.Answer1_3.UseVisualStyleBackColor = false;
+            this.Answer1_3.Click += new System.EventHandler(this.Answer1_3_Click);
             // 
             // Answer5_2
             // 
@@ -236,6 +246,7 @@
             this.Answer5_2.Text = "Применить";
             this.Answer5_2.UseMnemonic = false;
             this.Answer5_2.UseVisualStyleBackColor = false;
+            this.Answer5_2.Click += new System.EventHandler(this.Answer5_2_Click);
             // 
             // Answer5_1
             // 
@@ -250,6 +261,7 @@
             this.Answer5_1.Text = "Применить";
             this.Answer5_1.UseMnemonic = false;
             this.Answer5_1.UseVisualStyleBackColor = false;
+            this.Answer5_1.Click += new System.EventHandler(this.Answer5_1_Click);
             // 
             // Answer4_2
             // 
@@ -264,6 +276,7 @@
             this.Answer4_2.Text = "Применить";
             this.Answer4_2.UseMnemonic = false;
             this.Answer4_2.UseVisualStyleBackColor = false;
+            this.Answer4_2.Click += new System.EventHandler(this.Answer4_2_Click);
             // 
             // Answer4_1
             // 
@@ -278,6 +291,7 @@
             this.Answer4_1.Text = "Применить";
             this.Answer4_1.UseMnemonic = false;
             this.Answer4_1.UseVisualStyleBackColor = false;
+            this.Answer4_1.Click += new System.EventHandler(this.Answer4_1_Click);
             // 
             // Answer3_2
             // 
@@ -292,6 +306,7 @@
             this.Answer3_2.Text = "Применить";
             this.Answer3_2.UseMnemonic = false;
             this.Answer3_2.UseVisualStyleBackColor = false;
+            this.Answer3_2.Click += new System.EventHandler(this.Answer3_2_Click);
             // 
             // Answer3_1
             // 
@@ -306,6 +321,7 @@
             this.Answer3_1.Text = "Применить";
             this.Answer3_1.UseMnemonic = false;
             this.Answer3_1.UseVisualStyleBackColor = false;
+            this.Answer3_1.Click += new System.EventHandler(this.Answer3_1_Click);
             // 
             // Answer2_2
             // 
@@ -320,6 +336,7 @@
             this.Answer2_2.Text = "Применить";
             this.Answer2_2.UseMnemonic = false;
             this.Answer2_2.UseVisualStyleBackColor = false;
+            this.Answer2_2.Click += new System.EventHandler(this.Answer2_2_Click);
             // 
             // Answer2_1
             // 
@@ -334,6 +351,7 @@
             this.Answer2_1.Text = "Применить";
             this.Answer2_1.UseMnemonic = false;
             this.Answer2_1.UseVisualStyleBackColor = false;
+            this.Answer2_1.Click += new System.EventHandler(this.Answer2_1_Click);
             // 
             // Answer1_2
             // 
@@ -348,6 +366,7 @@
             this.Answer1_2.Text = "Применить";
             this.Answer1_2.UseMnemonic = false;
             this.Answer1_2.UseVisualStyleBackColor = false;
+            this.Answer1_2.Click += new System.EventHandler(this.Answer1_2_Click);
             // 
             // Answer1_1
             // 
@@ -362,6 +381,7 @@
             this.Answer1_1.Text = "Применить";
             this.Answer1_1.UseMnemonic = false;
             this.Answer1_1.UseVisualStyleBackColor = false;
+            this.Answer1_1.Click += new System.EventHandler(this.Answer1_1_Click);
             // 
             // Answer10_4
             // 
@@ -376,6 +396,7 @@
             this.Answer10_4.Text = "Применить";
             this.Answer10_4.UseMnemonic = false;
             this.Answer10_4.UseVisualStyleBackColor = false;
+            this.Answer10_4.Click += new System.EventHandler(this.Answer10_4_Click);
             // 
             // Answer9_4
             // 
@@ -390,6 +411,7 @@
             this.Answer9_4.Text = "Применить";
             this.Answer9_4.UseMnemonic = false;
             this.Answer9_4.UseVisualStyleBackColor = false;
+            this.Answer9_4.Click += new System.EventHandler(this.Answer9_4_Click);
             // 
             // Answer8_4
             // 
@@ -404,6 +426,7 @@
             this.Answer8_4.Text = "Применить";
             this.Answer8_4.UseMnemonic = false;
             this.Answer8_4.UseVisualStyleBackColor = false;
+            this.Answer8_4.Click += new System.EventHandler(this.Answer8_4_Click);
             // 
             // Answer7_4
             // 
@@ -418,6 +441,7 @@
             this.Answer7_4.Text = "Применить";
             this.Answer7_4.UseMnemonic = false;
             this.Answer7_4.UseVisualStyleBackColor = false;
+            this.Answer7_4.Click += new System.EventHandler(this.Answer7_4_Click);
             // 
             // Answer6_4
             // 
@@ -432,6 +456,7 @@
             this.Answer6_4.Text = "Применить";
             this.Answer6_4.UseMnemonic = false;
             this.Answer6_4.UseVisualStyleBackColor = false;
+            this.Answer6_4.Click += new System.EventHandler(this.Answer6_4_Click);
             // 
             // Answer10_3
             // 
@@ -446,6 +471,7 @@
             this.Answer10_3.Text = "Применить";
             this.Answer10_3.UseMnemonic = false;
             this.Answer10_3.UseVisualStyleBackColor = false;
+            this.Answer10_3.Click += new System.EventHandler(this.Answer10_3_Click);
             // 
             // Answer9_3
             // 
@@ -460,6 +486,7 @@
             this.Answer9_3.Text = "Применить";
             this.Answer9_3.UseMnemonic = false;
             this.Answer9_3.UseVisualStyleBackColor = false;
+            this.Answer9_3.Click += new System.EventHandler(this.Answer9_3_Click);
             // 
             // Answer8_3
             // 
@@ -474,6 +501,7 @@
             this.Answer8_3.Text = "Применить";
             this.Answer8_3.UseMnemonic = false;
             this.Answer8_3.UseVisualStyleBackColor = false;
+            this.Answer8_3.Click += new System.EventHandler(this.Answer8_3_Click);
             // 
             // Answer7_3
             // 
@@ -488,6 +516,7 @@
             this.Answer7_3.Text = "Применить";
             this.Answer7_3.UseMnemonic = false;
             this.Answer7_3.UseVisualStyleBackColor = false;
+            this.Answer7_3.Click += new System.EventHandler(this.Answer7_3_Click);
             // 
             // Answer6_3
             // 
@@ -502,6 +531,7 @@
             this.Answer6_3.Text = "Применить";
             this.Answer6_3.UseMnemonic = false;
             this.Answer6_3.UseVisualStyleBackColor = false;
+            this.Answer6_3.Click += new System.EventHandler(this.Answer6_3_Click);
             // 
             // Answer10_2
             // 
@@ -516,6 +546,7 @@
             this.Answer10_2.Text = "Применить";
             this.Answer10_2.UseMnemonic = false;
             this.Answer10_2.UseVisualStyleBackColor = false;
+            this.Answer10_2.Click += new System.EventHandler(this.Answer10_2_Click);
             // 
             // Answer10_1
             // 
@@ -530,6 +561,7 @@
             this.Answer10_1.Text = "Применить";
             this.Answer10_1.UseMnemonic = false;
             this.Answer10_1.UseVisualStyleBackColor = false;
+            this.Answer10_1.Click += new System.EventHandler(this.Answer10_1_Click);
             // 
             // Answer9_2
             // 
@@ -544,6 +576,7 @@
             this.Answer9_2.Text = "Применить";
             this.Answer9_2.UseMnemonic = false;
             this.Answer9_2.UseVisualStyleBackColor = false;
+            this.Answer9_2.Click += new System.EventHandler(this.Answer9_2_Click);
             // 
             // Answer9_1
             // 
@@ -558,6 +591,7 @@
             this.Answer9_1.Text = "Применить";
             this.Answer9_1.UseMnemonic = false;
             this.Answer9_1.UseVisualStyleBackColor = false;
+            this.Answer9_1.Click += new System.EventHandler(this.Answer9_1_Click);
             // 
             // Answer8_2
             // 
@@ -572,6 +606,7 @@
             this.Answer8_2.Text = "Применить";
             this.Answer8_2.UseMnemonic = false;
             this.Answer8_2.UseVisualStyleBackColor = false;
+            this.Answer8_2.Click += new System.EventHandler(this.Answer8_2_Click);
             // 
             // Answer8_1
             // 
@@ -586,6 +621,7 @@
             this.Answer8_1.Text = "Применить";
             this.Answer8_1.UseMnemonic = false;
             this.Answer8_1.UseVisualStyleBackColor = false;
+            this.Answer8_1.Click += new System.EventHandler(this.Answer8_1_Click);
             // 
             // Answer7_2
             // 
@@ -600,6 +636,7 @@
             this.Answer7_2.Text = "Применить";
             this.Answer7_2.UseMnemonic = false;
             this.Answer7_2.UseVisualStyleBackColor = false;
+            this.Answer7_2.Click += new System.EventHandler(this.Answer7_2_Click);
             // 
             // Answer7_1
             // 
@@ -614,6 +651,7 @@
             this.Answer7_1.Text = "Применить";
             this.Answer7_1.UseMnemonic = false;
             this.Answer7_1.UseVisualStyleBackColor = false;
+            this.Answer7_1.Click += new System.EventHandler(this.Answer7_1_Click);
             // 
             // Answer6_2
             // 
@@ -628,6 +666,7 @@
             this.Answer6_2.Text = "Применить";
             this.Answer6_2.UseMnemonic = false;
             this.Answer6_2.UseVisualStyleBackColor = false;
+            this.Answer6_2.Click += new System.EventHandler(this.Answer6_2_Click);
             // 
             // Answer6_1
             // 
@@ -642,6 +681,7 @@
             this.Answer6_1.Text = "Применить";
             this.Answer6_1.UseMnemonic = false;
             this.Answer6_1.UseVisualStyleBackColor = false;
+            this.Answer6_1.Click += new System.EventHandler(this.Answer6_1_Click);
             // 
             // Test
             // 
@@ -658,6 +698,7 @@
             this.Test.TabIndex = 56;
             this.Test.Text = "Завершить тестирование";
             this.Test.UseVisualStyleBackColor = false;
+            this.Test.Click += new System.EventHandler(this.Test_Click);
             // 
             // close
             // 
@@ -684,6 +725,7 @@
             this.Q1.Location = new System.Drawing.Point(69, 12);
             this.Q1.Multiline = true;
             this.Q1.Name = "Q1";
+            this.Q1.ReadOnly = true;
             this.Q1.Size = new System.Drawing.Size(877, 57);
             this.Q1.TabIndex = 58;
             this.Q1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -697,6 +739,7 @@
             this.Q2.Location = new System.Drawing.Point(69, 140);
             this.Q2.Multiline = true;
             this.Q2.Name = "Q2";
+            this.Q2.ReadOnly = true;
             this.Q2.Size = new System.Drawing.Size(877, 57);
             this.Q2.TabIndex = 59;
             this.Q2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -710,6 +753,7 @@
             this.Q3.Location = new System.Drawing.Point(69, 271);
             this.Q3.Multiline = true;
             this.Q3.Name = "Q3";
+            this.Q3.ReadOnly = true;
             this.Q3.Size = new System.Drawing.Size(877, 57);
             this.Q3.TabIndex = 60;
             this.Q3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -723,6 +767,7 @@
             this.Q4.Location = new System.Drawing.Point(69, 394);
             this.Q4.Multiline = true;
             this.Q4.Name = "Q4";
+            this.Q4.ReadOnly = true;
             this.Q4.Size = new System.Drawing.Size(877, 57);
             this.Q4.TabIndex = 61;
             this.Q4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -736,6 +781,7 @@
             this.Q5.Location = new System.Drawing.Point(69, 523);
             this.Q5.Multiline = true;
             this.Q5.Name = "Q5";
+            this.Q5.ReadOnly = true;
             this.Q5.Size = new System.Drawing.Size(877, 57);
             this.Q5.TabIndex = 62;
             this.Q5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -749,6 +795,7 @@
             this.Q6.Location = new System.Drawing.Point(69, 655);
             this.Q6.Multiline = true;
             this.Q6.Name = "Q6";
+            this.Q6.ReadOnly = true;
             this.Q6.Size = new System.Drawing.Size(877, 57);
             this.Q6.TabIndex = 63;
             this.Q6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -762,6 +809,7 @@
             this.Q7.Location = new System.Drawing.Point(69, 783);
             this.Q7.Multiline = true;
             this.Q7.Name = "Q7";
+            this.Q7.ReadOnly = true;
             this.Q7.Size = new System.Drawing.Size(877, 57);
             this.Q7.TabIndex = 64;
             this.Q7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -775,6 +823,7 @@
             this.Q8.Location = new System.Drawing.Point(69, 916);
             this.Q8.Multiline = true;
             this.Q8.Name = "Q8";
+            this.Q8.ReadOnly = true;
             this.Q8.Size = new System.Drawing.Size(877, 57);
             this.Q8.TabIndex = 65;
             this.Q8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -788,6 +837,7 @@
             this.Q9.Location = new System.Drawing.Point(69, 1050);
             this.Q9.Multiline = true;
             this.Q9.Name = "Q9";
+            this.Q9.ReadOnly = true;
             this.Q9.Size = new System.Drawing.Size(877, 57);
             this.Q9.TabIndex = 66;
             this.Q9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -801,6 +851,7 @@
             this.Q10.Location = new System.Drawing.Point(69, 1180);
             this.Q10.Multiline = true;
             this.Q10.Name = "Q10";
+            this.Q10.ReadOnly = true;
             this.Q10.Size = new System.Drawing.Size(877, 57);
             this.Q10.TabIndex = 67;
             this.Q10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;

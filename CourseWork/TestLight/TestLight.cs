@@ -4,6 +4,7 @@ using System.Data;
 using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
+using System.Drawing;
 using System.Windows.Forms;
 
 
@@ -15,17 +16,18 @@ namespace CourseWork.TestLight
         {
             InitializeComponent();
             Thread myThread = new Thread(new ThreadStart(Built2));
-            myThread.Start(); // запускаем поток
+            myThread.Start();
             Built1();
         }
         Random Random = new Random();
         HashSet<int> Order = new HashSet<int>();
         HashSet<int> OrderTwo = new HashSet<int>();
         FilllingOutForms filllingOutForms = new FilllingOutForms();
+        List<string> AnswersClient = new List<string>();
         private void Built1()
         {
             Q1.Text = filllingOutForms.AddQ(0);
-            BuildOrder(0,4);
+            BuildOrder(0, 4);
             foreach (int i in Order)
             {
                 switch (i)
@@ -46,7 +48,7 @@ namespace CourseWork.TestLight
             }
             Q2.Text = filllingOutForms.AddQ(1);
             Order.Clear();
-            BuildOrder(4,8);
+            BuildOrder(4, 8);
             foreach (int i in Order)
             {
                 switch (i)
@@ -237,9 +239,9 @@ namespace CourseWork.TestLight
                 }
             }
         }
-        void BuildOrder(int a,int b)
+        void BuildOrder(int a, int b)
         {
-            while(Order.Count<4)
+            while (Order.Count < 4)
             {
                 Order.Add(Random.Next(a, b));
             }
@@ -259,5 +261,331 @@ namespace CourseWork.TestLight
         {
 
         }
+
+        private void Test_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Answer1_1_Click(object sender, EventArgs e)
+        {
+            Answer1_1.BackColor = Color.Teal;
+            Answer1_2.BackColor = Color.FromArgb(0, 50, 50);
+            Answer1_3.BackColor = Color.FromArgb(0, 50, 50);
+            Answer1_4.BackColor = Color.FromArgb(0, 50, 50);
+        }
+
+        private void Answer1_2_Click(object sender, EventArgs e)
+        {
+            Answer1_1.BackColor = Color.FromArgb(0, 50, 50);
+            Answer1_2.BackColor = Color.Teal;
+            Answer1_3.BackColor = Color.FromArgb(0, 50, 50);
+            Answer1_4.BackColor = Color.FromArgb(0, 50, 50);
+        }
+
+        private void Answer1_3_Click(object sender, EventArgs e)
+        {
+            Answer1_1.BackColor = Color.FromArgb(0, 50, 50);
+            Answer1_2.BackColor = Color.FromArgb(0, 50, 50);
+            Answer1_3.BackColor = Color.Teal;
+            Answer1_4.BackColor = Color.FromArgb(0, 50, 50);
+        }
+
+        private void Answer1_4_Click(object sender, EventArgs e)
+        {
+            Answer1_1.BackColor = Color.FromArgb(0, 50, 50);
+            Answer1_2.BackColor = Color.FromArgb(0, 50, 50);
+            Answer1_3.BackColor = Color.FromArgb(0, 50, 50);
+            Answer1_4.BackColor = Color.Teal;
+        }
+
+        private void Answer2_1_Click(object sender, EventArgs e)
+        {
+            Answer2_1.BackColor = Color.Teal;
+            Answer2_2.BackColor = Color.FromArgb(0, 50, 50);
+            Answer2_3.BackColor = Color.FromArgb(0, 50, 50);
+            Answer2_4.BackColor = Color.FromArgb(0, 50, 50);
+        }
+
+        private void Answer2_2_Click(object sender, EventArgs e)
+        {
+            Answer2_1.BackColor = Color.FromArgb(0, 50, 50);
+            Answer2_2.BackColor = Color.Teal;
+            Answer2_3.BackColor = Color.FromArgb(0, 50, 50);
+            Answer2_4.BackColor = Color.FromArgb(0, 50, 50);
+        }
+
+        private void Answer2_3_Click(object sender, EventArgs e)
+        {
+            Answer2_1.BackColor = Color.FromArgb(0, 50, 50);
+            Answer2_2.BackColor = Color.FromArgb(0, 50, 50);
+            Answer2_3.BackColor = Color.Teal;
+            Answer2_4.BackColor = Color.FromArgb(0, 50, 50);
+        }
+
+        private void Answer2_4_Click(object sender, EventArgs e)
+        {
+            Answer2_1.BackColor = Color.FromArgb(0, 50, 50);
+            Answer2_2.BackColor = Color.FromArgb(0, 50, 50);
+            Answer2_3.BackColor = Color.FromArgb(0, 50, 50);
+            Answer2_4.BackColor = Color.Teal;
+        }
+
+        private void Answer3_1_Click(object sender, EventArgs e)
+        {
+            Answer3_1.BackColor = Color.Teal;
+            Answer3_2.BackColor = Color.FromArgb(0, 50, 50);
+            Answer3_3.BackColor = Color.FromArgb(0, 50, 50);
+            Answer3_4.BackColor = Color.FromArgb(0, 50, 50);
+        }
+
+        private void Answer3_2_Click(object sender, EventArgs e)
+        {
+            Answer3_1.BackColor = Color.FromArgb(0, 50, 50);
+            Answer3_2.BackColor = Color.Teal;
+            Answer3_3.BackColor = Color.FromArgb(0, 50, 50);
+            Answer3_4.BackColor = Color.FromArgb(0, 50, 50);
+        }
+
+        private void Answer3_3_Click(object sender, EventArgs e)
+        {
+            Answer3_1.BackColor = Color.FromArgb(0, 50, 50);
+            Answer3_2.BackColor = Color.FromArgb(0, 50, 50);
+            Answer3_3.BackColor = Color.Teal;
+            Answer3_4.BackColor = Color.FromArgb(0, 50, 50);
+        }
+
+        private void Answer3_4_Click(object sender, EventArgs e)
+        {
+            Answer3_1.BackColor = Color.FromArgb(0, 50, 50);
+            Answer3_2.BackColor = Color.FromArgb(0, 50, 50);
+            Answer3_3.BackColor = Color.FromArgb(0, 50, 50);
+            Answer3_4.BackColor = Color.Teal;
+        }
+
+        private void Answer4_1_Click(object sender, EventArgs e)
+        {
+            Answer4_1.BackColor = Color.Teal;
+            Answer4_2.BackColor = Color.FromArgb(0, 50, 50);
+            Answer4_3.BackColor = Color.FromArgb(0, 50, 50);
+            Answer4_4.BackColor = Color.FromArgb(0, 50, 50);
+        }
+
+        private void Answer4_2_Click(object sender, EventArgs e)
+        {
+            Answer4_1.BackColor = Color.FromArgb(0, 50, 50);
+            Answer4_2.BackColor = Color.Teal;
+            Answer4_3.BackColor = Color.FromArgb(0, 50, 50);
+            Answer4_4.BackColor = Color.FromArgb(0, 50, 50);
+        }
+
+        private void Answer4_3_Click(object sender, EventArgs e)
+        {
+            Answer4_1.BackColor = Color.FromArgb(0, 50, 50);
+            Answer4_2.BackColor = Color.FromArgb(0, 50, 50);
+            Answer4_3.BackColor = Color.Teal;
+            Answer4_4.BackColor = Color.FromArgb(0, 50, 50);
+        }
+
+        private void Answer4_4_Click(object sender, EventArgs e)
+        {
+            Answer4_1.BackColor = Color.FromArgb(0, 50, 50);
+            Answer4_2.BackColor = Color.FromArgb(0, 50, 50);
+            Answer4_3.BackColor = Color.FromArgb(0, 50, 50);
+            Answer4_4.BackColor = Color.Teal;
+        }
+
+        private void Answer5_1_Click(object sender, EventArgs e)
+        {
+            Answer5_1.BackColor = Color.Teal;
+            Answer5_2.BackColor = Color.FromArgb(0, 50, 50);
+            Answer5_3.BackColor = Color.FromArgb(0, 50, 50);
+            Answer5_4.BackColor = Color.FromArgb(0, 50, 50);
+        }
+
+        private void Answer5_2_Click(object sender, EventArgs e)
+        {
+            Answer5_1.BackColor = Color.FromArgb(0, 50, 50);
+            Answer5_2.BackColor = Color.Teal;
+            Answer5_3.BackColor = Color.FromArgb(0, 50, 50);
+            Answer5_4.BackColor = Color.FromArgb(0, 50, 50);
+        }
+
+        private void Answer5_3_Click(object sender, EventArgs e)
+        {
+            Answer5_1.BackColor = Color.FromArgb(0, 50, 50);
+            Answer5_2.BackColor = Color.FromArgb(0, 50, 50);
+            Answer5_3.BackColor = Color.Teal;
+            Answer5_4.BackColor = Color.FromArgb(0, 50, 50);
+        }
+
+        private void Answer5_4_Click(object sender, EventArgs e)
+        {
+            Answer5_1.BackColor = Color.FromArgb(0, 50, 50);
+            Answer5_2.BackColor = Color.FromArgb(0, 50, 50);
+            Answer5_3.BackColor = Color.FromArgb(0, 50, 50);
+            Answer5_4.BackColor = Color.Teal;
+        }
+
+        private void Answer6_1_Click(object sender, EventArgs e)
+        {
+            Answer6_1.BackColor = Color.Teal;
+            Answer6_2.BackColor = Color.FromArgb(0, 50, 50);
+            Answer6_3.BackColor = Color.FromArgb(0, 50, 50);
+            Answer6_4.BackColor = Color.FromArgb(0, 50, 50);
+        }
+
+        private void Answer6_2_Click(object sender, EventArgs e)
+        {
+            Answer6_1.BackColor = Color.FromArgb(0, 50, 50);
+            Answer6_2.BackColor = Color.Teal;
+            Answer6_3.BackColor = Color.FromArgb(0, 50, 50);
+            Answer6_4.BackColor = Color.FromArgb(0, 50, 50);
+        }
+
+        private void Answer6_3_Click(object sender, EventArgs e)
+        {
+            Answer6_1.BackColor = Color.FromArgb(0, 50, 50);
+            Answer6_2.BackColor = Color.FromArgb(0, 50, 50);
+            Answer6_3.BackColor = Color.Teal;
+            Answer6_4.BackColor = Color.FromArgb(0, 50, 50);
+        }
+
+        private void Answer6_4_Click(object sender, EventArgs e)
+        {
+            Answer6_1.BackColor = Color.FromArgb(0, 50, 50);
+            Answer6_2.BackColor = Color.FromArgb(0, 50, 50);
+            Answer6_3.BackColor = Color.FromArgb(0, 50, 50);
+            Answer6_4.BackColor = Color.Teal;
+        }
+
+        private void Answer7_1_Click(object sender, EventArgs e)
+        {
+            Answer7_1.BackColor = Color.Teal;
+            Answer7_2.BackColor = Color.FromArgb(0, 50, 50);
+            Answer7_3.BackColor = Color.FromArgb(0, 50, 50);
+            Answer7_4.BackColor = Color.FromArgb(0, 50, 50);
+        }
+
+        private void Answer7_2_Click(object sender, EventArgs e)
+        {
+            Answer7_1.BackColor = Color.FromArgb(0, 50, 50);
+            Answer7_2.BackColor = Color.Teal;
+            Answer7_3.BackColor = Color.FromArgb(0, 50, 50);
+            Answer7_4.BackColor = Color.FromArgb(0, 50, 50);
+        }
+
+        private void Answer7_3_Click(object sender, EventArgs e)
+        {
+            Answer7_1.BackColor = Color.FromArgb(0, 50, 50);
+            Answer7_2.BackColor = Color.FromArgb(0, 50, 50);
+            Answer7_3.BackColor = Color.Teal;
+            Answer7_4.BackColor = Color.FromArgb(0, 50, 50);
+        }
+
+        private void Answer7_4_Click(object sender, EventArgs e)
+        {
+            Answer7_1.BackColor = Color.FromArgb(0, 50, 50);
+            Answer7_2.BackColor = Color.FromArgb(0, 50, 50);
+            Answer7_3.BackColor = Color.FromArgb(0, 50, 50);
+            Answer7_4.BackColor = Color.Teal;
+        }
+
+        private void Answer8_1_Click(object sender, EventArgs e)
+        {
+            Answer8_1.BackColor = Color.Teal;
+            Answer8_2.BackColor = Color.FromArgb(0, 50, 50);
+            Answer8_3.BackColor = Color.FromArgb(0, 50, 50);
+            Answer8_4.BackColor = Color.FromArgb(0, 50, 50);
+        }
+
+        private void Answer8_2_Click(object sender, EventArgs e)
+        {
+            Answer8_1.BackColor = Color.FromArgb(0, 50, 50);
+            Answer8_2.BackColor = Color.Teal;
+            Answer8_3.BackColor = Color.FromArgb(0, 50, 50);
+            Answer8_4.BackColor = Color.FromArgb(0, 50, 50);
+        }
+
+        private void Answer8_3_Click(object sender, EventArgs e)
+        {
+            Answer8_1.BackColor = Color.FromArgb(0, 50, 50);
+            Answer8_2.BackColor = Color.FromArgb(0, 50, 50);
+            Answer8_3.BackColor = Color.Teal;
+            Answer8_4.BackColor = Color.FromArgb(0, 50, 50);
+        }
+
+        private void Answer8_4_Click(object sender, EventArgs e)
+        {
+            Answer8_1.BackColor = Color.FromArgb(0, 50, 50);
+            Answer8_2.BackColor = Color.FromArgb(0, 50, 50);
+            Answer8_3.BackColor = Color.FromArgb(0, 50, 50);
+            Answer8_4.BackColor = Color.Teal;
+        }
+
+        private void Answer9_1_Click(object sender, EventArgs e)
+        {
+            Answer9_1.BackColor = Color.Teal;
+            Answer9_2.BackColor = Color.FromArgb(0, 50, 50);
+            Answer9_3.BackColor = Color.FromArgb(0, 50, 50);
+            Answer9_4.BackColor = Color.FromArgb(0, 50, 50);
+        }
+
+        private void Answer9_2_Click(object sender, EventArgs e)
+        {
+            Answer9_1.BackColor = Color.FromArgb(0, 50, 50);
+            Answer9_2.BackColor = Color.Teal;
+            Answer9_3.BackColor = Color.FromArgb(0, 50, 50);
+            Answer9_4.BackColor = Color.FromArgb(0, 50, 50);
+        }
+
+        private void Answer9_3_Click(object sender, EventArgs e)
+        {
+            Answer9_1.BackColor = Color.FromArgb(0, 50, 50);
+            Answer9_2.BackColor = Color.FromArgb(0, 50, 50);
+            Answer9_3.BackColor = Color.Teal;
+            Answer9_4.BackColor = Color.FromArgb(0, 50, 50);
+        }
+
+        private void Answer9_4_Click(object sender, EventArgs e)
+        {
+            Answer9_1.BackColor = Color.FromArgb(0, 50, 50);
+            Answer9_2.BackColor = Color.FromArgb(0, 50, 50);
+            Answer9_3.BackColor = Color.FromArgb(0, 50, 50);
+            Answer9_4.BackColor = Color.Teal;
+        }
+
+        private void Answer10_1_Click(object sender, EventArgs e)
+        {
+            Answer10_1.BackColor = Color.Teal;
+            Answer10_2.BackColor = Color.FromArgb(0, 50, 50);
+            Answer10_3.BackColor = Color.FromArgb(0, 50, 50);
+            Answer10_4.BackColor = Color.FromArgb(0, 50, 50);
+        }
+
+        private void Answer10_2_Click(object sender, EventArgs e)
+        {
+            Answer10_1.BackColor = Color.FromArgb(0, 50, 50);
+            Answer10_2.BackColor = Color.Teal;
+            Answer10_3.BackColor = Color.FromArgb(0, 50, 50);
+            Answer10_4.BackColor = Color.FromArgb(0, 50, 50);
+        }
+
+        private void Answer10_3_Click(object sender, EventArgs e)
+        {
+            Answer10_1.BackColor = Color.FromArgb(0, 50, 50);
+            Answer10_2.BackColor = Color.FromArgb(0, 50, 50);
+            Answer10_3.BackColor = Color.Teal;
+            Answer10_4.BackColor = Color.FromArgb(0, 50, 50);
+        }
+
+        private void Answer10_4_Click(object sender, EventArgs e)
+        {
+            Answer10_1.BackColor = Color.FromArgb(0, 50, 50);
+            Answer10_2.BackColor = Color.FromArgb(0, 50, 50);
+            Answer10_3.BackColor = Color.FromArgb(0, 50, 50);
+            Answer10_4.BackColor = Color.Teal;
+        }
     }
 }
+ 
