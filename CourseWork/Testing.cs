@@ -46,7 +46,8 @@ namespace CourseWork
                 }
                 else if (Convert.ToString(level.SelectedItem) == "Средний")
                 {
-
+                    TestMiddle.MiddleTest middleTest = new TestMiddle.MiddleTest();
+                    middleTest.Show();
                 }
                 else if(Convert.ToString(level.SelectedItem) == "Сложный")
                 {

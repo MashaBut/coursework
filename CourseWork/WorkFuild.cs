@@ -43,7 +43,6 @@ namespace CourseWork
         {
             panel3.Height = Table.Height;
             panel3.Top = Table.Top;
-
             honors1.BringToFront();
         }
 

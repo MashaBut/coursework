@@ -113,6 +113,14 @@
     <Compile Include="TestLight\TestLight.Designer.cs">
       <DependentUpon>TestLight.cs</DependentUpon>
     </Compile>
+    <Compile Include="TestMiddle\FillingFormsMT.cs" />
+    <Compile Include="TestMiddle\FillingMiddleTest.cs" />
+    <Compile Include="TestMiddle\MiddleTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestMiddle\MiddleTest.Designer.cs">
+      <DependentUpon>MiddleTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="UpdateClient.cs" />
     <Compile Include="WorkFuild.cs">
       <SubType>Form</SubType>
@@ -158,6 +166,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TestLight\TestLight.resx">
       <DependentUpon>TestLight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestMiddle\MiddleTest.resx">
+      <DependentUpon>MiddleTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WorkFuild.resx">
       <DependentUpon>WorkFuild.cs</DependentUpon>

@@ -11,23 +11,23 @@ namespace CourseWork.TestLight
         public List<string> tlQ = new List<string>();
         public List<string> trueAns = new List<string>();
         public List<string> ErrorAns = new List<string>();
-        HashSet<int> number = new HashSet<int>();
+        public HashSet<int> number = new HashSet<int>();
         Random Random = new Random();
         int idMAX, idMIN = 0;
-        public BuildTestForm()
+        public BuildTestForm(int k)
         {
             conn.Open();
             MySqlCommand sqlCommand2 = new MySqlCommand($"SELECT MAX(id) FROM coursework.{LOG.NameTable}", conn);
             idMAX = Convert.ToInt32(sqlCommand2.ExecuteScalar());
             MySqlCommand sqlCommand1 = new MySqlCommand($"SELECT MIN(id) FROM coursework.{LOG.NameTable}", conn);
             idMIN = Convert.ToInt32(sqlCommand1.ExecuteScalar());
-            while (number.Count < 10)
+            while (number.Count < k)
             {
                 number.Add(Random.Next(idMIN, idMAX));
             }
             conn.Close();
         }
-        public void Search()
+        public virtual void Search()
         {
             conn.Open();
             foreach (int i in number)

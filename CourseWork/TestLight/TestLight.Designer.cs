@@ -87,7 +87,7 @@
             // 
             this.Answer5_4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.Answer5_4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Answer5_4.Font = new System.Drawing.Font("Palatino Linotype", 12F);
+            this.Answer5_4.Font = new System.Drawing.Font("Palatino Linotype", 10F);
             this.Answer5_4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
             this.Answer5_4.Location = new System.Drawing.Point(764, 590);
             this.Answer5_4.Name = "Answer5_4";
@@ -102,7 +102,7 @@
             // 
             this.Answer4_4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.Answer4_4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Answer4_4.Font = new System.Drawing.Font("Palatino Linotype", 12F);
+            this.Answer4_4.Font = new System.Drawing.Font("Palatino Linotype", 10F);
             this.Answer4_4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
             this.Answer4_4.Location = new System.Drawing.Point(764, 461);
             this.Answer4_4.Name = "Answer4_4";
@@ -117,7 +117,7 @@
             // 
             this.Answer3_4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.Answer3_4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Answer3_4.Font = new System.Drawing.Font("Palatino Linotype", 12F);
+            this.Answer3_4.Font = new System.Drawing.Font("Palatino Linotype", 10F);
             this.Answer3_4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
             this.Answer3_4.Location = new System.Drawing.Point(764, 334);
             this.Answer3_4.Name = "Answer3_4";
@@ -132,7 +132,7 @@
             // 
             this.Answer2_4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.Answer2_4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Answer2_4.Font = new System.Drawing.Font("Palatino Linotype", 12F);
+            this.Answer2_4.Font = new System.Drawing.Font("Palatino Linotype", 10F);
             this.Answer2_4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
             this.Answer2_4.Location = new System.Drawing.Point(764, 210);
             this.Answer2_4.Name = "Answer2_4";
@@ -147,7 +147,7 @@
             // 
             this.Answer1_4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.Answer1_4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Answer1_4.Font = new System.Drawing.Font("Palatino Linotype", 12F);
+            this.Answer1_4.Font = new System.Drawing.Font("Palatino Linotype", 10F);
             this.Answer1_4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
             this.Answer1_4.Location = new System.Drawing.Point(764, 80);
             this.Answer1_4.Name = "Answer1_4";
@@ -162,7 +162,7 @@
             // 
             this.Answer5_3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.Answer5_3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Answer5_3.Font = new System.Drawing.Font("Palatino Linotype", 12F);
+            this.Answer5_3.Font = new System.Drawing.Font("Palatino Linotype", 10F);
             this.Answer5_3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
             this.Answer5_3.Location = new System.Drawing.Point(554, 590);
             this.Answer5_3.Name = "Answer5_3";
@@ -177,7 +177,7 @@
             // 
             this.Answer4_3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.Answer4_3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Answer4_3.Font = new System.Drawing.Font("Palatino Linotype", 12F);
+            this.Answer4_3.Font = new System.Drawing.Font("Palatino Linotype", 10F);
             this.Answer4_3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
             this.Answer4_3.Location = new System.Drawing.Point(554, 461);
             this.Answer4_3.Name = "Answer4_3";
@@ -192,7 +192,7 @@
             // 
             this.Answer3_3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.Answer3_3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Answer3_3.Font = new System.Drawing.Font("Palatino Linotype", 12F);
+            this.Answer3_3.Font = new System.Drawing.Font("Palatino Linotype", 10F);
             this.Answer3_3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
             this.Answer3_3.Location = new System.Drawing.Point(554, 334);
             this.Answer3_3.Name = "Answer3_3";
@@ -207,7 +207,7 @@
             // 
             this.Answer2_3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.Answer2_3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Answer2_3.Font = new System.Drawing.Font("Palatino Linotype", 12F);
+            this.Answer2_3.Font = new System.Drawing.Font("Palatino Linotype", 10F);
             this.Answer2_3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
             this.Answer2_3.Location = new System.Drawing.Point(554, 210);
             this.Answer2_3.Name = "Answer2_3";
@@ -222,7 +222,7 @@
             // 
             this.Answer1_3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.Answer1_3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Answer1_3.Font = new System.Drawing.Font("Palatino Linotype", 12F);
+            this.Answer1_3.Font = new System.Drawing.Font("Palatino Linotype", 10F);
             this.Answer1_3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
             this.Answer1_3.Location = new System.Drawing.Point(554, 80);
             this.Answer1_3.Name = "Answer1_3";
@@ -237,7 +237,7 @@
             // 
             this.Answer5_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.Answer5_2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Answer5_2.Font = new System.Drawing.Font("Palatino Linotype", 12F);
+            this.Answer5_2.Font = new System.Drawing.Font("Palatino Linotype", 10F);
             this.Answer5_2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
             this.Answer5_2.Location = new System.Drawing.Point(344, 590);
             this.Answer5_2.Name = "Answer5_2";
@@ -252,7 +252,7 @@
             // 
             this.Answer5_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.Answer5_1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Answer5_1.Font = new System.Drawing.Font("Palatino Linotype", 12F);
+            this.Answer5_1.Font = new System.Drawing.Font("Palatino Linotype", 10F);
             this.Answer5_1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
             this.Answer5_1.Location = new System.Drawing.Point(134, 590);
             this.Answer5_1.Name = "Answer5_1";
@@ -267,7 +267,7 @@
             // 
             this.Answer4_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.Answer4_2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Answer4_2.Font = new System.Drawing.Font("Palatino Linotype", 12F);
+            this.Answer4_2.Font = new System.Drawing.Font("Palatino Linotype", 10F);
             this.Answer4_2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
             this.Answer4_2.Location = new System.Drawing.Point(344, 461);
             this.Answer4_2.Name = "Answer4_2";
@@ -282,7 +282,7 @@
             // 
             this.Answer4_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.Answer4_1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Answer4_1.Font = new System.Drawing.Font("Palatino Linotype", 12F);
+            this.Answer4_1.Font = new System.Drawing.Font("Palatino Linotype", 10F);
             this.Answer4_1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
             this.Answer4_1.Location = new System.Drawing.Point(134, 461);
             this.Answer4_1.Name = "Answer4_1";
@@ -297,7 +297,7 @@
             // 
             this.Answer3_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.Answer3_2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Answer3_2.Font = new System.Drawing.Font("Palatino Linotype", 12F);
+            this.Answer3_2.Font = new System.Drawing.Font("Palatino Linotype", 10F);
             this.Answer3_2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
             this.Answer3_2.Location = new System.Drawing.Point(344, 334);
             this.Answer3_2.Name = "Answer3_2";
@@ -312,7 +312,7 @@
             // 
             this.Answer3_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.Answer3_1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Answer3_1.Font = new System.Drawing.Font("Palatino Linotype", 12F);
+            this.Answer3_1.Font = new System.Drawing.Font("Palatino Linotype", 10F);
             this.Answer3_1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
             this.Answer3_1.Location = new System.Drawing.Point(134, 334);
             this.Answer3_1.Name = "Answer3_1";
@@ -327,7 +327,7 @@
             // 
             this.Answer2_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.Answer2_2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Answer2_2.Font = new System.Drawing.Font("Palatino Linotype", 12F);
+            this.Answer2_2.Font = new System.Drawing.Font("Palatino Linotype", 10F);
             this.Answer2_2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
             this.Answer2_2.Location = new System.Drawing.Point(344, 210);
             this.Answer2_2.Name = "Answer2_2";
@@ -342,7 +342,7 @@
             // 
             this.Answer2_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.Answer2_1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Answer2_1.Font = new System.Drawing.Font("Palatino Linotype", 12F);
+            this.Answer2_1.Font = new System.Drawing.Font("Palatino Linotype", 10F);
             this.Answer2_1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
             this.Answer2_1.Location = new System.Drawing.Point(134, 210);
             this.Answer2_1.Name = "Answer2_1";
@@ -357,7 +357,7 @@
             // 
             this.Answer1_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.Answer1_2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Answer1_2.Font = new System.Drawing.Font("Palatino Linotype", 12F);
+            this.Answer1_2.Font = new System.Drawing.Font("Palatino Linotype", 10F);
             this.Answer1_2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
             this.Answer1_2.Location = new System.Drawing.Point(344, 80);
             this.Answer1_2.Name = "Answer1_2";
@@ -372,7 +372,7 @@
             // 
             this.Answer1_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.Answer1_1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Answer1_1.Font = new System.Drawing.Font("Palatino Linotype", 12F);
+            this.Answer1_1.Font = new System.Drawing.Font("Palatino Linotype", 10F);
             this.Answer1_1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
             this.Answer1_1.Location = new System.Drawing.Point(134, 80);
             this.Answer1_1.Name = "Answer1_1";
@@ -387,7 +387,7 @@
             // 
             this.Answer10_4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.Answer10_4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Answer10_4.Font = new System.Drawing.Font("Palatino Linotype", 12F);
+            this.Answer10_4.Font = new System.Drawing.Font("Palatino Linotype", 10F);
             this.Answer10_4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
             this.Answer10_4.Location = new System.Drawing.Point(764, 1248);
             this.Answer10_4.Name = "Answer10_4";
@@ -402,7 +402,7 @@
             // 
             this.Answer9_4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.Answer9_4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Answer9_4.Font = new System.Drawing.Font("Palatino Linotype", 12F);
+            this.Answer9_4.Font = new System.Drawing.Font("Palatino Linotype", 10F);
             this.Answer9_4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
             this.Answer9_4.Location = new System.Drawing.Point(764, 1117);
             this.Answer9_4.Name = "Answer9_4";
@@ -417,7 +417,7 @@
             // 
             this.Answer8_4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.Answer8_4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Answer8_4.Font = new System.Drawing.Font("Palatino Linotype", 12F);
+            this.Answer8_4.Font = new System.Drawing.Font("Palatino Linotype", 10F);
             this.Answer8_4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
             this.Answer8_4.Location = new System.Drawing.Point(764, 987);
             this.Answer8_4.Name = "Answer8_4";
@@ -432,7 +432,7 @@
             // 
             this.Answer7_4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.Answer7_4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Answer7_4.Font = new System.Drawing.Font("Palatino Linotype", 12F);
+            this.Answer7_4.Font = new System.Drawing.Font("Palatino Linotype", 10F);
             this.Answer7_4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
             this.Answer7_4.Location = new System.Drawing.Point(764, 852);
             this.Answer7_4.Name = "Answer7_4";
@@ -447,7 +447,7 @@
             // 
             this.Answer6_4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.Answer6_4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Answer6_4.Font = new System.Drawing.Font("Palatino Linotype", 12F);
+            this.Answer6_4.Font = new System.Drawing.Font("Palatino Linotype", 10F);
             this.Answer6_4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
             this.Answer6_4.Location = new System.Drawing.Point(764, 720);
             this.Answer6_4.Name = "Answer6_4";
@@ -462,7 +462,7 @@
             // 
             this.Answer10_3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.Answer10_3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Answer10_3.Font = new System.Drawing.Font("Palatino Linotype", 12F);
+            this.Answer10_3.Font = new System.Drawing.Font("Palatino Linotype", 10F);
             this.Answer10_3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
             this.Answer10_3.Location = new System.Drawing.Point(554, 1248);
             this.Answer10_3.Name = "Answer10_3";
@@ -477,7 +477,7 @@
             // 
             this.Answer9_3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.Answer9_3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Answer9_3.Font = new System.Drawing.Font("Palatino Linotype", 12F);
+            this.Answer9_3.Font = new System.Drawing.Font("Palatino Linotype", 10F);
             this.Answer9_3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
             this.Answer9_3.Location = new System.Drawing.Point(554, 1117);
             this.Answer9_3.Name = "Answer9_3";
@@ -492,7 +492,7 @@
             // 
             this.Answer8_3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.Answer8_3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Answer8_3.Font = new System.Drawing.Font("Palatino Linotype", 12F);
+            this.Answer8_3.Font = new System.Drawing.Font("Palatino Linotype", 10F);
             this.Answer8_3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
             this.Answer8_3.Location = new System.Drawing.Point(554, 987);
             this.Answer8_3.Name = "Answer8_3";
@@ -507,7 +507,7 @@
             // 
             this.Answer7_3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.Answer7_3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Answer7_3.Font = new System.Drawing.Font("Palatino Linotype", 12F);
+            this.Answer7_3.Font = new System.Drawing.Font("Palatino Linotype", 10F);
             this.Answer7_3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
             this.Answer7_3.Location = new System.Drawing.Point(554, 852);
             this.Answer7_3.Name = "Answer7_3";
@@ -522,7 +522,7 @@
             // 
             this.Answer6_3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.Answer6_3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Answer6_3.Font = new System.Drawing.Font("Palatino Linotype", 12F);
+            this.Answer6_3.Font = new System.Drawing.Font("Palatino Linotype", 10F);
             this.Answer6_3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
             this.Answer6_3.Location = new System.Drawing.Point(554, 720);
             this.Answer6_3.Name = "Answer6_3";
@@ -537,7 +537,7 @@
             // 
             this.Answer10_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.Answer10_2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Answer10_2.Font = new System.Drawing.Font("Palatino Linotype", 12F);
+            this.Answer10_2.Font = new System.Drawing.Font("Palatino Linotype", 10F);
             this.Answer10_2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
             this.Answer10_2.Location = new System.Drawing.Point(344, 1248);
             this.Answer10_2.Name = "Answer10_2";
@@ -552,7 +552,7 @@
             // 
             this.Answer10_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.Answer10_1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Answer10_1.Font = new System.Drawing.Font("Palatino Linotype", 12F);
+            this.Answer10_1.Font = new System.Drawing.Font("Palatino Linotype", 10F);
             this.Answer10_1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
             this.Answer10_1.Location = new System.Drawing.Point(134, 1248);
             this.Answer10_1.Name = "Answer10_1";
@@ -567,7 +567,7 @@
             // 
             this.Answer9_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.Answer9_2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Answer9_2.Font = new System.Drawing.Font("Palatino Linotype", 12F);
+            this.Answer9_2.Font = new System.Drawing.Font("Palatino Linotype", 10F);
             this.Answer9_2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
             this.Answer9_2.Location = new System.Drawing.Point(344, 1117);
             this.Answer9_2.Name = "Answer9_2";
@@ -582,7 +582,7 @@
             // 
             this.Answer9_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.Answer9_1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Answer9_1.Font = new System.Drawing.Font("Palatino Linotype", 12F);
+            this.Answer9_1.Font = new System.Drawing.Font("Palatino Linotype", 10F);
             this.Answer9_1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
             this.Answer9_1.Location = new System.Drawing.Point(134, 1117);
             this.Answer9_1.Name = "Answer9_1";
@@ -597,7 +597,7 @@
             // 
             this.Answer8_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.Answer8_2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Answer8_2.Font = new System.Drawing.Font("Palatino Linotype", 12F);
+            this.Answer8_2.Font = new System.Drawing.Font("Palatino Linotype", 10F);
             this.Answer8_2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
             this.Answer8_2.Location = new System.Drawing.Point(344, 987);
             this.Answer8_2.Name = "Answer8_2";
@@ -612,7 +612,7 @@
             // 
             this.Answer8_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.Answer8_1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Answer8_1.Font = new System.Drawing.Font("Palatino Linotype", 12F);
+            this.Answer8_1.Font = new System.Drawing.Font("Palatino Linotype", 10F);
             this.Answer8_1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
             this.Answer8_1.Location = new System.Drawing.Point(134, 987);
             this.Answer8_1.Name = "Answer8_1";
@@ -627,7 +627,7 @@
             // 
             this.Answer7_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.Answer7_2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Answer7_2.Font = new System.Drawing.Font("Palatino Linotype", 12F);
+            this.Answer7_2.Font = new System.Drawing.Font("Palatino Linotype", 10F);
             this.Answer7_2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
             this.Answer7_2.Location = new System.Drawing.Point(344, 852);
             this.Answer7_2.Name = "Answer7_2";
@@ -642,7 +642,7 @@
             // 
             this.Answer7_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.Answer7_1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Answer7_1.Font = new System.Drawing.Font("Palatino Linotype", 12F);
+            this.Answer7_1.Font = new System.Drawing.Font("Palatino Linotype", 10F);
             this.Answer7_1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
             this.Answer7_1.Location = new System.Drawing.Point(134, 852);
             this.Answer7_1.Name = "Answer7_1";
@@ -657,7 +657,7 @@
             // 
             this.Answer6_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.Answer6_2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Answer6_2.Font = new System.Drawing.Font("Palatino Linotype", 12F);
+            this.Answer6_2.Font = new System.Drawing.Font("Palatino Linotype", 10F);
             this.Answer6_2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
             this.Answer6_2.Location = new System.Drawing.Point(344, 720);
             this.Answer6_2.Name = "Answer6_2";
@@ -672,7 +672,7 @@
             // 
             this.Answer6_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.Answer6_1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Answer6_1.Font = new System.Drawing.Font("Palatino Linotype", 12F);
+            this.Answer6_1.Font = new System.Drawing.Font("Palatino Linotype", 10F);
             this.Answer6_1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
             this.Answer6_1.Location = new System.Drawing.Point(134, 720);
             this.Answer6_1.Name = "Answer6_1";
