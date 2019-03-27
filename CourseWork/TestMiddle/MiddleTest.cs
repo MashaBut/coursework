@@ -147,8 +147,6 @@ namespace CourseWork.TestMiddle
             }
         }
 
-
-
         private void Answer1_1_Click_1(object sender, EventArgs e)
         {
             Answer1_1.BackColor = Color.Teal;
