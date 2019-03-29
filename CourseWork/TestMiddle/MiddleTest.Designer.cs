@@ -55,6 +55,23 @@
             this.Answer2_1 = new System.Windows.Forms.Button();
             this.Answer1_2 = new System.Windows.Forms.Button();
             this.Answer1_1 = new System.Windows.Forms.Button();
+            this.Conformity1_1 = new System.Windows.Forms.Button();
+            this.Conformity1_2 = new System.Windows.Forms.Button();
+            this.Conformity1_3 = new System.Windows.Forms.Button();
+            this.Conformity1_4 = new System.Windows.Forms.Button();
+            this.Juxtapositon1_1 = new System.Windows.Forms.Button();
+            this.Juxtapositon1_2 = new System.Windows.Forms.Button();
+            this.Juxtapositon1_3 = new System.Windows.Forms.Button();
+            this.Juxtapositon1_4 = new System.Windows.Forms.Button();
+            this.Juxtapositon2_4 = new System.Windows.Forms.Button();
+            this.Conformity2_4 = new System.Windows.Forms.Button();
+            this.Juxtapositon2_3 = new System.Windows.Forms.Button();
+            this.Conformity2_3 = new System.Windows.Forms.Button();
+            this.Juxtapositon2_2 = new System.Windows.Forms.Button();
+            this.Conformity2_2 = new System.Windows.Forms.Button();
+            this.Juxtapositon2_1 = new System.Windows.Forms.Button();
+            this.Conformity2_1 = new System.Windows.Forms.Button();
+            this.Test = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // close
@@ -443,13 +460,287 @@
             this.Answer1_1.UseVisualStyleBackColor = false;
             this.Answer1_1.Click += new System.EventHandler(this.Answer1_1_Click_1);
             // 
+            // Conformity1_1
+            // 
+            this.Conformity1_1.BackColor = System.Drawing.Color.SeaGreen;
+            this.Conformity1_1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Conformity1_1.Font = new System.Drawing.Font("Palatino Linotype", 9F);
+            this.Conformity1_1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
+            this.Conformity1_1.Location = new System.Drawing.Point(165, 692);
+            this.Conformity1_1.Name = "Conformity1_1";
+            this.Conformity1_1.Size = new System.Drawing.Size(442, 79);
+            this.Conformity1_1.TabIndex = 88;
+            this.Conformity1_1.Text = "Применить";
+            this.Conformity1_1.UseMnemonic = false;
+            this.Conformity1_1.UseVisualStyleBackColor = false;
+            this.Conformity1_1.Click += new System.EventHandler(this.Conformity1_1_Click);
+            // 
+            // Conformity1_2
+            // 
+            this.Conformity1_2.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.Conformity1_2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Conformity1_2.Font = new System.Drawing.Font("Palatino Linotype", 9F);
+            this.Conformity1_2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
+            this.Conformity1_2.Location = new System.Drawing.Point(165, 790);
+            this.Conformity1_2.Name = "Conformity1_2";
+            this.Conformity1_2.Size = new System.Drawing.Size(442, 79);
+            this.Conformity1_2.TabIndex = 89;
+            this.Conformity1_2.Text = "Применить";
+            this.Conformity1_2.UseMnemonic = false;
+            this.Conformity1_2.UseVisualStyleBackColor = false;
+            this.Conformity1_2.Click += new System.EventHandler(this.Conformity1_2_Click);
+            // 
+            // Conformity1_3
+            // 
+            this.Conformity1_3.BackColor = System.Drawing.Color.Teal;
+            this.Conformity1_3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Conformity1_3.Font = new System.Drawing.Font("Palatino Linotype", 9F);
+            this.Conformity1_3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
+            this.Conformity1_3.Location = new System.Drawing.Point(165, 889);
+            this.Conformity1_3.Name = "Conformity1_3";
+            this.Conformity1_3.Size = new System.Drawing.Size(442, 79);
+            this.Conformity1_3.TabIndex = 89;
+            this.Conformity1_3.Text = "Применить";
+            this.Conformity1_3.UseMnemonic = false;
+            this.Conformity1_3.UseVisualStyleBackColor = false;
+            this.Conformity1_3.Click += new System.EventHandler(this.Conformity1_3_Click);
+            // 
+            // Conformity1_4
+            // 
+            this.Conformity1_4.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.Conformity1_4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Conformity1_4.Font = new System.Drawing.Font("Palatino Linotype", 9F);
+            this.Conformity1_4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
+            this.Conformity1_4.Location = new System.Drawing.Point(165, 991);
+            this.Conformity1_4.Name = "Conformity1_4";
+            this.Conformity1_4.Size = new System.Drawing.Size(442, 79);
+            this.Conformity1_4.TabIndex = 89;
+            this.Conformity1_4.Text = "Применить";
+            this.Conformity1_4.UseMnemonic = false;
+            this.Conformity1_4.UseVisualStyleBackColor = false;
+            this.Conformity1_4.Click += new System.EventHandler(this.Conformity1_4_Click);
+            // 
+            // Juxtapositon1_1
+            // 
+            this.Juxtapositon1_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.Juxtapositon1_1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Juxtapositon1_1.Font = new System.Drawing.Font("Palatino Linotype", 9F);
+            this.Juxtapositon1_1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
+            this.Juxtapositon1_1.Location = new System.Drawing.Point(639, 692);
+            this.Juxtapositon1_1.Name = "Juxtapositon1_1";
+            this.Juxtapositon1_1.Size = new System.Drawing.Size(289, 79);
+            this.Juxtapositon1_1.TabIndex = 88;
+            this.Juxtapositon1_1.Text = "Применить";
+            this.Juxtapositon1_1.UseMnemonic = false;
+            this.Juxtapositon1_1.UseVisualStyleBackColor = false;
+            this.Juxtapositon1_1.Click += new System.EventHandler(this.Juxtapositon1_1_Click);
+            // 
+            // Juxtapositon1_2
+            // 
+            this.Juxtapositon1_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.Juxtapositon1_2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Juxtapositon1_2.Font = new System.Drawing.Font("Palatino Linotype", 9F);
+            this.Juxtapositon1_2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
+            this.Juxtapositon1_2.Location = new System.Drawing.Point(639, 790);
+            this.Juxtapositon1_2.Name = "Juxtapositon1_2";
+            this.Juxtapositon1_2.Size = new System.Drawing.Size(289, 79);
+            this.Juxtapositon1_2.TabIndex = 89;
+            this.Juxtapositon1_2.Text = "Применить";
+            this.Juxtapositon1_2.UseMnemonic = false;
+            this.Juxtapositon1_2.UseVisualStyleBackColor = false;
+            this.Juxtapositon1_2.Click += new System.EventHandler(this.Juxtapositon1_2_Click);
+            // 
+            // Juxtapositon1_3
+            // 
+            this.Juxtapositon1_3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.Juxtapositon1_3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Juxtapositon1_3.Font = new System.Drawing.Font("Palatino Linotype", 9F);
+            this.Juxtapositon1_3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
+            this.Juxtapositon1_3.Location = new System.Drawing.Point(639, 889);
+            this.Juxtapositon1_3.Name = "Juxtapositon1_3";
+            this.Juxtapositon1_3.Size = new System.Drawing.Size(289, 79);
+            this.Juxtapositon1_3.TabIndex = 89;
+            this.Juxtapositon1_3.Text = "Применить";
+            this.Juxtapositon1_3.UseMnemonic = false;
+            this.Juxtapositon1_3.UseVisualStyleBackColor = false;
+            this.Juxtapositon1_3.Click += new System.EventHandler(this.Juxtapositon1_3_Click);
+            // 
+            // Juxtapositon1_4
+            // 
+            this.Juxtapositon1_4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.Juxtapositon1_4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Juxtapositon1_4.Font = new System.Drawing.Font("Palatino Linotype", 9F);
+            this.Juxtapositon1_4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
+            this.Juxtapositon1_4.Location = new System.Drawing.Point(639, 991);
+            this.Juxtapositon1_4.Name = "Juxtapositon1_4";
+            this.Juxtapositon1_4.Size = new System.Drawing.Size(289, 79);
+            this.Juxtapositon1_4.TabIndex = 89;
+            this.Juxtapositon1_4.Text = "Применить";
+            this.Juxtapositon1_4.UseMnemonic = false;
+            this.Juxtapositon1_4.UseVisualStyleBackColor = false;
+            this.Juxtapositon1_4.Click += new System.EventHandler(this.Juxtapositon1_4_Click);
+            // 
+            // Juxtapositon2_4
+            // 
+            this.Juxtapositon2_4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.Juxtapositon2_4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Juxtapositon2_4.Font = new System.Drawing.Font("Palatino Linotype", 9F);
+            this.Juxtapositon2_4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
+            this.Juxtapositon2_4.Location = new System.Drawing.Point(639, 1440);
+            this.Juxtapositon2_4.Name = "Juxtapositon2_4";
+            this.Juxtapositon2_4.Size = new System.Drawing.Size(289, 79);
+            this.Juxtapositon2_4.TabIndex = 93;
+            this.Juxtapositon2_4.Text = "Применить";
+            this.Juxtapositon2_4.UseMnemonic = false;
+            this.Juxtapositon2_4.UseVisualStyleBackColor = false;
+            this.Juxtapositon2_4.Click += new System.EventHandler(this.Juxtapositon2_4_Click);
+            // 
+            // Conformity2_4
+            // 
+            this.Conformity2_4.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.Conformity2_4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Conformity2_4.Font = new System.Drawing.Font("Palatino Linotype", 9F);
+            this.Conformity2_4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
+            this.Conformity2_4.Location = new System.Drawing.Point(165, 1440);
+            this.Conformity2_4.Name = "Conformity2_4";
+            this.Conformity2_4.Size = new System.Drawing.Size(442, 79);
+            this.Conformity2_4.TabIndex = 94;
+            this.Conformity2_4.Text = "Применить";
+            this.Conformity2_4.UseMnemonic = false;
+            this.Conformity2_4.UseVisualStyleBackColor = false;
+            this.Conformity2_4.Click += new System.EventHandler(this.Conformity2_4_Click);
+            // 
+            // Juxtapositon2_3
+            // 
+            this.Juxtapositon2_3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.Juxtapositon2_3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Juxtapositon2_3.Font = new System.Drawing.Font("Palatino Linotype", 9F);
+            this.Juxtapositon2_3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
+            this.Juxtapositon2_3.Location = new System.Drawing.Point(639, 1338);
+            this.Juxtapositon2_3.Name = "Juxtapositon2_3";
+            this.Juxtapositon2_3.Size = new System.Drawing.Size(289, 79);
+            this.Juxtapositon2_3.TabIndex = 95;
+            this.Juxtapositon2_3.Text = "Применить";
+            this.Juxtapositon2_3.UseMnemonic = false;
+            this.Juxtapositon2_3.UseVisualStyleBackColor = false;
+            this.Juxtapositon2_3.Click += new System.EventHandler(this.Juxtapositon2_3_Click);
+            // 
+            // Conformity2_3
+            // 
+            this.Conformity2_3.BackColor = System.Drawing.Color.Teal;
+            this.Conformity2_3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Conformity2_3.Font = new System.Drawing.Font("Palatino Linotype", 9F);
+            this.Conformity2_3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
+            this.Conformity2_3.Location = new System.Drawing.Point(165, 1338);
+            this.Conformity2_3.Name = "Conformity2_3";
+            this.Conformity2_3.Size = new System.Drawing.Size(442, 79);
+            this.Conformity2_3.TabIndex = 96;
+            this.Conformity2_3.Text = "Применить";
+            this.Conformity2_3.UseMnemonic = false;
+            this.Conformity2_3.UseVisualStyleBackColor = false;
+            this.Conformity2_3.Click += new System.EventHandler(this.Conformity2_3_Click);
+            // 
+            // Juxtapositon2_2
+            // 
+            this.Juxtapositon2_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.Juxtapositon2_2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Juxtapositon2_2.Font = new System.Drawing.Font("Palatino Linotype", 9F);
+            this.Juxtapositon2_2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
+            this.Juxtapositon2_2.Location = new System.Drawing.Point(639, 1239);
+            this.Juxtapositon2_2.Name = "Juxtapositon2_2";
+            this.Juxtapositon2_2.Size = new System.Drawing.Size(289, 79);
+            this.Juxtapositon2_2.TabIndex = 97;
+            this.Juxtapositon2_2.Text = "Применить";
+            this.Juxtapositon2_2.UseMnemonic = false;
+            this.Juxtapositon2_2.UseVisualStyleBackColor = false;
+            this.Juxtapositon2_2.Click += new System.EventHandler(this.Juxtapositon2_2_Click);
+            // 
+            // Conformity2_2
+            // 
+            this.Conformity2_2.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.Conformity2_2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Conformity2_2.Font = new System.Drawing.Font("Palatino Linotype", 9F);
+            this.Conformity2_2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
+            this.Conformity2_2.Location = new System.Drawing.Point(165, 1239);
+            this.Conformity2_2.Name = "Conformity2_2";
+            this.Conformity2_2.Size = new System.Drawing.Size(442, 79);
+            this.Conformity2_2.TabIndex = 98;
+            this.Conformity2_2.Text = "Применить";
+            this.Conformity2_2.UseMnemonic = false;
+            this.Conformity2_2.UseVisualStyleBackColor = false;
+            this.Conformity2_2.Click += new System.EventHandler(this.Conformity2_2_Click);
+            // 
+            // Juxtapositon2_1
+            // 
+            this.Juxtapositon2_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.Juxtapositon2_1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Juxtapositon2_1.Font = new System.Drawing.Font("Palatino Linotype", 9F);
+            this.Juxtapositon2_1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
+            this.Juxtapositon2_1.Location = new System.Drawing.Point(639, 1141);
+            this.Juxtapositon2_1.Name = "Juxtapositon2_1";
+            this.Juxtapositon2_1.Size = new System.Drawing.Size(289, 79);
+            this.Juxtapositon2_1.TabIndex = 91;
+            this.Juxtapositon2_1.Text = "Применить";
+            this.Juxtapositon2_1.UseMnemonic = false;
+            this.Juxtapositon2_1.UseVisualStyleBackColor = false;
+            this.Juxtapositon2_1.Click += new System.EventHandler(this.Juxtapositon2_1_Click);
+            // 
+            // Conformity2_1
+            // 
+            this.Conformity2_1.BackColor = System.Drawing.Color.SeaGreen;
+            this.Conformity2_1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Conformity2_1.Font = new System.Drawing.Font("Palatino Linotype", 9F);
+            this.Conformity2_1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(236)))));
+            this.Conformity2_1.Location = new System.Drawing.Point(165, 1141);
+            this.Conformity2_1.Name = "Conformity2_1";
+            this.Conformity2_1.Size = new System.Drawing.Size(442, 79);
+            this.Conformity2_1.TabIndex = 92;
+            this.Conformity2_1.Text = "Применить";
+            this.Conformity2_1.UseMnemonic = false;
+            this.Conformity2_1.UseVisualStyleBackColor = false;
+            this.Conformity2_1.Click += new System.EventHandler(this.Conformity2_1_Click);
+            // 
+            // Test
+            // 
+            this.Test.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.Test.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Test.FlatAppearance.BorderSize = 0;
+            this.Test.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Test.Font = new System.Drawing.Font("Monotype Corsiva", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Test.ForeColor = System.Drawing.Color.White;
+            this.Test.Location = new System.Drawing.Point(351, 1572);
+            this.Test.Margin = new System.Windows.Forms.Padding(3, 50, 3, 15);
+            this.Test.Name = "Test";
+            this.Test.Size = new System.Drawing.Size(413, 51);
+            this.Test.TabIndex = 103;
+            this.Test.Text = "Завершить тестирование";
+            this.Test.UseVisualStyleBackColor = false;
+            this.Test.Click += new System.EventHandler(this.Test_Click);
+            // 
             // MiddleTest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            this.ClientSize = new System.Drawing.Size(1093, 781);
+            this.ClientSize = new System.Drawing.Size(1135, 781);
+            this.Controls.Add(this.Test);
+            this.Controls.Add(this.Juxtapositon2_4);
+            this.Controls.Add(this.Conformity2_4);
+            this.Controls.Add(this.Juxtapositon2_3);
+            this.Controls.Add(this.Conformity2_3);
+            this.Controls.Add(this.Juxtapositon2_2);
+            this.Controls.Add(this.Conformity2_2);
+            this.Controls.Add(this.Juxtapositon2_1);
+            this.Controls.Add(this.Conformity2_1);
+            this.Controls.Add(this.Juxtapositon1_4);
+            this.Controls.Add(this.Conformity1_4);
+            this.Controls.Add(this.Juxtapositon1_3);
+            this.Controls.Add(this.Conformity1_3);
+            this.Controls.Add(this.Juxtapositon1_2);
+            this.Controls.Add(this.Conformity1_2);
+            this.Controls.Add(this.Juxtapositon1_1);
+            this.Controls.Add(this.Conformity1_1);
             this.Controls.Add(this.Q5);
             this.Controls.Add(this.Q4);
             this.Controls.Add(this.Q3);
@@ -515,5 +806,22 @@
         private System.Windows.Forms.Button Answer2_1;
         private System.Windows.Forms.Button Answer1_2;
         private System.Windows.Forms.Button Answer1_1;
+        private System.Windows.Forms.Button Conformity1_1;
+        private System.Windows.Forms.Button Conformity1_2;
+        private System.Windows.Forms.Button Conformity1_3;
+        private System.Windows.Forms.Button Conformity1_4;
+        private System.Windows.Forms.Button Juxtapositon1_1;
+        private System.Windows.Forms.Button Juxtapositon1_2;
+        private System.Windows.Forms.Button Juxtapositon1_3;
+        private System.Windows.Forms.Button Juxtapositon1_4;
+        private System.Windows.Forms.Button Juxtapositon2_4;
+        private System.Windows.Forms.Button Conformity2_4;
+        private System.Windows.Forms.Button Juxtapositon2_3;
+        private System.Windows.Forms.Button Conformity2_3;
+        private System.Windows.Forms.Button Juxtapositon2_2;
+        private System.Windows.Forms.Button Conformity2_2;
+        private System.Windows.Forms.Button Juxtapositon2_1;
+        private System.Windows.Forms.Button Conformity2_1;
+        private System.Windows.Forms.Button Test;
     }
 }

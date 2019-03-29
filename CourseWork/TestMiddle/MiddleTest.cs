@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -16,11 +11,12 @@ namespace CourseWork.TestMiddle
         public MiddleTest()
         {
             InitializeComponent();
-            //Thread myThread = new Thread(new ThreadStart());
-            //myThread.Start();
+            Thread myThread = new Thread(new ThreadStart(Built2));
+            myThread.Start();
             Built1();
         }
-
+        Color[] color = { Color.SeaGreen, Color.MediumSeaGreen, Color.Teal, Color.LightSeaGreen };
+        Color c1 = Color.SeaGreen, c2 = Color.SeaGreen;
         private void close_Click(object sender, EventArgs e)
         {
             Close();
@@ -30,7 +26,8 @@ namespace CourseWork.TestMiddle
         HashSet<int> OrderTwo = new HashSet<int>();
         FillingFormsMT filling = new FillingFormsMT();
         ResultTesting ResultTesting = new ResultTesting();
-        List<string> AnswersClient = new List<string>();
+        List<string> AnswersClient= new List<string>();
+
         private void Built1()
         {
             Q1.Text = filling.AddQ(0);
@@ -139,6 +136,57 @@ namespace CourseWork.TestMiddle
             }
             Order.Clear();
         }
+        private void Built2()
+        {
+
+            Conformity1_1.Text = filling.AddQ(5);
+            Conformity1_2.Text = filling.AddQ(6);
+            Conformity1_3.Text = filling.AddQ(7);
+            Conformity1_4.Text = filling.AddQ(8);
+            BuildOrderTwo(5, 9);
+            foreach (int i in OrderTwo)
+            {
+                switch (i)
+                {
+                    case 5:
+                        Juxtapositon1_1.Text = filling.GetTrueAns(i);
+                        break;
+                    case 6:
+                        Juxtapositon1_2.Text = filling.GetTrueAns(i);
+                        break;
+                    case 7:
+                        Juxtapositon1_3.Text = filling.GetTrueAns(i);
+                        break;
+                    case 8:
+                        Juxtapositon1_4.Text = filling.GetTrueAns(i);
+                        break;
+                }
+            }
+            Conformity2_1.Text = filling.AddQ(9);
+            Conformity2_2.Text = filling.AddQ(10);
+            Conformity2_3.Text = filling.AddQ(11);
+            Conformity2_4.Text = filling.AddQ(12);
+            OrderTwo.Clear();
+            BuildOrderTwo(9, 13);
+            foreach (int i in OrderTwo)
+            {
+                switch (i)
+                {
+                    case 9:
+                        Juxtapositon2_4.Text = filling.GetTrueAns(i);
+                        break;
+                    case 10:
+                        Juxtapositon2_1.Text = filling.GetTrueAns(i);
+                        break;
+                    case 11:
+                        Juxtapositon2_3.Text = filling.GetTrueAns(i);
+                        break;
+                    case 12:
+                        Juxtapositon2_2.Text = filling.GetTrueAns(i);
+                        break;
+                }
+            }
+        }
         void BuildOrder(int a, int b)
         {
             while (Order.Count < 4)
@@ -146,7 +194,14 @@ namespace CourseWork.TestMiddle
                 Order.Add(Random.Next(a, b));
             }
         }
-
+        void BuildOrderTwo(int a, int b)
+        {
+            while (OrderTwo.Count < 4)
+            {
+                OrderTwo.Add(Random.Next(a, b));
+            }
+        }
+        #region Button
         private void Answer1_1_Click_1(object sender, EventArgs e)
         {
             Answer1_1.BackColor = Color.Teal;
@@ -305,6 +360,242 @@ namespace CourseWork.TestMiddle
             Answer5_2.BackColor = Color.FromArgb(0, 50, 50);
             Answer5_3.BackColor = Color.FromArgb(0, 50, 50);
             Answer5_4.BackColor = Color.Teal;
+        }
+
+        private void Juxtapositon1_1_Click(object sender, EventArgs e)
+        {
+            Juxtapositon1_1.BackColor = c1;
+        }
+
+        private void Juxtapositon1_2_Click(object sender, EventArgs e)
+        {
+            Juxtapositon1_2.BackColor = c1;
+        }
+
+        private void Juxtapositon1_3_Click(object sender, EventArgs e)
+        {
+            Juxtapositon1_3.BackColor = c1;
+        }
+
+        private void Juxtapositon1_4_Click(object sender, EventArgs e)
+        {
+            Juxtapositon1_4.BackColor = c1;
+        }
+
+        private void Juxtapositon2_1_Click(object sender, EventArgs e)
+        {
+            Juxtapositon2_1.BackColor = c2;
+        }
+
+        private void Juxtapositon2_2_Click(object sender, EventArgs e)
+        {
+            Juxtapositon2_2.BackColor = c2;
+        }
+
+        private void Juxtapositon2_3_Click(object sender, EventArgs e)
+        {
+            Juxtapositon2_3.BackColor = c2;
+        }
+
+        private void Juxtapositon2_4_Click(object sender, EventArgs e)
+        {
+            Juxtapositon2_4.BackColor = c2;
+        }
+
+        private void Conformity1_1_Click(object sender, EventArgs e)
+        {
+            c1 = Color.SeaGreen;
+        }
+
+        private void Conformity1_2_Click(object sender, EventArgs e)
+        {
+            c1 = Color.MediumSeaGreen;
+        }
+
+        private void Conformity1_3_Click(object sender, EventArgs e)
+        {
+            c1 = Color.Teal;
+        }
+
+        private void Conformity1_4_Click(object sender, EventArgs e)
+        {
+            c1 = Color.LightSeaGreen;
+        }
+
+        private void Conformity2_1_Click(object sender, EventArgs e)
+        {
+            c2 = Color.SeaGreen;
+        }
+
+        private void Conformity2_2_Click(object sender, EventArgs e)
+        {
+            c2 = Color.MediumSeaGreen;
+        }
+
+        private void Conformity2_3_Click(object sender, EventArgs e)
+        {
+            c2 = Color.Teal;
+        }
+
+        private void Conformity2_4_Click(object sender, EventArgs e)
+        {
+            c2 = Color.LightSeaGreen;
+        }
+        #endregion
+        private void PutAnsLight()
+        {
+            if (Answer1_1.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer1_1.Text); }
+            else if (Answer1_2.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer1_2.Text); }
+            else if (Answer1_3.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer1_3.Text); }
+            else if (Answer1_4.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer1_4.Text); }
+
+            if (Answer2_1.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer2_1.Text); }
+            else if (Answer2_2.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer2_2.Text); }
+            else if (Answer2_3.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer2_3.Text); }
+            else if (Answer2_4.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer2_4.Text); }
+
+            if (Answer3_1.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer3_1.Text); }
+            else if (Answer3_2.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer3_2.Text); }
+            else if (Answer3_3.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer3_3.Text); }
+            else if (Answer3_4.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer3_4.Text); }
+
+            if (Answer4_1.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer4_1.Text); }
+            else if (Answer4_2.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer4_2.Text); }
+            else if (Answer4_3.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer4_3.Text); }
+            else if (Answer4_4.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer4_4.Text); }
+
+            if (Answer5_1.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer5_1.Text); }
+            else if (Answer5_2.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer5_2.Text); }
+            else if (Answer5_3.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer5_3.Text); }
+            else if (Answer5_4.BackColor == Color.Teal)
+            { AnswersClient.Add(Answer5_4.Text); }
+        }
+        private void PutAnsMiddle()
+        {
+            if(Juxtapositon1_1.BackColor== Color.SeaGreen)
+            { AnswersClient.Add(Juxtapositon1_1.Text); }
+            else if (Juxtapositon1_2.BackColor == Color.SeaGreen)
+            { AnswersClient.Add(Juxtapositon1_2.Text); }
+            else if (Juxtapositon1_3.BackColor == Color.SeaGreen)
+            { AnswersClient.Add(Juxtapositon1_3.Text); }
+            else if (Juxtapositon1_4.BackColor == Color.SeaGreen)
+            { AnswersClient.Add(Juxtapositon1_4.Text); }
+
+            if (Juxtapositon1_1.BackColor == Color.MediumSeaGreen)
+            { AnswersClient.Add(Juxtapositon1_1.Text); }
+            else if (Juxtapositon1_2.BackColor == Color.MediumSeaGreen)
+            { AnswersClient.Add(Juxtapositon1_2.Text); }
+            else if (Juxtapositon1_3.BackColor == Color.MediumSeaGreen)
+            { AnswersClient.Add(Juxtapositon1_3.Text); }
+            else if (Juxtapositon1_4.BackColor == Color.MediumSeaGreen)
+            { AnswersClient.Add(Juxtapositon1_4.Text); }
+
+            if (Juxtapositon1_1.BackColor == Color.Teal)
+            { AnswersClient.Add(Juxtapositon1_1.Text); }
+            else if (Juxtapositon1_2.BackColor == Color.Teal)
+            { AnswersClient.Add(Juxtapositon1_2.Text); }
+            else if (Juxtapositon1_3.BackColor == Color.Teal)
+            { AnswersClient.Add(Juxtapositon1_3.Text); }
+            else if (Juxtapositon1_4.BackColor == Color.Teal)
+            { AnswersClient.Add(Juxtapositon1_4.Text); }
+
+            if (Juxtapositon1_1.BackColor == Color.LightSeaGreen)
+            { AnswersClient.Add(Juxtapositon1_1.Text); }
+            else if (Juxtapositon1_2.BackColor == Color.LightSeaGreen)
+            { AnswersClient.Add(Juxtapositon1_2.Text); }
+            else if (Juxtapositon1_3.BackColor == Color.LightSeaGreen)
+            { AnswersClient.Add(Juxtapositon1_3.Text); }
+            else if (Juxtapositon1_4.BackColor == Color.LightSeaGreen)
+            { AnswersClient.Add(Juxtapositon1_4.Text); }
+
+
+            if (Juxtapositon2_1.BackColor == Color.SeaGreen)
+            { AnswersClient.Add(Juxtapositon2_1.Text); }
+            else if (Juxtapositon2_2.BackColor == Color.SeaGreen)
+            { AnswersClient.Add(Juxtapositon2_2.Text); }
+            else if (Juxtapositon2_3.BackColor == Color.SeaGreen)
+            { AnswersClient.Add(Juxtapositon2_3.Text); }
+            else if (Juxtapositon2_4.BackColor == Color.SeaGreen)
+            { AnswersClient.Add(Juxtapositon2_4.Text); }
+
+            if (Juxtapositon2_1.BackColor == Color.MediumSeaGreen)
+            { AnswersClient.Add(Juxtapositon2_1.Text); }
+            else if (Juxtapositon2_2.BackColor == Color.MediumSeaGreen)
+            { AnswersClient.Add(Juxtapositon2_2.Text); }
+            else if (Juxtapositon2_3.BackColor == Color.MediumSeaGreen)
+            { AnswersClient.Add(Juxtapositon2_3.Text); }
+            else if (Juxtapositon2_4.BackColor == Color.MediumSeaGreen)
+            { AnswersClient.Add(Juxtapositon2_4.Text); }
+
+            if (Juxtapositon2_1.BackColor == Color.Teal)
+            { AnswersClient.Add(Juxtapositon2_1.Text); }
+            else if (Juxtapositon2_2.BackColor == Color.Teal)
+            { AnswersClient.Add(Juxtapositon2_2.Text); }
+            else if (Juxtapositon2_3.BackColor == Color.Teal)
+            { AnswersClient.Add(Juxtapositon2_3.Text); }
+            else if (Juxtapositon2_4.BackColor == Color.Teal)
+            { AnswersClient.Add(Juxtapositon2_4.Text); }
+
+            if (Juxtapositon2_1.BackColor == Color.LightSeaGreen)
+            { AnswersClient.Add(Juxtapositon2_1.Text); }
+            else if (Juxtapositon2_2.BackColor == Color.LightSeaGreen)
+            { AnswersClient.Add(Juxtapositon2_2.Text); }
+            else if (Juxtapositon2_3.BackColor == Color.LightSeaGreen)
+            { AnswersClient.Add(Juxtapositon2_3.Text); }
+            else if (Juxtapositon2_4.BackColor == Color.LightSeaGreen)
+            { AnswersClient.Add(Juxtapositon2_4.Text); }
+        }
+        private void Test_Click(object sender, EventArgs e)
+        {
+            PutAnsLight();
+            PutAnsMiddle();
+            if(AnswersClient.Count==13)
+            {
+                int result = 0;
+                for (int i = 0; i < 13; i++)
+                {
+                    if (AnswersClient[i] == filling.GetTrueAns(i))
+                    { result++; }
+                }
+                MessageBox.Show(
+                          $"Правильных ответов: {result}",
+                          "Результаты",
+                          MessageBoxButtons.OK
+                   );
+                ResultTesting.PushSQL(result, AnswersClient.Count, "Средний");
+                Close();
+            }
+            else
+            {
+                MessageBox.Show(
+                          "При прохождении теста была допущена ошибка!\n" +
+                          "Проверте Ваши ответы",
+                          "                                     Ошибка",
+                          MessageBoxButtons.OK,
+                          MessageBoxIcon.Information,
+                          MessageBoxDefaultButton.Button1
+                   );
+            }
+            AnswersClient.Clear();
         }
     }
 }
