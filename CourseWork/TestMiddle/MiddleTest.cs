@@ -21,7 +21,7 @@ namespace CourseWork.TestMiddle
         {
             Close();
         }
-        Random Random = new Random();
+        static Random Random = new Random();
         HashSet<int> Order = new HashSet<int>();
         HashSet<int> OrderTwo = new HashSet<int>();
         FillingFormsMT filling = new FillingFormsMT();
@@ -32,108 +32,68 @@ namespace CourseWork.TestMiddle
         {
             Q1.Text = filling.AddQ(0);
             BuildOrder(0, 4);
+            int[] mass = new int[4];
+            int a = 0;
             foreach (int i in Order)
             {
-                switch (i)
-                {
-                    case 1:
-                        Answer1_1.Text = filling.AddErrorAns(i);
-                        break;
-                    case 2:
-                        Answer1_2.Text = filling.AddErrorAns(i);
-                        break;
-                    case 3:
-                        Answer1_3.Text = filling.AddErrorAns(i);
-                        break;
-                    case 0:
-                        Answer1_4.Text = filling.AddErrorAns(i);
-                        break;
-                }
+                mass[a++] = i;
             }
+            Answer1_1.Text = filling.AddErrorAns(mass[0]);
+            Answer1_2.Text = filling.AddErrorAns(mass[1]);
+            Answer1_3.Text = filling.AddErrorAns(mass[2]);
+            Answer1_4.Text = filling.AddErrorAns(mass[3]);
+
             Q2.Text = filling.AddQ(1);
             Order.Clear();
             BuildOrder(4, 8);
+            a = 0;
             foreach (int i in Order)
             {
-                switch (i)
-                {
-                    case 4:
-                        Answer2_1.Text = filling.AddErrorAns(i);
-                        break;
-                    case 5:
-                        Answer2_2.Text = filling.AddErrorAns(i);
-                        break;
-                    case 6:
-                        Answer2_3.Text = filling.AddErrorAns(i);
-                        break;
-                    case 7:
-                        Answer2_4.Text = filling.AddErrorAns(i);
-                        break;
-                }
+                mass[a++] = i;
             }
+            Answer2_1.Text = filling.AddErrorAns(mass[0]);
+            Answer2_2.Text = filling.AddErrorAns(mass[1]);
+            Answer2_3.Text = filling.AddErrorAns(mass[2]);
+            Answer2_4.Text = filling.AddErrorAns(mass[3]);
+
             Q3.Text = filling.AddQ(2);
             Order.Clear();
             BuildOrder(8, 12);
+            a = 0;
             foreach (int i in Order)
             {
-                switch (i)
-                {
-                    case 8:
-                        Answer3_1.Text = filling.AddErrorAns(i);
-                        break;
-                    case 9:
-                        Answer3_2.Text = filling.AddErrorAns(i);
-                        break;
-                    case 10:
-                        Answer3_3.Text = filling.AddErrorAns(i);
-                        break;
-                    case 11:
-                        Answer3_4.Text = filling.AddErrorAns(i);
-                        break;
-                }
+                mass[a++] = i;
             }
+            Answer3_1.Text = filling.AddErrorAns(mass[0]);
+            Answer3_2.Text = filling.AddErrorAns(mass[1]);
+            Answer3_3.Text = filling.AddErrorAns(mass[2]);
+            Answer3_4.Text = filling.AddErrorAns(mass[3]);
+ 
             Q4.Text = filling.AddQ(3);
             Order.Clear();
             BuildOrder(12, 16);
+            a = 0;
             foreach (int i in Order)
             {
-                switch (i)
-                {
-                    case 12:
-                        Answer4_1.Text = filling.AddErrorAns(i);
-                        break;
-                    case 13:
-                        Answer4_2.Text = filling.AddErrorAns(i);
-                        break;
-                    case 14:
-                        Answer4_3.Text = filling.AddErrorAns(i);
-                        break;
-                    case 15:
-                        Answer4_4.Text = filling.AddErrorAns(i);
-                        break;
-                }
+                mass[a++] = i;
             }
+            Answer4_1.Text = filling.AddErrorAns(mass[0]);
+            Answer4_2.Text = filling.AddErrorAns(mass[1]);
+            Answer4_3.Text = filling.AddErrorAns(mass[2]);
+            Answer4_4.Text = filling.AddErrorAns(mass[3]);
+
             Q5.Text = filling.AddQ(4);
             Order.Clear();
             BuildOrder(16, 20);
+            a = 0;
             foreach (int i in Order)
             {
-                switch (i)
-                {
-                    case 16:
-                        Answer5_1.Text = filling.AddErrorAns(i);
-                        break;
-                    case 17:
-                        Answer5_2.Text = filling.AddErrorAns(i);
-                        break;
-                    case 18:
-                        Answer5_3.Text = filling.AddErrorAns(i);
-                        break;
-                    case 19:
-                        Answer5_4.Text = filling.AddErrorAns(i);
-                        break;
-                }
+                mass[a++] = i;
             }
+            Answer5_1.Text = filling.AddErrorAns(mass[0]);
+            Answer5_2.Text = filling.AddErrorAns(mass[1]);
+            Answer5_3.Text = filling.AddErrorAns(mass[2]);
+            Answer5_4.Text = filling.AddErrorAns(mass[3]);
             Order.Clear();
         }
         private void Built2()
@@ -144,48 +104,33 @@ namespace CourseWork.TestMiddle
             Conformity1_3.Text = filling.AddQ(7);
             Conformity1_4.Text = filling.AddQ(8);
             BuildOrderTwo(5, 9);
+            int a = 0;
+            int[] mass = new int[4];
+
             foreach (int i in OrderTwo)
             {
-                switch (i)
-                {
-                    case 5:
-                        Juxtapositon1_1.Text = filling.GetTrueAns(i);
-                        break;
-                    case 6:
-                        Juxtapositon1_2.Text = filling.GetTrueAns(i);
-                        break;
-                    case 7:
-                        Juxtapositon1_3.Text = filling.GetTrueAns(i);
-                        break;
-                    case 8:
-                        Juxtapositon1_4.Text = filling.GetTrueAns(i);
-                        break;
-                }
+                mass[a++] = i;
             }
+            Juxtapositon1_1.Text = filling.GetTrueAns(mass[0]);
+            Juxtapositon1_2.Text = filling.GetTrueAns(mass[1]);
+            Juxtapositon1_3.Text = filling.GetTrueAns(mass[2]);
+            Juxtapositon1_4.Text = filling.GetTrueAns(mass[3]);
+
             Conformity2_1.Text = filling.AddQ(9);
             Conformity2_2.Text = filling.AddQ(10);
             Conformity2_3.Text = filling.AddQ(11);
             Conformity2_4.Text = filling.AddQ(12);
             OrderTwo.Clear();
             BuildOrderTwo(9, 13);
+            a = 0;
             foreach (int i in OrderTwo)
             {
-                switch (i)
-                {
-                    case 9:
-                        Juxtapositon2_4.Text = filling.GetTrueAns(i);
-                        break;
-                    case 10:
-                        Juxtapositon2_1.Text = filling.GetTrueAns(i);
-                        break;
-                    case 11:
-                        Juxtapositon2_3.Text = filling.GetTrueAns(i);
-                        break;
-                    case 12:
-                        Juxtapositon2_2.Text = filling.GetTrueAns(i);
-                        break;
-                }
+                mass[a++] = i;
             }
+            Juxtapositon2_4.Text = filling.GetTrueAns(mass[0]);
+            Juxtapositon2_1.Text = filling.GetTrueAns(mass[1]);
+            Juxtapositon2_3.Text = filling.GetTrueAns(mass[2]);
+            Juxtapositon2_2.Text = filling.GetTrueAns(mass[3]);
         }
         void BuildOrder(int a, int b)
         {
@@ -564,6 +509,125 @@ namespace CourseWork.TestMiddle
             else if (Juxtapositon2_4.BackColor == Color.LightSeaGreen)
             { AnswersClient.Add(Juxtapositon2_4.Text); }
         }
+        private void LookTrueAns()
+        {
+            if (Answer1_1.Text == filling.GetTrueAns(0))
+            { Answer1_1.BackColor = Color.Green; }
+            else if (Answer1_2.Text == filling.GetTrueAns(0))
+            { Answer1_2.BackColor = Color.Green; }
+            else if (Answer1_3.Text == filling.GetTrueAns(0))
+            { Answer1_3.BackColor = Color.Green; }
+            else if (Answer1_4.Text == filling.GetTrueAns(0))
+            { Answer1_4.BackColor = Color.Green; }
+
+            if (Answer2_1.Text == filling.GetTrueAns(1))
+            { Answer2_1.BackColor = Color.Green; }
+            else if (Answer2_2.Text == filling.GetTrueAns(1))
+            { Answer2_2.BackColor = Color.Green; }
+            else if (Answer2_3.Text == filling.GetTrueAns(1))
+            { Answer2_3.BackColor = Color.Green; }
+            else if (Answer2_4.Text == filling.GetTrueAns(1))
+            { Answer2_4.BackColor = Color.Green; }
+
+            if (Answer3_1.Text == filling.GetTrueAns(2))
+            { Answer3_1.BackColor = Color.Green; }
+            else if (Answer3_2.Text == filling.GetTrueAns(2))
+            { Answer3_2.BackColor = Color.Green; }
+            else if (Answer3_3.Text == filling.GetTrueAns(2))
+            { Answer3_3.BackColor = Color.Green; }
+            else if (Answer3_4.Text == filling.GetTrueAns(2))
+            { Answer3_4.BackColor = Color.Green; }
+
+            if (Answer4_1.Text == filling.GetTrueAns(3))
+            { Answer4_1.BackColor = Color.Green; }
+            else if (Answer4_2.Text == filling.GetTrueAns(3))
+            { Answer4_2.BackColor = Color.Green; }
+            else if (Answer4_3.Text == filling.GetTrueAns(3))
+            { Answer4_3.BackColor = Color.Green; }
+            else if (Answer4_4.Text == filling.GetTrueAns(3))
+            { Answer4_4.BackColor = Color.Green; }
+
+            if (Answer5_1.Text == filling.GetTrueAns(4))
+            { Answer5_1.BackColor = Color.Green; }
+            else if (Answer5_2.Text == filling.GetTrueAns(4))
+            { Answer5_2.BackColor = Color.Green; }
+            else if (Answer5_3.Text == filling.GetTrueAns(4))
+            { Answer5_3.BackColor = Color.Green; }
+            else if (Answer5_4.Text == filling.GetTrueAns(4))
+            { Answer5_4.BackColor = Color.Green; }
+
+            if (Juxtapositon1_1.Text == filling.GetTrueAns(5))
+            { Juxtapositon1_1.BackColor = Color.SeaGreen; }
+            else if(Juxtapositon1_2.Text== filling.GetTrueAns(5))
+            { Juxtapositon1_2.BackColor = Color.SeaGreen; }
+            else if (Juxtapositon1_3.Text == filling.GetTrueAns(5))
+            { Juxtapositon1_3.BackColor = Color.SeaGreen; }
+            else if (Juxtapositon1_4.Text == filling.GetTrueAns(5))
+            { Juxtapositon1_4.BackColor = Color.SeaGreen; }
+
+            if (Juxtapositon1_1.Text == filling.GetTrueAns(6))
+            { Juxtapositon1_1.BackColor = Color.MediumSeaGreen; }
+            else if (Juxtapositon1_2.Text == filling.GetTrueAns(6))
+            { Juxtapositon1_2.BackColor = Color.MediumSeaGreen; }
+            else if (Juxtapositon1_3.Text == filling.GetTrueAns(6))
+            { Juxtapositon1_3.BackColor = Color.MediumSeaGreen; }
+            else if (Juxtapositon1_4.Text == filling.GetTrueAns(6))
+            { Juxtapositon1_4.BackColor = Color.MediumSeaGreen; }
+
+            if (Juxtapositon1_1.Text == filling.GetTrueAns(7))
+            { Juxtapositon1_1.BackColor = Color.Teal; }
+            else if (Juxtapositon1_2.Text == filling.GetTrueAns(7))
+            { Juxtapositon1_2.BackColor = Color.Teal; }
+            else if (Juxtapositon1_3.Text == filling.GetTrueAns(7))
+            { Juxtapositon1_3.BackColor = Color.Teal; }
+            else if (Juxtapositon1_4.Text == filling.GetTrueAns(7))
+            { Juxtapositon1_4.BackColor = Color.Teal; }
+           
+            if(Juxtapositon1_1.Text == filling.GetTrueAns(8))
+            { Juxtapositon1_1.BackColor = Color.LightSeaGreen; }
+            else if (Juxtapositon1_2.Text == filling.GetTrueAns(8))
+            { Juxtapositon1_2.BackColor = Color.LightSeaGreen; }
+            else if (Juxtapositon1_3.Text == filling.GetTrueAns(8))
+            { Juxtapositon1_3.BackColor = Color.LightSeaGreen; }
+            else if (Juxtapositon1_4.Text == filling.GetTrueAns(8))
+            { Juxtapositon1_4.BackColor = Color.LightSeaGreen; }
+
+            if (Juxtapositon2_1.Text == filling.GetTrueAns(9))
+            { Juxtapositon2_1.BackColor = Color.SeaGreen; }
+            else if (Juxtapositon2_2.Text == filling.GetTrueAns(9))
+            { Juxtapositon2_2.BackColor = Color.SeaGreen; }
+            else if (Juxtapositon2_3.Text == filling.GetTrueAns(9))
+            { Juxtapositon2_3.BackColor = Color.SeaGreen; }
+            else if (Juxtapositon2_4.Text == filling.GetTrueAns(9))
+            { Juxtapositon2_4.BackColor = Color.SeaGreen; }
+
+            if (Juxtapositon2_1.Text == filling.GetTrueAns(10))
+            { Juxtapositon2_1.BackColor = Color.MediumSeaGreen; }
+            else if (Juxtapositon2_2.Text == filling.GetTrueAns(10))
+            { Juxtapositon2_2.BackColor = Color.MediumSeaGreen; }
+            else if (Juxtapositon2_3.Text == filling.GetTrueAns(10))
+            { Juxtapositon2_3.BackColor = Color.MediumSeaGreen; }
+            else if (Juxtapositon2_4.Text == filling.GetTrueAns(10))
+            { Juxtapositon2_4.BackColor = Color.MediumSeaGreen; }
+
+            if (Juxtapositon2_1.Text == filling.GetTrueAns(11))
+            { Juxtapositon2_1.BackColor = Color.Teal; }
+            else if (Juxtapositon2_2.Text == filling.GetTrueAns(11))
+            { Juxtapositon2_2.BackColor = Color.Teal; }
+            else if (Juxtapositon2_3.Text == filling.GetTrueAns(11))
+            { Juxtapositon2_3.BackColor = Color.Teal; }
+            else if (Juxtapositon2_4.Text == filling.GetTrueAns(11))
+            { Juxtapositon2_4.BackColor = Color.Teal; }
+
+            if (Juxtapositon2_1.Text == filling.GetTrueAns(12))
+            { Juxtapositon2_1.BackColor = Color.LightSeaGreen; }
+            else if (Juxtapositon2_2.Text == filling.GetTrueAns(12))
+            { Juxtapositon2_2.BackColor = Color.LightSeaGreen; }
+            else if (Juxtapositon2_3.Text == filling.GetTrueAns(12))
+            { Juxtapositon2_3.BackColor = Color.LightSeaGreen; }
+            else if (Juxtapositon2_4.Text == filling.GetTrueAns(12))
+            { Juxtapositon2_4.BackColor = Color.LightSeaGreen; }
+        }
         private void Test_Click(object sender, EventArgs e)
         {
             PutAnsLight();
@@ -581,8 +645,8 @@ namespace CourseWork.TestMiddle
                           "Результаты",
                           MessageBoxButtons.OK
                    );
+                LookTrueAns();
                 ResultTesting.PushSQL(result, AnswersClient.Count, "Средний");
-                Close();
             }
             else
             {
