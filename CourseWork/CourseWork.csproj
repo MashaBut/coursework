@@ -99,6 +99,14 @@
     <Compile Include="Settings.Designer.cs">
       <DependentUpon>Settings.cs</DependentUpon>
     </Compile>
+    <Compile Include="TestHard\FillingFormsHT.cs" />
+    <Compile Include="TestHard\FillingInfoForHardTest.cs" />
+    <Compile Include="TestHard\HardTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestHard\HardTest.Designer.cs">
+      <DependentUpon>HardTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="Testing.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -160,6 +168,9 @@
     </Compile>
     <EmbeddedResource Include="Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestHard\HardTest.resx">
+      <DependentUpon>HardTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Testing.resx">
       <DependentUpon>Testing.cs</DependentUpon>

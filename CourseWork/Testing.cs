@@ -51,7 +51,8 @@ namespace CourseWork
                 }
                 else if(Convert.ToString(level.SelectedItem) == "Сложный")
                 {
-
+                    TestHard.HardTest hardTest = new TestHard.HardTest();
+                    hardTest.Show();
                 }
             }
         }
