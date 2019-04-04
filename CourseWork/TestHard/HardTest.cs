@@ -403,9 +403,99 @@ namespace CourseWork.TestHard
             else if (Juxtapositon30.Text == formsHT.GetTrueAns(poz))
             { Juxtapositon30.BackColor = c; }
         }
+        private void ClickClient(Color c)
+        {
+            if(Juxtapositon1.BackColor==c)
+            { AnswersClient.Add(Juxtapositon1.Text); }
+            else if (Juxtapositon2.BackColor == c)
+            { AnswersClient.Add(Juxtapositon2.Text); }
+            else if (Juxtapositon3.BackColor == c)
+            { AnswersClient.Add(Juxtapositon3.Text); }
+            else if (Juxtapositon4.BackColor == c)
+            { AnswersClient.Add(Juxtapositon4.Text); }
+            else if (Juxtapositon5.BackColor == c)
+            { AnswersClient.Add(Juxtapositon5.Text); }
+            else if (Juxtapositon6.BackColor == c)
+            { AnswersClient.Add(Juxtapositon6.Text); }
+            else if (Juxtapositon7.BackColor == c)
+            { AnswersClient.Add(Juxtapositon7.Text); }
+            else if (Juxtapositon8.BackColor == c)
+            { AnswersClient.Add(Juxtapositon8.Text); }
+            else if (Juxtapositon9.BackColor == c)
+            { AnswersClient.Add(Juxtapositon9.Text); }
+            else if (Juxtapositon10.BackColor == c)
+            { AnswersClient.Add(Juxtapositon10.Text); }
+            else if (Juxtapositon11.BackColor == c)
+            { AnswersClient.Add(Juxtapositon11.Text); }
+            else if (Juxtapositon12.BackColor == c)
+            { AnswersClient.Add(Juxtapositon12.Text); }
+            else if (Juxtapositon13.BackColor == c)
+            { AnswersClient.Add(Juxtapositon13.Text); }
+            else if (Juxtapositon14.BackColor == c)
+            { AnswersClient.Add(Juxtapositon14.Text); }
+            else if (Juxtapositon15.BackColor == c)
+            { AnswersClient.Add(Juxtapositon15.Text); }
+            else if (Juxtapositon16.BackColor == c)
+            { AnswersClient.Add(Juxtapositon16.Text); }
+            else if (Juxtapositon17.BackColor == c)
+            { AnswersClient.Add(Juxtapositon17.Text); }
+            else if (Juxtapositon18.BackColor == c)
+            { AnswersClient.Add(Juxtapositon18.Text); }
+            else if (Juxtapositon19.BackColor == c)
+            { AnswersClient.Add(Juxtapositon19.Text); }
+            else if (Juxtapositon20.BackColor == c)
+            { AnswersClient.Add(Juxtapositon20.Text); }
+            else if (Juxtapositon21.BackColor == c)
+            { AnswersClient.Add(Juxtapositon21.Text); }
+            else if (Juxtapositon22.BackColor == c)
+            { AnswersClient.Add(Juxtapositon22.Text); }
+            else if (Juxtapositon23.BackColor == c)
+            { AnswersClient.Add(Juxtapositon23.Text); }
+            else if (Juxtapositon24.BackColor == c)
+            { AnswersClient.Add(Juxtapositon24.Text); }
+            else if (Juxtapositon25.BackColor == c)
+            { AnswersClient.Add(Juxtapositon25.Text); }
+            else if (Juxtapositon26.BackColor == c)
+            { AnswersClient.Add(Juxtapositon26.Text); }
+            else if (Juxtapositon27.BackColor == c)
+            { AnswersClient.Add(Juxtapositon27.Text); }
+            else if (Juxtapositon28.BackColor == c)
+            { AnswersClient.Add(Juxtapositon28.Text); }
+            else if (Juxtapositon29.BackColor == c)
+            { AnswersClient.Add(Juxtapositon29.Text); }
+            else if (Juxtapositon30.BackColor == c)
+            { AnswersClient.Add(Juxtapositon30.Text); }
+        }
         private void Test_Click(object sender, EventArgs e)
         {
-            TrueAns();
+            for (int i = 0; i < 12; i++)
+            { ClickClient(color[i]); }
+            if(AnswersClient.Count==12)
+            {
+                int rez = 0;
+                for(int i = 0;i < 12;i++)
+                { if (AnswersClient[i] == formsHT.GetTrueAns(i))
+                    { rez++; }
+                }
+                MessageBox.Show(
+                         $"Правильных ответов: {rez}",
+                         "Результаты",
+                         MessageBoxButtons.OK
+                  );
+                ResultTesting.PushSQL(rez, AnswersClient.Count, "Сложный");
+                TrueAns();
+            }
+            else
+            {
+                MessageBox.Show(
+                           "Вы должны ответить на все вопросы!\n",
+                           "                                     Ошибка",
+                           MessageBoxButtons.OK,
+                           MessageBoxIcon.Information,
+                           MessageBoxDefaultButton.Button1
+                    );
+            }
+            AnswersClient.Clear();
         }
     }
 }
