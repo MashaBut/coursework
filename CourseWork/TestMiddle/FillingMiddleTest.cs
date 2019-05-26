@@ -30,6 +30,8 @@ namespace CourseWork.TestMiddle
                 ErrorAns.Add(Convert.ToString(sqlCommand3.ExecuteScalar()));
                 MySqlCommand sqlCommand4 = new MySqlCommand($"SELECT Error2Ans FROM coursework.{LOG.NameTable} where id='{i}'", conn);
                 ErrorAns.Add(Convert.ToString(sqlCommand4.ExecuteScalar()));
+                MySqlCommand sqlCommand5 = new MySqlCommand($"SELECT Error3Ans FROM coursework.{LOG.NameTable} where id='{i}'", conn);
+                ErrorAns.Add(Convert.ToString(sqlCommand5.ExecuteScalar()));
             }
             conn.Close();
         }

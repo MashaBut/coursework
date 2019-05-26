@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using static CourseWork.Library;
@@ -36,25 +35,30 @@ namespace CourseWork
         }
         private void Test_Click(object sender, EventArgs e)
         {
-            if(SizeList>=10)
+            if (SizeList >= 12)
             {
                 LOG.NameTable = Convert.ToString(BoxForCategory.SelectedItem);
-                if(Convert.ToString(level.SelectedItem)== "Легкий")
-                {
-                    TestLight.TestLight testLight = new TestLight.TestLight();
-                    testLight.Show();
-                }
-                else if (Convert.ToString(level.SelectedItem) == "Средний")
+                if (Convert.ToString(level.SelectedItem) == "Средний")
                 {
                     TestMiddle.MiddleTest middleTest = new TestMiddle.MiddleTest();
                     middleTest.Show();
                 }
-                else if(Convert.ToString(level.SelectedItem) == "Сложный")
+                else if (Convert.ToString(level.SelectedItem) == "Сложный")
                 {
                     TestHard.HardTest hardTest = new TestHard.HardTest();
                     hardTest.Show();
                 }
             }
+            if (SizeList >= 10)
+            {
+                LOG.NameTable = Convert.ToString(BoxForCategory.SelectedItem);
+                if (Convert.ToString(level.SelectedItem) == "Легкий")
+                {
+                    TestLight.TestLight testLight = new TestLight.TestLight();
+                    testLight.Show();
+                }
+            }
+
         }
         private void BoxForCategory_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -68,10 +72,10 @@ namespace CourseWork
                     try
                     {
                         SizeList = Convert.ToInt32(sqlCommand.ExecuteScalar());
-                        if (SizeList < 10)
+                        if (SizeList < 13)
                         {
                             MessageBox.Show(
-                                "Таблица должна содержать больше 10 объектов",
+                                "Таблица должна содержать больше 13 объектов",
                                "                                     Ошибка",
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Error,

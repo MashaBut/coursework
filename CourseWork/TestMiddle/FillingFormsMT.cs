@@ -4,7 +4,7 @@ namespace CourseWork.TestMiddle
 {
     class FillingFormsMT:FilllingOutForms
     {
-        FillingMiddleTest fillingMiddleTest = new FillingMiddleTest(24);
+        FillingMiddleTest fillingMiddleTest = new FillingMiddleTest(13);//24
         public FillingFormsMT()
         {
             fillingMiddleTest.Search();

@@ -117,27 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="Sound.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAATr2AAE69gE6sVc6AAADiklE
-        QVRoQ+3ZSYwMURzH8bbFHkvGNjJV1VM9ieAiiIMDwhUJJgyDhLhyQYhwdhJHxMmVxE0E4SQkYl9iuVhC
-        kNgSO8H3V/Nez3+ma/RsnalO+p98prv6vap6/+5Xr96rydWiFrWoRdmIw0iGoh5T4jA/WJ9VRbjGj8ce
-        PME9tDYE05OyzIYa1xhGg3hdgDP4hb/OHUyGq52xUMMwFtvwHL7h3jMEcHtkJNSgpijpGjNxCt/RufFd
-        JqBt6Ferc/TelVY4dCKMxBY8QlrDvZIE9D4OkgZvwk1Hv+BwuFoViAIHbwoa1YA8juEb0hptpSeQjFDR
-        ffh6X7AblUlCB8UwrIZGlz+wDe1KdxOQr9gHDcOudh9DB3IacBifYE9azv+60Hq8hK3/ES2FiJEtSEki
-        DvJtwmg0lerKiSWMluIq7Im6q+uLOAj1ugIvYPfRPWQ2XG0X+sBZhgvQGH27jLt4D3uCnigmoGsIHUae
-        QpR8mSvxDna/o+jYlbSBibgCW7mSignEYehHnlvOhsaoQW3SdGMv7A1QX9oSuNYT2oAOpoPak1SSSSCa
-        Cnvh6sY3DyrTF3sRdt8T0MCR2QTkOJKuglb8hN23EdlIoClM7iHb8QO+/C3mQ2WTcA2+TF1qLbKRgDMO
-        nbvKAfjyg+4zj6FbF3qYhQSSEUd2wdY5ixFQ2XLYbnQeSZnfecASML1gET7D19F8ahpUNgtv4Mt0zbRN
-        x/UHWUhAF6a9eZlfqaR97fvrj9uoJdADaQl07kIP4buQphC2C2nimI0upMmZXtGTi/gcsnEROxpGL8HW
-        2Q9fnuFhtD45/w7Yb/g15kJlWiNchy9TvWYk3W/gE+hqKhEUpxIbkd2pBPplMjcBl2ErVlJ7AlGyFmjB
-        Dac5zieLGk2nNZ34Db+f1geL0dZ4hTacAVnQOGZBw/qgbVXWvQWNosDVLBSMSltCpqGulpS9XQQVE7Ch
-        ba3QeE1bUj5G6ZKyN6GDOFrUH4IW3fZk5ZQkQFfKxfnkl9iMV7D1P2ANkvP2W7gD6iddBXWrvj5WSRuR
-        +v+xig3dUPL5Jp08whFUz4MtGzoB9GhRS8AHsA3uLDUB93RiHfyIpO5U+cb70IniINDrDJxE9TzctaGT
-        Ygy24im6lUCmQo1jpqlvUHOa06ief3DYUCOh2eZOaI6vi3TjnHAhn+ddrYwHDZYh0AKluv7JV4ta1KKS
-        kcv9A3d2LkDd/OS7AAAAAElFTkSuQmCC
-</value>
-  </data>
 </root>

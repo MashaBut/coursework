@@ -4,7 +4,7 @@ namespace CourseWork.TestHard
 {
     class FillingFormsHT:FilllingOutForms
     {
-        FillingInfoForHardTest hardTest = new FillingInfoForHardTest(12);
+        FillingInfoForHardTest hardTest = new FillingInfoForHardTest(13);
         public FillingFormsHT()
         {
             hardTest.Search();
